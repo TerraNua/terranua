@@ -1,0 +1,2548 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Terra Nua | Jabones Artesanales Botánicos - Culiacán, Sinaloa</title>
+  <meta name="description" content="Jabones artesanales botánicos de 70g hechos a mano en Culiacán, Sinaloa. Ingredientes naturales, puros y conscientes para el cuidado de tu piel.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://lh3.googleusercontent.com/aida-public/AB6AXuCaAuQA5YtKIynRLMvU6DM0MCGuxV3XLFxNTcEsRF3SM1ymjhQH6T9l0qXndhCuxViVm_c2GfMN8JI4S-tTJWMsUzLUvEbh_P6O8VygnEad3FAq9HTekgbuTZVcaO0BewtjnwD2DQNc9x6Oi8wjc4X21w5H6sJRvI8WLaVnIXFRhigYTLjtDKiTUGo4rfqbZMbPKix6aeJM1uSpV1Q9vOsn84ZhTv4_9cEmK_iAN_U7_arV6zq7ctY1bz-21OxrYjz-K3Q">
+  
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,300..900;1,6..12,300..900&amp;family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+
+  <style>
+    @layer base {
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #fef9ef;
+        color: #1d1c16;
+        font-family: 'Nunito Sans', sans-serif;
+      }
+    }
+    
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f8f3e9;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #c4c8bb;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #74796d;
+    }
+
+    /* Animation Utilities */
+    @keyframes pulseSoft {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.05); opacity: 0.9; }
+    }
+    .animate-pulse-soft {
+      animation: pulseSoft 2.5s infinite ease-in-out;
+    }
+
+    /* Modal Backdrop */
+    .modal-backdrop {
+      background: rgba(29, 28, 22, 0.6);
+      backdrop-filter: blur(6px);
+    }
+  </style>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-tint": "#4a6638",
+            "surface": "#fef9ef",
+            "error-container": "#ffdad6",
+            "inverse-primary": "#afd098",
+            "on-tertiary-fixed-variant": "#5e4100",
+            "on-secondary-fixed": "#390c00",
+            "inverse-on-surface": "#f5f0e6",
+            "on-tertiary-fixed": "#271900",
+            "on-secondary-container": "#78351e",
+            "on-primary": "#ffffff",
+            "secondary": "#934a31",
+            "primary-container": "#2f4a1f",
+            "on-error": "#ffffff",
+            "on-secondary-fixed-variant": "#75331c",
+            "on-primary-fixed": "#082100",
+            "primary-fixed": "#cbedb2",
+            "outline": "#74796d",
+            "on-error-container": "#93000a",
+            "on-surface": "#1d1c16",
+            "surface-container-low": "#f8f3e9",
+            "surface-container": "#f2ede3",
+            "secondary-container": "#fea182",
+            "background": "#fef9ef",
+            "surface-variant": "#e7e2d8",
+            "on-primary-fixed-variant": "#334e22",
+            "on-primary-container": "#99b983",
+            "on-background": "#1d1c16",
+            "primary": "#19330a",
+            "primary-fixed-dim": "#afd098",
+            "tertiary-fixed-dim": "#f3be5b",
+            "error": "#ba1a1a",
+            "outline-variant": "#c4c8bb",
+            "on-tertiary": "#ffffff",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-high": "#ede8de",
+            "secondary-fixed": "#ffdbd0",
+            "secondary-fixed-dim": "#ffb59d",
+            "on-surface-variant": "#43483e",
+            "tertiary-container": "#5a3e00",
+            "tertiary-fixed": "#ffdea9",
+            "tertiary": "#3d2900",
+            "on-tertiary-container": "#dba847",
+            "surface-dim": "#dedad0",
+            "surface-container-highest": "#e7e2d8",
+            "inverse-surface": "#32302a",
+            "on-secondary": "#ffffff",
+            "surface-bright": "#fef9ef"
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "2xl": "1rem",
+            "3xl": "1.5rem",
+            "full": "9999px"
+          },
+          spacing: {
+            "space-lg": "1.5rem",
+            "space-xl": "2.5rem",
+            "space-md": "1rem",
+            "margin-mobile": "1.25rem",
+            "gutter-mobile": "1rem",
+            "space-sm": "0.5rem",
+            "space-2xl": "4rem",
+            "gutter": "1.5rem",
+            "margin": "3rem",
+            "space-xs": "0.25rem"
+          },
+          fontFamily: {
+            "headline-lg-mobile": ["Playfair Display", "serif"],
+            "label-sm": ["Nunito Sans", "sans-serif"],
+            "headline-sm": ["Playfair Display", "serif"],
+            "label-lg": ["Nunito Sans", "sans-serif"],
+            "headline-md": ["Playfair Display", "serif"],
+            "display-mobile": ["Playfair Display", "serif"],
+            "title-md": ["Nunito Sans", "sans-serif"],
+            "headline-lg": ["Playfair Display", "serif"],
+            "title-lg": ["Nunito Sans", "sans-serif"],
+            "body-sm": ["Nunito Sans", "sans-serif"],
+            "body-md": ["Nunito Sans", "sans-serif"],
+            "body-lg": ["Nunito Sans", "sans-serif"],
+            "display": ["Playfair Display", "serif"]
+          },
+          fontSize: {
+            "headline-lg-mobile": ["1.75rem", { "lineHeight": "2.25rem", "fontWeight": "600" }],
+            "label-sm": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.06em", "fontWeight": "600" }],
+            "headline-sm": ["1.25rem", { "lineHeight": "1.75rem", "fontWeight": "500" }],
+            "label-lg": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.04em", "fontWeight": "600" }],
+            "headline-md": ["1.75rem", { "lineHeight": "2.25rem", "fontWeight": "500" }],
+            "display-mobile": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "title-md": ["1rem", { "lineHeight": "1.5rem", "fontWeight": "600" }],
+            "headline-lg": ["2.5rem", { "lineHeight": "3rem", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "title-lg": ["1.125rem", { "lineHeight": "1.625rem", "fontWeight": "700" }],
+            "body-sm": ["0.875rem", { "lineHeight": "1.375rem", "fontWeight": "400" }],
+            "body-md": ["1rem", { "lineHeight": "1.6rem", "fontWeight": "400" }],
+            "body-lg": ["1.125rem", { "lineHeight": "1.75rem", "fontWeight": "400" }],
+            "display": ["3.5rem", { "lineHeight": "4rem", "letterSpacing": "-0.02em", "fontWeight": "600" }]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-surface font-body-md text-on-surface antialiased min-h-screen relative selection:bg-primary-container selection:text-on-primary-container">
+
+  <!-- ==================== NAVEGACIÓN SUPERIOR (STICKY) ==================== -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] border-b border-surface-container transition-all" id="main-header">
+    <div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between">
+      
+      <!-- Logotipo & Nombre -->
+      <a class="flex items-center gap-3 group" href="#quienes-somos" aria-label="Ir al inicio">
+        <img alt="Terra Nua" class="h-12 w-12 object-contain rounded-full ring-2 ring-primary/20 group-hover:ring-primary/50 transition-all duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaAuQA5YtKIynRLMvU6DM0MCGuxV3XLFxNTcEsRF3SM1ymjhQH6T9l0qXndhCuxViVm_c2GfMN8JI4S-tTJWMsUzLUvEbh_P6O8VygnEad3FAq9HTekgbuTZVcaO0BewtjnwD2DQNc9x6Oi8wjc4X21w5H6sJRvI8WLaVnIXFRhigYTLjtDKiTUGo4rfqbZMbPKix6aeJM1uSpV1Q9vOsn84ZhTv4_9cEmK_iAN_U7_arV6zq7ctY1bz-21OxrYjz-K3Q">
+        <span class="font-headline-sm text-primary tracking-tight font-semibold hidden sm:inline-block">Terra Nua</span>
+      </a>
+
+      <!-- Menú de Navegación de Escritorio -->
+      <nav class="hidden xl:flex items-center gap-1 lg:gap-2" id="desktop-nav">
+        <a class="nav-item font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all py-2 px-3 rounded-lg" data-path="quienes-somos" href="#quienes-somos">Quiénes somos</a>
+        <a class="nav-item font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all py-2 px-3 rounded-lg" data-path="mision-vision" href="#mision-vision">Misión y visión</a>
+        <a class="nav-item font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all py-2 px-3 rounded-lg" data-path="encuentra-tu-jabon" href="#encuentra-tu-jabon">Encuentra tu jabón</a>
+        <a class="nav-item font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all py-2 px-3 rounded-lg" data-path="nuestros-jabones" href="#nuestros-jabones">Nuestros jabones</a>
+        <a class="nav-item font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all py-2 px-3 rounded-lg" data-path="como-los-hacemos" href="#como-los-hacemos">Cómo los hacemos</a>
+        <a class="nav-item font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all py-2 px-3 rounded-lg" data-path="como-pedir" href="#como-pedir">Cómo pedir</a>
+        <a class="nav-item font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all py-2 px-3 rounded-lg" data-path="contacto" href="#contacto">Contacto</a>
+      </nav>
+
+      <!-- Botones de Acción: Carrito y Menú Móvil -->
+      <div class="flex items-center gap-3">
+        <!-- Botón de Carrito de Compras -->
+        <button id="open-cart-btn" class="relative flex items-center gap-2 px-3.5 py-2 rounded-full bg-surface-container hover:bg-surface-container-high text-primary font-label-lg text-label-lg transition-all shadow-xs group" aria-label="Abrir carrito de compras">
+          <span class="material-symbols-outlined text-xl group-hover:scale-110 transition-transform">shopping_bag</span>
+          <span class="hidden sm:inline font-semibold">Pedido</span>
+          <span id="cart-badge" class="bg-secondary text-white text-[11px] font-bold px-2 py-0.5 rounded-full min-w-[20px] text-center">0</span>
+        </button>
+
+        <!-- Botón Hamburguesa Móvil -->
+        <button id="mobile-menu-btn" class="xl:hidden p-2 rounded-lg text-on-surface hover:bg-surface-container transition-colors" aria-label="Abrir menú de navegación">
+          <span class="material-symbols-outlined text-2xl" id="menu-icon">menu</span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Menú Desplegable Móvil -->
+    <div id="mobile-menu" class="hidden xl:hidden bg-surface-container-low border-b border-surface-container px-6 py-5 shadow-lg">
+      <div class="flex flex-col gap-2">
+        <a class="mobile-nav-link py-2.5 px-4 rounded-lg font-label-lg text-primary hover:bg-surface-container transition-colors" href="#quienes-somos">Quiénes somos</a>
+        <a class="mobile-nav-link py-2.5 px-4 rounded-lg font-label-lg text-primary hover:bg-surface-container transition-colors" href="#mision-vision">Misión y visión</a>
+        <a class="mobile-nav-link py-2.5 px-4 rounded-lg font-label-lg text-primary hover:bg-surface-container transition-colors" href="#encuentra-tu-jabon">Encuentra tu jabón</a>
+        <a class="mobile-nav-link py-2.5 px-4 rounded-lg font-label-lg text-primary hover:bg-surface-container transition-colors" href="#nuestros-jabones">Nuestros jabones</a>
+        <a class="mobile-nav-link py-2.5 px-4 rounded-lg font-label-lg text-primary hover:bg-surface-container transition-colors" href="#como-los-hacemos">Cómo los hacemos</a>
+        <a class="mobile-nav-link py-2.5 px-4 rounded-lg font-label-lg text-primary hover:bg-surface-container transition-colors" href="#como-pedir">Cómo pedir</a>
+        <a class="mobile-nav-link py-2.5 px-4 rounded-lg font-label-lg text-primary hover:bg-surface-container transition-colors" href="#contacto">Contacto</a>
+        <div class="pt-3 border-t border-surface-container flex gap-3">
+          <button onclick="openSkinQuizModal()" class="flex-1 py-2.5 px-4 rounded-lg bg-surface-container text-primary font-label-lg font-semibold text-center hover:bg-surface-container-high">
+            Test de piel
+          </button>
+          <a href="https://wa.me/526672311505?text=Hola%20Terra%20Nua%2C%20quisiera%20pedir%20informaci%C3%B3n" target="_blank" rel="noopener noreferrer" class="flex-1 py-2.5 px-4 rounded-lg bg-primary text-on-primary font-label-lg font-semibold text-center hover:bg-secondary">
+            WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== CONTENIDO PRINCIPAL ==================== -->
+  <main class="w-full pt-20 bg-surface">
+    <div class="flex flex-col w-full text-on-surface">
+
+      <!-- ==================== 1. HERO / ¿QUIÉNES SOMOS? ==================== -->
+      <section class="relative w-full overflow-hidden bg-surface py-20 lg:py-28 flex flex-col items-center justify-center text-center px-6 lg:px-12" id="quienes-somos">
+        <!-- Ambient subtle background decorative botanical blobs -->
+        <div class="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-primary/5 blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-24 -right-24 w-96 h-96 rounded-full bg-secondary-container/20 blur-3xl pointer-events-none"></div>
+
+        <div class="relative max-w-4xl mx-auto flex flex-col items-center">
+          
+          <!-- Badge de Origen -->
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider mb-8 shadow-sm">
+            <span class="material-symbols-outlined text-sm text-secondary">location_on</span>
+            <span>Culiacán, Sinaloa, méxico</span>
+          </div>
+
+          <!-- Logotipo Emblemático -->
+          <div class="mb-8 w-32 h-32 md:w-40 md:h-40 rounded-full bg-surface-container-lowest p-4 shadow-[0_8px_30px_rgba(47,74,31,0.08)] flex items-center justify-center transform hover:scale-105 transition-transform duration-500 cursor-pointer" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" title="Terra Nua">
+            <img alt="Terra Nua" class="w-full h-full object-contain rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCurX1DSYrSKGWYw5Es4Ug5RKzoNdb7iR6ERnyfaLNrqGcbDkE_crvJjmIUsu8DAhypS_DR5QVdkz3TZWe6XVjyDPXvuLeC6rpT-McZBa7YwKzWLtByq8mVysUA9OOBRJHbXi0_0oyyy8eQfEmbxYcRygBf8lsHMQ163G8nBoffiIfQSS9gMuLzfTZl_LI-H4rGvoX9mPrbKGwUXe-ZGOStfzfx4lYVbSOyX__tBWdCumJSIvKxgWzAq_Mq61jW8EPNgKs">
+          </div>
+
+          <!-- Título Grande Serif -->
+          <h1 class="font-headline-lg text-headline-lg text-primary tracking-tight mb-4 max-w-2xl">
+            ¿Quiénes somos?
+          </h1>
+
+          <!-- Reseña -->
+          <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed mb-6">
+            Somos un emprendimiento 100% mexicano originario de la ciudad de <strong class="text-primary font-semibold">Culiacán, Sinaloa</strong>, que busca ofrecer un cuidado auténtico, puro y consciente para la piel, honrando la sabiduría botánica de nuestra tierra.
+          </p>
+
+          <!-- Eslogan en Cursiva -->
+          <div class="font-headline-md text-headline-md text-secondary italic mb-10 tracking-normal">
+            “Lo natural hecho rutina”
+          </div>
+
+          <!-- Botón de Acción Principal -->
+          <div class="flex flex-col sm:flex-row items-center gap-4">
+            <a class="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-lg bg-primary text-on-primary font-title-md text-title-md hover:bg-secondary transition-all shadow-[0_8px_20px_-4px_rgba(47,74,31,0.25)] hover:shadow-lg transform hover:-translate-y-0.5 active:translate-y-0" href="#nuestros-jabones">
+              <span>Conoce nuestros jabones</span>
+              <span class="material-symbols-outlined text-[20px]">spa</span>
+            </a>
+            <button onclick="openSkinQuizModal()" class="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-lg bg-surface-container text-primary font-title-md text-title-md hover:bg-surface-container-high transition-colors shadow-xs transform hover:-translate-y-0.5">
+              <span>Hacer test de piel</span>
+              <span class="material-symbols-outlined text-[20px]">psychology_alt</span>
+            </button>
+          </div>
+
+          <!-- Indicador animado de scroll -->
+          <a class="mt-16 flex flex-col items-center text-on-surface-variant hover:text-primary transition-colors group cursor-pointer" href="#mision-vision" aria-label="Bajar a la siguiente sección">
+            <span class="font-label-sm text-label-sm uppercase tracking-widest mb-2 opacity-75">Descubrir</span>
+            <span class="material-symbols-outlined text-2xl animate-bounce">expand_more</span>
+          </a>
+
+        </div>
+      </section>
+
+      <!-- ==================== 2. MISIÓN Y VISIÓN ==================== -->
+      <section class="w-full py-20 bg-surface-container-low px-6 lg:px-12" id="mision-vision">
+        <div class="max-w-6xl mx-auto">
+          
+          <div class="text-center max-w-2xl mx-auto mb-16">
+            <span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Nuestra Esencia</span>
+            <h2 class="font-headline-lg text-headline-lg text-primary mt-2">Propósito con Raíces</h2>
+            <div class="w-12 h-0.5 bg-secondary mx-auto mt-4 rounded-full"></div>
+          </div>
+
+          <!-- Tarjetas Misión & Visión -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+            
+            <!-- Misión -->
+            <div class="bg-surface-container-lowest p-8 lg:p-10 rounded-xl shadow-[0_4px_16px_-2px_rgba(107,74,58,0.06)] flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+              <div class="absolute -right-8 -top-8 w-28 h-28 bg-surface-container-low rounded-full pointer-events-none group-hover:scale-110 transition-transform"></div>
+              <div>
+                <div class="w-14 h-14 rounded-lg bg-surface-container flex items-center justify-center text-primary mb-6 shadow-xs">
+                  <span class="material-symbols-outlined text-3xl">compost</span>
+                </div>
+                <span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Compromiso Diario</span>
+                <h3 class="font-headline-sm text-headline-sm text-primary mt-1 mb-4">Nuestra Misión</h3>
+                <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                  Consolidar a Terra Nua como una marca reconocida en el ámbito del cuidado personal, ampliando progresivamente su presencia en el mercado mediante la innovación, la mejora continua y el desarrollo de nuevos productos. A largo plazo, se busca fortalecer la capacidad productiva y comercial de la empresa, ampliar sus canales de distribución y establecer una identidad de marca sólida y reconocible.
+                </p>
+              </div>
+              <div class="mt-8 pt-4 border-t border-surface-container flex items-center gap-2 text-primary font-label-lg text-label-lg">
+                <span class="material-symbols-outlined text-lg text-secondary">eco</span>
+                <span class="font-semibold text-xs tracking-wider uppercase">Elaboración 100% en Culiacán</span>
+              </div>
+            </div>
+
+            <!-- Visión -->
+            <div class="bg-surface-container-lowest p-8 lg:p-10 rounded-xl shadow-[0_4px_16px_-2px_rgba(107,74,58,0.06)] flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+              <div class="absolute -right-8 -top-8 w-28 h-28 bg-surface-container-low rounded-full pointer-events-none group-hover:scale-110 transition-transform"></div>
+              <div>
+                <div class="w-14 h-14 rounded-lg bg-surface-container flex items-center justify-center text-secondary mb-6 shadow-xs">
+                  <span class="material-symbols-outlined text-3xl">wb_sunny</span>
+                </div>
+                <span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Mirando al Futuro</span>
+                <h3 class="font-headline-sm text-headline-sm text-primary mt-1 mb-4">Nuestra Visión</h3>
+                <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                  Terra Nua busca proporcionar una experiencia de cuidado práctica y agradable, promoviendo hábitos conscientes y construyendo relaciones de confianza con sus clientes además de desarrollar y comercializar productos de cuidado personal que respondan a diferentes características y necesidades de la piel, mediante procesos organizados, selección responsable de ingredientes y una comunicación clara con los consumidores.
+                </p>
+              </div>
+              <div class="mt-8 pt-4 border-t border-surface-container flex items-center gap-2 text-primary font-label-lg text-label-lg">
+                <span class="material-symbols-outlined text-lg text-secondary">verified</span>
+                <span class="font-semibold text-xs tracking-wider uppercase">Cuidado Botánico Consciente</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- 4 Sellos / Insignias de Calidad -->
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-6 bg-surface-container p-6 lg:p-8 rounded-xl shadow-sm">
+            <div class="flex flex-col items-center text-center p-3 rounded-lg hover:bg-surface-container-high transition-colors cursor-pointer" onclick="showNotification('🌱 Extraemos el poder de arcillas puras y botánicos cosechados con respeto.')">
+              <div class="w-12 h-12 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary mb-3 shadow-xs">
+                <span class="material-symbols-outlined text-2xl">local_florist</span>
+              </div>
+              <h4 class="font-title-md text-title-md text-primary font-bold">Ingredientes naturales</h4>
+              <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Extractos y arcillas puras</p>
+            </div>
+
+            <div class="flex flex-col items-center text-center p-3 rounded-lg hover:bg-surface-container-high transition-colors cursor-pointer" onclick="showNotification('🧼 Fórmulas puras sin parabenos, sulfatos ni conservantes artificiales dañinos.')">
+              <div class="w-12 h-12 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary mb-3 shadow-xs">
+                <span class="material-symbols-outlined text-2xl">sanitizer</span>
+              </div>
+              <h4 class="font-title-md text-title-md text-primary font-bold">Libre de parabenos</h4>
+              <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Cero químicos agresivos</p>
+            </div>
+
+            <div class="flex flex-col items-center text-center p-3 rounded-lg hover:bg-surface-container-high transition-colors cursor-pointer" onclick="showNotification('🐰 Amor por la naturaleza: jamás testeamos en animales.')">
+              <div class="w-12 h-12 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary mb-3 shadow-xs">
+                <span class="material-symbols-outlined text-2xl">cruelty_free</span>
+              </div>
+              <h4 class="font-title-md text-title-md text-primary font-bold">Cruelty Free</h4>
+              <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">No probado en animales</p>
+            </div>
+
+            <div class="flex flex-col items-center text-center p-3 rounded-lg hover:bg-surface-container-high transition-colors cursor-pointer" onclick="showNotification('🌍 Empaques biodegradables y elaboración consciente en lotes pequeños.')">
+              <div class="w-12 h-12 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary mb-3 shadow-xs">
+                <span class="material-symbols-outlined text-2xl">nature_people</span>
+              </div>
+              <h4 class="font-title-md text-title-md text-primary font-bold">Cuida el planeta</h4>
+              <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Empaque y proceso consciente</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ==================== 3. ENCUENTRA TU JABÓN IDEAL (Selector Interactivo) ==================== -->
+      <section class="w-full py-20 bg-surface px-6 lg:px-12" id="encuentra-tu-jabon">
+        <div class="max-w-5xl mx-auto">
+          
+          <div class="text-center max-w-2xl mx-auto mb-12">
+            <span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Diagnóstico Rápido</span>
+            <h2 class="font-headline-lg text-headline-lg text-primary mt-2">Encuentra tu jabón ideal</h2>
+            <p class="font-body-md text-body-md text-on-surface-variant mt-3">
+              Dinos cómo sientes tu piel hoy y te recomendamos la fórmula botánica perfecta para equilibrarla.
+            </p>
+          </div>
+
+          <!-- Fila de Chips interactivos -->
+          <div class="flex flex-wrap items-center justify-center gap-3 md:gap-4 mb-10" id="skin-filters">
+            <button class="skin-tab-btn flex items-center gap-2.5 px-6 py-3.5 rounded-full font-label-lg text-label-lg transition-all duration-200 shadow-xs bg-surface-container text-on-surface hover:bg-surface-variant active:scale-95" data-type="grasa" type="button">
+              <span class="material-symbols-outlined text-lg">water_drop</span>
+              <span>Piel grasa o con acné</span>
+            </button>
+            <button class="skin-tab-btn flex items-center gap-2.5 px-6 py-3.5 rounded-full font-label-lg text-label-lg transition-all duration-200 shadow-xs bg-surface-container text-on-surface hover:bg-surface-variant active:scale-95" data-type="mixta" type="button">
+              <span class="material-symbols-outlined text-lg">balance</span>
+              <span>Piel mixta</span>
+            </button>
+            <button class="skin-tab-btn flex items-center gap-2.5 px-6 py-3.5 rounded-full font-label-lg text-label-lg transition-all duration-200 shadow-xs bg-surface-container text-on-surface hover:bg-surface-variant active:scale-95" data-type="sensible" type="button">
+              <span class="material-symbols-outlined text-lg">spa</span>
+              <span>Piel sensible</span>
+            </button>
+            <button class="skin-tab-btn flex items-center gap-2.5 px-6 py-3.5 rounded-full font-label-lg text-label-lg transition-all duration-200 bg-primary text-on-primary shadow-md active:scale-95" data-type="todo" type="button">
+              <span class="material-symbols-outlined text-lg">all_inclusive</span>
+              <span>No sé / Todo tipo de piel</span>
+            </button>
+          </div>
+
+          <!-- Contenedor dinámico de recomendaciones -->
+          <div class="min-h-[220px] transition-opacity duration-300" id="recommendation-results">
+            <!-- Grid dinámico renderizado con JS -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="results-grid">
+              <!-- Rendered via JS dynamically -->
+            </div>
+          </div>
+
+          <!-- Botón complementario para abrir test profundo -->
+          <div class="mt-12 text-center">
+            <button onclick="openSkinQuizModal()" class="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-secondary text-secondary hover:bg-secondary hover:text-white transition-all font-label-lg font-semibold text-label-lg shadow-xs">
+              <span class="material-symbols-outlined text-xl">psychology</span>
+              <span>¿Quieres un test guiado con preguntas personalizadas? Haz el Test de Piel</span>
+            </button>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ==================== 4. NUESTROS JABONES (Catálogo Completo) ==================== -->
+      <section class="w-full py-20 bg-surface-container-low px-6 lg:px-12" id="nuestros-jabones">
+        <div class="max-w-7xl mx-auto">
+          
+          <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+            <div>
+              <span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Catálogo Botánico</span>
+              <h2 class="font-headline-lg text-headline-lg text-primary mt-2">Nuestros jabones</h2>
+              <p class="font-body-md text-body-md text-on-surface-variant mt-2">
+                Barras de glicerina artesanal de 70 g que se sienten y transforman tu piel desde el primer lavado.
+              </p>
+            </div>
+            
+            <div class="flex flex-wrap items-center gap-3">
+              <div class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-surface-container-lowest shadow-xs text-primary font-label-lg text-label-lg">
+                <span class="material-symbols-outlined text-lg text-secondary">scale</span>
+                <span>Formato sólido: 70 gramos c/u</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Filtro rápido de catálogo -->
+          <div class="flex flex-wrap items-center gap-2 mb-10 pb-2 border-b border-surface-container">
+            <span class="text-xs uppercase font-bold text-on-surface-variant tracking-wider mr-2">Filtrar por:</span>
+            <button onclick="filterCatalog('todos')" class="catalog-filter-btn px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-primary text-on-primary transition-all shadow-xs" data-filter="todos">Todos (6)</button>
+            <button onclick="filterCatalog('mixta')" class="catalog-filter-btn px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-surface-container text-on-surface hover:bg-surface-variant transition-all" data-filter="mixta">Piel Mixta</button>
+            <button onclick="filterCatalog('grasa')" class="catalog-filter-btn px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-surface-container text-on-surface hover:bg-surface-variant transition-all" data-filter="grasa">Piel Grasa / Acné</button>
+            <button onclick="filterCatalog('sensible')" class="catalog-filter-btn px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-surface-container text-on-surface hover:bg-surface-variant transition-all" data-filter="sensible">Piel Sensible / Seca</button>
+          </div>
+
+          <!-- Cuadrícula de 6 Jabones -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="catalog-grid">
+
+            <!-- 1. Vino & Rosas -->
+            <div class="soap-card bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_16px_-2px_rgba(107,74,58,0.06)] hover:shadow-[0_10px_24px_-4px_rgba(47,74,31,0.14)] transition-all flex flex-col justify-between group" data-category="mixta" id="jabon-vino">
+              <div>
+                <div class="h-52 bg-surface-container relative flex items-center justify-center overflow-hidden cursor-pointer" onclick="openProductModal('vino')">
+                  <img alt="Jabón artesanal Vino y Rosas Terra Nua" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAn1injnKRrXV1-JzcEi3sExaKXqVTgOXx0CFDHxhU3TqvJyW_77h-wSh74G8731NeacypysYdWTypDFRdiEN_fi3Ls8IfzmZ7CxopnFK1ZdlCgpdE46dz2kX3psviylgzwuN5y3Alohfsnsk2Xi6Ms9IqXq-H07WH36p2TxHNVdRCARBTA5bkON6XYqFl9B4cB33J3fSoH5EnGfXvzOLTiPDuhSpJhI302OAgTtlGscygETAsUDcLoE-lBbtRD0b-JQ6I">
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
+                  <span class="absolute top-4 left-4 px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-surface/90 text-[#7A1F33] shadow-xs">Ideal para piel mixta</span>
+                  <button class="absolute bottom-3 right-3 p-2 rounded-full bg-surface/80 text-primary opacity-0 group-hover:opacity-100 transition-opacity hover:bg-surface shadow-xs" title="Ver detalles amplios" onclick="event.stopPropagation(); openProductModal('vino');">
+                    <span class="material-symbols-outlined text-lg">visibility</span>
+                  </button>
+                </div>
+                <div class="p-6">
+                  <div class="flex items-start justify-between gap-2 mb-2">
+                    <h3 class="font-headline-sm text-headline-sm text-primary cursor-pointer hover:text-secondary transition-colors" onclick="openProductModal('vino')">Vino &amp; Rosas</h3>
+                    <span class="font-title-lg text-title-lg text-secondary font-bold shrink-0">$50 MXN</span>
+                  </div>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant mb-4 leading-relaxed">
+                    Limpieza suave que deja la piel con aspecto más suave y luminoso, revitalizando la textura opaca.
+                  </p>
+                  <div class="space-y-2 py-3 bg-surface-container-low rounded-lg p-3 text-left">
+                    <div class="flex items-start gap-2">
+                      <span class="material-symbols-outlined text-secondary text-sm shrink-0 mt-0.5">grain</span>
+                      <span class="font-body-sm text-body-sm text-on-surface"><strong>Ingredientes:</strong> Glicerina con vino tinto, arcilla rosa y agua de rosas pura.</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <span class="material-symbols-outlined text-secondary text-sm shrink-0">view_in_ar_new</span>
+                      <span class="font-body-sm text-body-sm text-on-surface"><strong>Aroma:</strong> Rosas frescas</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="p-6 pt-0 flex gap-2">
+                <button class="flex-1 inline-flex items-center justify-center gap-2 py-3 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg hover:bg-secondary transition-colors shadow-xs active:scale-98" onclick="addToCart('vino')">
+                  <span class="material-symbols-outlined text-lg">shopping_bag</span>
+                  <span>Pedir este jabón</span>
+                </button>
+                <button onclick="openProductModal('vino')" class="p-3 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary transition-colors" title="Ver ficha botánica completa">
+                  <span class="material-symbols-outlined text-lg">info</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- 2. Carbón Activado -->
+            <div class="soap-card bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_16px_-2px_rgba(107,74,58,0.06)] hover:shadow-[0_10px_24px_-4px_rgba(47,74,31,0.14)] transition-all flex flex-col justify-between group" data-category="grasa" id="jabon-carbon">
+              <div>
+                <div class="h-52 bg-surface-container relative flex items-center justify-center overflow-hidden cursor-pointer" onclick="openProductModal('carbon')">
+                  <img alt="Jabón artesanal Carbón Activado Terra Nua" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlkRkf6t6Kmpo1PjXA9DAn3Vd2qv1AAEsiQD_xikiYY3MFseF3NKSDhKXbNKVjl-Vvx2JANXt-Q571bpckhUg-VZNLm0X_xszSksYUEAsPSftXz3bmi__N2-R_42hs2HPUsh5Kz-S4hL21rNaYSKKCYjcZGbBXZcuZHKMRwmPhc_LiKNIEGlBjIaD_AH3OqtJ2B43M2ktufwZ2eXGEn0lKcBV6nrZmQLj2J-GD9UfE45JbKa3eTaF-8fNYngoVzka2Kpk">
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
+                  <span class="absolute top-4 left-4 px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-surface/90 text-secondary shadow-xs">Ideal para piel grasa o acné</span>
+                  <button class="absolute bottom-3 right-3 p-2 rounded-full bg-surface/80 text-primary opacity-0 group-hover:opacity-100 transition-opacity hover:bg-surface shadow-xs" title="Ver detalles amplios" onclick="event.stopPropagation(); openProductModal('carbon');">
+                    <span class="material-symbols-outlined text-lg">visibility</span>
+                  </button>
+                </div>
+                <div class="p-6">
+                  <div class="flex items-start justify-between gap-2 mb-2">
+                    <h3 class="font-headline-sm text-headline-sm text-primary cursor-pointer hover:text-secondary transition-colors" onclick="openProductModal('carbon')">Carbón Activado</h3>
+                    <span class="font-title-lg text-title-lg text-secondary font-bold shrink-0">$50 MXN</span>
+                  </div>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant mb-4 leading-relaxed">
+                    Limpieza profunda que ayuda a eliminar impurezas, destapar poros y controlar el exceso de sebo.
+                  </p>
+                  <div class="space-y-2 py-3 bg-surface-container-low rounded-lg p-3 text-left">
+                    <div class="flex items-start gap-2">
+                      <span class="material-symbols-outlined text-secondary text-sm shrink-0 mt-0.5">grain</span>
+                      <span class="font-body-sm text-body-sm text-on-surface"><strong>Ingredientes:</strong> Carbón activado, arcilla roja, aceite de coco y árbol del té.</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <span class="material-symbols-outlined text-secondary text-sm shrink-0">view_in_ar_new</span>
+                      <span class="font-body-sm text-body-sm text-on-surface"><strong>Aroma:</strong> Coco botánico</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="p-6 pt-0 flex gap-2">
+                <button class="flex-1 inline-flex items-center justify-center gap-2 py-3 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg hover:bg-secondary transition-colors shadow-xs active:scale-98" onclick="addToCart('carbon')">
+                  <span class="material-symbols-outlined text-lg">shopping_bag</span>
+                  <span>Pedir este jabón</span>
+                </button>
+                <button onclick="openProductModal('carbon')" class="p-3 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary transition-colors" title="Ver ficha botánica completa">
+                  <span class="material-symbols-outlined text-lg">info</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- 3. Tepezcohuite -->
+            <div class="soap-card bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_16px_-2px_rgba(107,74,58,0.06)] hover:shadow-[0_10px_24px_-4px_rgba(47,74,31,0.14)] transition-all flex flex-col justify-between group" data-category="mixta" id="jabon-tepezcohuite">
+              <div>
+                <div class="h-52 bg-surface-container relative flex items-center justify-center p-6 overflow-hidden cursor-pointer" onclick="openProductModal('tepezcohuite')">
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent"></div>
+                  <div class="w-32 h-32 rounded-2xl bg-[#6B4A3A] text-surface shadow-md flex flex-col items-center justify-center p-3 text-center transform group-hover:scale-105 transition-transform duration-300 border-2 border-white/20">
+                    <span class="material-symbols-outlined text-4xl mb-1 opacity-90 text-amber-200">park</span>
+                    <span class="font-label-sm text-[11px] tracking-wider uppercase font-bold text-surface">Terra Nua</span>
+                    <span class="text-[10px] opacity-75">70 g</span>
+                  </div>
+                  <span class="absolute top-4 left-4 px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-surface/90 text-secondary shadow-xs">
+                    Ideal para piel mixta a grasa
+                  </span>
+                  <button class="absolute bottom-3 right-3 p-2 rounded-full bg-surface/80 text-primary opacity-0 group-hover:opacity-100 transition-opacity hover:bg-surface shadow-xs" title="Ver detalles amplios" onclick="event.stopPropagation(); openProductModal('tepezcohuite');">
+                    <span class="material-symbols-outlined text-lg">visibility</span>
+                  </button>
+                </div>
+                <div class="p-6">
+                  <div class="flex items-start justify-between gap-2 mb-2">
+                    <h3 class="font-headline-sm text-headline-sm text-primary cursor-pointer hover:text-secondary transition-colors" onclick="openProductModal('tepezcohuite')">Tepezcohuite</h3>
+                    <span class="font-title-lg text-title-lg text-secondary font-bold shrink-0">$50 MXN</span>
+                  </div>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant mb-4 leading-relaxed">
+                    Limpieza suave con polvo de tepezcohuite ancestral mexicano y arcilla blanca purificante.
+                  </p>
+                  <div class="space-y-2 py-3 bg-surface-container-low rounded-lg p-3 text-left">
+                    <div class="flex items-start gap-2">
+                      <span class="material-symbols-outlined text-secondary text-sm shrink-0 mt-0.5">grain</span>
+                      <span class="font-body-sm text-body-sm text-on-surface"><strong>Ingredientes:</strong> Polvo de corteza de tepezcohuite y arcilla blanca.</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <span class="material-symbols-outlined text-secondary text-sm shrink-0">view_in_ar_new</span>
+                      <span class="font-body-sm text-body-sm text-on-surface"><strong>Aroma:</strong> Maderas nobles</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="p-6 pt-0 flex gap-2">
+                <button class="flex-1 inline-flex items-center justify-center gap-2 py-3 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg hover:bg-secondary transition-colors shadow-xs active:scale-98" onclick="addToCart('tepezcohuite')">
+                  <span class="material-symbols-outlined text-lg">shopping_bag</span>
+                  <span>Pedir este jabón</span>
+                </button>
+                <button onclick="openProductModal('tepezcohuite')" class="p-3 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary transition-colors" title="Ver ficha botánica completa">
+                  <span class="material-symbols-outlined text-lg">info</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- 4. Miel Pura -->
+            <div class="soap-card bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_16px_-2px_rgba(107,74,58,0.06)] hover:shadow-[0_10px_24px_-4px_rgba(47,74,31,0.14)] transition-all flex flex-col justify-between group" data-category="sensible" id="jabon-miel">
+              <div>
+                <div class="h-52 bg-surface-container relative flex items-center justify-center p-6 overflow-hidden cursor-pointer" onclick="openProductModal('miel')">
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent"></div>
+                  <div class="w-32 h-32 rounded-2xl bg-[#B8892B] text-surface shadow-md flex flex-col items-center justify-center p-3 text-center transform group-hover:scale-105 transition-transform duration-300 border-2 border-white/20">
+                    <span class="material-symbols-outlined text-4xl mb-1 opacity-90 text-amber-100">hive</span>
+                    <span class="font-label-sm text-[11px] tracking-wider uppercase font-bold text-surface">Terra Nua</span>
+                    <span class="text-[10px] opacity-75">70 g</span>
+                  </div>
+                  <span class="absolute top-4 left-4 px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-surface/90 text-[#8f6412] shadow-xs">
+                    Ideal para piel sensible
+                  </span>
+                  <button class="absolute bottom-3 right-3 p-2 rounded-full bg-surface/80 text-primary opacity-0 group-hover:opacity-100 transition-opacity hover:bg-surface shadow-xs" title="Ver detalles amplios" onclick="event.stopPropagation(); openProductModal('miel');">
+                    <span class="material-symbols-outlined text-lg">visibility</span>
+                  </button>
+                </div>
+                <div class="p-6">
+                  <div class="flex items-start justify-between gap-2 mb-2">
+                    <h3 class="font-headline-sm text-headline-sm text-primary cursor-pointer hover:text-secondary transition-colors" onclick="openProductModal('miel')">Miel Pura</h3>
+                    <span class="font-title-lg text-title-lg text-secondary font-bold shrink-0">$50 MXN</span>
+                  </div>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant mb-4 leading-relaxed">
+                    Limpieza reconfortante y ultra delicada, diseñada con mimo absoluto para calmar pieles sensibles o reactivas.
+                  </p>
+                  <div class="space-y-2 py-3 bg-surface-container-low rounded-lg p-3 text-left">
+                    <div class="flex items-start gap-2">
+                      <span class="material-symbols-outlined text-secondary text-sm shrink-0 mt-0.5">grain</span>
+                      <span class="font-body-sm text-body-sm text-on-surface"><strong>Ingredientes:</strong> Base de glicerina vegetal pura enriquecida con miel de abeja natural.</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <span class="material-symbols-outlined text-secondary text-sm shrink-0">view_in_ar_new</span>
+                      <span class="font-body-sm text-body-sm text-on-surface"><strong>Aroma:</strong> Dulce natural apícola</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="p-6 pt-0 flex gap-2">
+                <button class="flex-1 inline-flex items-center justify-center gap-2 py-3 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg hover:bg-secondary transition-colors shadow-xs active:scale-98" onclick="addToCart('miel')">
+                  <span class="material-symbols-outlined text-lg">shopping_bag</span>
+                  <span>Pedir este jabón</span>
+                </button>
+                <button onclick="openProductModal('miel')" class="p-3 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary transition-colors" title="Ver ficha botánica completa">
+                  <span class="material-symbols-outlined text-lg">info</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- 5. Cúrcuma y Miel -->
+            <div class="soap-card bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_16px_-2px_rgba(107,74,58,0.06)] hover:shadow-[0_10px_24px_-4px_rgba(47,74,31,0.14)] transition-all flex flex-col justify-between group" data-category="mixta" id="jabon-curcuma">
+              <div>
+                <div class="h-52 bg-surface-container relative flex items-center justify-center overflow-hidden cursor-pointer" onclick="openProductModal('curcuma')">
+                  <img alt="Jabón artesanal Cúrcuma y Miel Terra Nua" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGSWA0am1-MVIhis5W0KXxYyLOznMb6LEbd9gWVKc2BGY1eBTmKQn4O94yvooolXPv0kwIVxx_CG8SJ3ttc8miApA273yOjuUUn6Eiy31ZPzZTP0RDO9Cd0v6T7PMDSGFvZYURPjlpFSsxYhRyqyg5sdrJjzLE4X_Vj3W6DOBwBbrIzl7oguwwlRfDoOeCIsB6EW1N5BnNeVCer2BunAxiLuWjd7uswtOeoybRXUsBM3lm4z6Bjq-vKUmE2j5zo4qAMUI">
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
+                  <span class="absolute top-4 left-4 px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-surface/90 text-[#a36912] shadow-xs">Ideal para piel mixta</span>
+                  <button class="absolute bottom-3 right-3 p-2 rounded-full bg-surface/80 text-primary opacity-0 group-hover:opacity-100 transition-opacity hover:bg-surface shadow-xs" title="Ver detalles amplios" onclick="event.stopPropagation(); openProductModal('curcuma');">
+                    <span class="material-symbols-outlined text-lg">visibility</span>
+                  </button>
+                </div>
+                <div class="p-6">
+                  <div class="flex items-start justify-between gap-2 mb-2">
+                    <h3 class="font-headline-sm text-headline-sm text-primary cursor-pointer hover:text-secondary transition-colors" onclick="openProductModal('curcuma')">Cúrcuma y Miel</h3>
+                    <span class="font-title-lg text-title-lg text-secondary font-bold shrink-0">$50 MXN</span>
+                  </div>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant mb-4 leading-relaxed">
+                    Limpieza suave y profundamente nutritiva que ayuda a iluminar, emparejar y tonificar la dermis cansada.
+                  </p>
+                  <div class="space-y-2 py-3 bg-surface-container-low rounded-lg p-3 text-left">
+                    <div class="flex items-start gap-2">
+                      <span class="material-symbols-outlined text-secondary text-sm shrink-0 mt-0.5">grain</span>
+                      <span class="font-body-sm text-body-sm text-on-surface"><strong>Ingredientes:</strong> Base de leche de cabra, cúrcuma, arcilla blanca, miel y avena coloidal.</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <span class="material-symbols-outlined text-secondary text-sm shrink-0">view_in_ar_new</span>
+                      <span class="font-body-sm text-body-sm text-on-surface"><strong>Aroma:</strong> Verbena y bergamota</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="p-6 pt-0 flex gap-2">
+                <button class="flex-1 inline-flex items-center justify-center gap-2 py-3 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg hover:bg-secondary transition-colors shadow-xs active:scale-98" onclick="addToCart('curcuma')">
+                  <span class="material-symbols-outlined text-lg">shopping_bag</span>
+                  <span>Pedir este jabón</span>
+                </button>
+                <button onclick="openProductModal('curcuma')" class="p-3 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary transition-colors" title="Ver ficha botánica completa">
+                  <span class="material-symbols-outlined text-lg">info</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- 6. Avena & Miel -->
+            <div class="soap-card bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_16px_-2px_rgba(107,74,58,0.06)] hover:shadow-[0_10px_24px_-4px_rgba(47,74,31,0.14)] transition-all flex flex-col justify-between group" data-category="sensible" id="jabon-avena">
+              <div>
+                <div class="h-52 bg-surface-container relative flex items-center justify-center overflow-hidden cursor-pointer" onclick="openProductModal('avena')">
+                  <img alt="Jabón artesanal Avena y Miel Terra Nua 70 g" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwcD0-sNtocTxHcRzmOJFfsi_ZMgV0lopq1jnZHeWkQAz3zqoZH-sHiDs8-RQukATs_1FzgvBC97qxPYYuVWLhEY4v9lUiodi7Yi35KD-33iAn4kjg0LpWoOW5g0RuWzk_mW3jmeZ7yqVVmtmAzmWFiPyA_k4f1Jy7b6aX3vedhVUXKGSSnZss47k4enJbORESxzUvshQ8SqYmrZQg5OtyJSsdGlR8SZN5Ylr9uBSt7p7V0WrX78L6JziKuxxRKQmMbjs">
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
+                  <span class="absolute top-4 left-4 px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-surface/90 text-[#8f6412] shadow-xs">
+                    Ideal para piel sensible o seca
+                  </span>
+                  <button class="absolute bottom-3 right-3 p-2 rounded-full bg-surface/80 text-primary opacity-0 group-hover:opacity-100 transition-opacity hover:bg-surface shadow-xs" title="Ver detalles amplios" onclick="event.stopPropagation(); openProductModal('avena');">
+                    <span class="material-symbols-outlined text-lg">visibility</span>
+                  </button>
+                </div>
+                <div class="p-6">
+                  <div class="flex items-start justify-between gap-2 mb-2">
+                    <h3 class="font-headline-sm text-headline-sm text-primary cursor-pointer hover:text-secondary transition-colors" onclick="openProductModal('avena')">Avena &amp; Miel</h3>
+                    <span class="font-title-lg text-title-lg text-secondary font-bold shrink-0">$50 MXN</span>
+                  </div>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant mb-4 leading-relaxed">
+                    Nutrición calmante y exfoliación ultra suave que alivia, suaviza e hidrata las pieles delicadas.
+                  </p>
+                  <div class="space-y-2 py-3 bg-surface-container-low rounded-lg p-3 text-left">
+                    <div class="flex items-start gap-2">
+                      <span class="material-symbols-outlined text-secondary text-sm shrink-0 mt-0.5">grain</span>
+                      <span class="font-body-sm text-body-sm text-on-surface"><strong>Ingredientes:</strong> Base de leche de cabra, avena coloidal, arcilla blanca, miel y extractos botánicos.</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <span class="material-symbols-outlined text-secondary text-sm shrink-0">view_in_ar_new</span>
+                      <span class="font-body-sm text-body-sm text-on-surface"><strong>Aroma:</strong> Miel tibia y avena silvestre</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="p-6 pt-0 flex gap-2">
+                <button class="flex-1 inline-flex items-center justify-center gap-2 py-3 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg hover:bg-secondary transition-colors shadow-xs active:scale-98" onclick="addToCart('avena')">
+                  <span class="material-symbols-outlined text-lg">shopping_bag</span>
+                  <span>Pedir este jabón</span>
+                </button>
+                <button onclick="openProductModal('avena')" class="p-3 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary transition-colors" title="Ver ficha botánica completa">
+                  <span class="material-symbols-outlined text-lg">info</span>
+                </button>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ==================== 5. CÓMO LOS HACEMOS ==================== -->
+      <section class="w-full py-20 bg-surface px-6 lg:px-12" id="como-los-hacemos">
+        <div class="max-w-6xl mx-auto">
+          
+          <div class="text-center max-w-2xl mx-auto mb-16">
+            <span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Proceso Artesanal</span>
+            <h2 class="font-headline-lg text-headline-lg text-primary mt-2">Del campo a tu rutina</h2>
+            <p class="font-body-md text-body-md text-on-surface-variant mt-2">
+              Así nacen nuestros jabones: paciencia, respeto botánico y elaboración artesanal.
+            </p>
+          </div>
+
+          <!-- Línea de tiempo de 5 pasos -->
+          <div class="grid grid-cols-1 md:grid-cols-5 gap-6 relative mb-20">
+            
+            <!-- Paso 1 -->
+            <div class="bg-surface-container-low p-6 rounded-xl flex flex-col justify-between text-left relative group hover:bg-surface-container hover:shadow-sm transition-all transform hover:-translate-y-1">
+              <div>
+                <div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold mb-4 shadow-sm">1</div>
+                <h3 class="font-headline-sm text-[1.1rem] leading-snug text-primary mb-2">Ingredientes naturales</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Arcillas puras, polvos botánicos, miel virgen y avena seleccionados meticulosamente.
+                </p>
+              </div>
+              <span class="material-symbols-outlined text-secondary/40 text-3xl mt-6 self-end">eco</span>
+            </div>
+
+            <!-- Paso 2 -->
+            <div class="bg-surface-container-low p-6 rounded-xl flex flex-col justify-between text-left relative group hover:bg-surface-container hover:shadow-sm transition-all transform hover:-translate-y-1">
+              <div>
+                <div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold mb-4 shadow-sm">2</div>
+                <h3 class="font-headline-sm text-[1.1rem] leading-snug text-primary mb-2">Base de glicerina</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Partimos de bases vegetales altamente emolientes que retienen la humedad natural de la piel.
+                </p>
+              </div>
+              <span class="material-symbols-outlined text-secondary/40 text-3xl mt-6 self-end">opacity</span>
+            </div>
+
+            <!-- Paso 3 -->
+            <div class="bg-surface-container-low p-6 rounded-xl flex flex-col justify-between text-left relative group hover:bg-surface-container hover:shadow-sm transition-all transform hover:-translate-y-1">
+              <div>
+                <div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold mb-4 shadow-sm">3</div>
+                <h3 class="font-headline-sm text-[1.1rem] leading-snug text-primary mb-2">Fundimos y mezclamos</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Derretimos la base a temperatura controlada y unimos a mano los extractos, polvos y esencias.
+                </p>
+              </div>
+              <span class="material-symbols-outlined text-secondary/40 text-3xl mt-6 self-end">blender</span>
+            </div>
+
+            <!-- Paso 4 -->
+            <div class="bg-surface-container-low p-6 rounded-xl flex flex-col justify-between text-left relative group hover:bg-surface-container hover:shadow-sm transition-all transform hover:-translate-y-1">
+              <div>
+                <div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold mb-4 shadow-sm">4</div>
+                <h3 class="font-headline-sm text-[1.1rem] leading-snug text-primary mb-2">Vertemos y reposamos</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Cada infusión va a su molde individual, reposando en calma hasta fraguar naturalmente.
+                </p>
+              </div>
+              <span class="material-symbols-outlined text-secondary/40 text-3xl mt-6 self-end">hourglass_empty</span>
+            </div>
+
+            <!-- Paso 5 -->
+            <div class="bg-surface-container-low p-6 rounded-xl flex flex-col justify-between text-left relative group hover:bg-surface-container hover:shadow-sm transition-all transform hover:-translate-y-1">
+              <div>
+                <div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold mb-4 shadow-sm">5</div>
+                <h3 class="font-headline-sm text-[1.1rem] leading-snug text-primary mb-2">Sellamos y empacamos</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Lotes pequeños de 12 piezas, barras de 70 g con el distintivo sello artesanal Terra Nua.
+                </p>
+              </div>
+              <span class="material-symbols-outlined text-secondary/40 text-3xl mt-6 self-end">verified</span>
+            </div>
+
+          </div>
+
+          <!-- Fila de 11 Ingredientes Estrella con Tooltips Interactivos -->
+          <div class="bg-surface-container p-8 lg:p-10 rounded-2xl shadow-sm text-center">
+            <h3 class="font-headline-sm text-headline-sm text-primary mb-2">Nuestros 11 Ingredientes Estrella</h3>
+            <p class="font-body-sm text-body-sm text-on-surface-variant mb-8 max-w-xl mx-auto">
+              Nutrientes honestos y activos botánicos cosechados con ética para revitalizar tu piel. <span class="text-secondary font-semibold">Toca cualquiera para ver su ficha:</span>
+            </p>
+            
+            <div class="flex flex-wrap items-center justify-center gap-3 lg:gap-4 max-w-4xl mx-auto">
+              
+              <!-- 1. Arcilla rosa -->
+              <div class="relative group cursor-pointer" onclick="openIngredientModal('arcilla-rosa')">
+                <span class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-surface-container-lowest font-label-sm text-label-sm text-on-surface shadow-xs transition-all duration-200 group-hover:bg-primary group-hover:text-on-primary group-hover:shadow-md">
+                  <span class="material-symbols-outlined text-sm text-secondary group-hover:text-white">spa</span>
+                  <span>Arcilla rosa</span>
+                </span>
+                <div class="pointer-events-none absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-52 p-2.5 rounded-xl bg-primary text-white text-xs leading-snug text-center opacity-0 group-hover:opacity-100 transition-all duration-200 transform group-hover:-translate-y-1 shadow-lg z-50">
+                  Regenera, desintoxica y aporta luminosidad a pieles delicadas.
+                  <div class="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-primary"></div>
+                </div>
+              </div>
+
+              <!-- 2. Arcilla roja -->
+              <div class="relative group cursor-pointer" onclick="openIngredientModal('arcilla-roja')">
+                <span class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-surface-container-lowest font-label-sm text-label-sm text-on-surface shadow-xs transition-all duration-200 group-hover:bg-primary group-hover:text-on-primary group-hover:shadow-md">
+                  <span class="material-symbols-outlined text-sm text-secondary group-hover:text-white">spa</span>
+                  <span>Arcilla roja</span>
+                </span>
+                <div class="pointer-events-none absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-52 p-2.5 rounded-xl bg-primary text-white text-xs leading-snug text-center opacity-0 group-hover:opacity-100 transition-all duration-200 transform group-hover:-translate-y-1 shadow-lg z-50">
+                  Estimula la circulación y tonifica pieles mixtas o apagadas.
+                  <div class="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-primary"></div>
+                </div>
+              </div>
+
+              <!-- 3. Arcilla blanca -->
+              <div class="relative group cursor-pointer" onclick="openIngredientModal('arcilla-blanca')">
+                <span class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-surface-container-lowest font-label-sm text-label-sm text-on-surface shadow-xs transition-all duration-200 group-hover:bg-primary group-hover:text-on-primary group-hover:shadow-md">
+                  <span class="material-symbols-outlined text-sm text-secondary group-hover:text-white">spa</span>
+                  <span>Arcilla blanca</span>
+                </span>
+                <div class="pointer-events-none absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-52 p-2.5 rounded-xl bg-primary text-white text-xs leading-snug text-center opacity-0 group-hover:opacity-100 transition-all duration-200 transform group-hover:-translate-y-1 shadow-lg z-50">
+                  Caolín mineral ultra suave que purifica y absorbe toxinas con mimo.
+                  <div class="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-primary"></div>
+                </div>
+              </div>
+
+              <!-- 4. Carbón activado -->
+              <div class="relative group cursor-pointer" onclick="openIngredientModal('carbon-activado')">
+                <span class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-surface-container-lowest font-label-sm text-label-sm text-on-surface shadow-xs transition-all duration-200 group-hover:bg-primary group-hover:text-on-primary group-hover:shadow-md">
+                  <span class="material-symbols-outlined text-sm text-secondary group-hover:text-white">masks</span>
+                  <span>Carbón activado</span>
+                </span>
+                <div class="pointer-events-none absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-52 p-2.5 rounded-xl bg-primary text-white text-xs leading-snug text-center opacity-0 group-hover:opacity-100 transition-all duration-200 transform group-hover:-translate-y-1 shadow-lg z-50">
+                  Purifica a profundidad, desobstruye poros y controla el sebo.
+                  <div class="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-primary"></div>
+                </div>
+              </div>
+
+              <!-- 5. Tepezcohuite -->
+              <div class="relative group cursor-pointer" onclick="openIngredientModal('tepezcohuite')">
+                <span class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-surface-container-lowest font-label-sm text-label-sm text-on-surface shadow-xs transition-all duration-200 group-hover:bg-primary group-hover:text-on-primary group-hover:shadow-md">
+                  <span class="material-symbols-outlined text-sm text-secondary group-hover:text-white">park</span>
+                  <span>Tepezcohuite</span>
+                </span>
+                <div class="pointer-events-none absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-56 p-2.5 rounded-xl bg-primary text-white text-xs leading-snug text-center opacity-0 group-hover:opacity-100 transition-all duration-200 transform group-hover:-translate-y-1 shadow-lg z-50">
+                  Regenerador celular ancestral; cicatriza y repara la barrera cutánea.
+                  <div class="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-primary"></div>
+                </div>
+              </div>
+
+              <!-- 6. Cúrcuma pura -->
+              <div class="relative group cursor-pointer" onclick="openIngredientModal('curcuma')">
+                <span class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-surface-container-lowest font-label-sm text-label-sm text-on-surface shadow-xs transition-all duration-200 group-hover:bg-primary group-hover:text-on-primary group-hover:shadow-md">
+                  <span class="material-symbols-outlined text-sm text-secondary group-hover:text-white">flare</span>
+                  <span>Cúrcuma pura</span>
+                </span>
+                <div class="pointer-events-none absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-56 p-2.5 rounded-xl bg-primary text-white text-xs leading-snug text-center opacity-0 group-hover:opacity-100 transition-all duration-200 transform group-hover:-translate-y-1 shadow-lg z-50">
+                  Antioxidante y desinflamatoria; unifica el tono y da brillo natural.
+                  <div class="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-primary"></div>
+                </div>
+              </div>
+
+              <!-- 7. Miel natural -->
+              <div class="relative group cursor-pointer" onclick="openIngredientModal('miel')">
+                <span class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-surface-container-lowest font-label-sm text-label-sm text-on-surface shadow-xs transition-all duration-200 group-hover:bg-primary group-hover:text-on-primary group-hover:shadow-md">
+                  <span class="material-symbols-outlined text-sm text-secondary group-hover:text-white">hive</span>
+                  <span>Miel natural</span>
+                </span>
+                <div class="pointer-events-none absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-56 p-2.5 rounded-xl bg-primary text-white text-xs leading-snug text-center opacity-0 group-hover:opacity-100 transition-all duration-200 transform group-hover:-translate-y-1 shadow-lg z-50">
+                  Humectante bioactivo; hidrata profundamente y combate bacterias.
+                  <div class="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-primary"></div>
+                </div>
+              </div>
+
+              <!-- 8. Avena coloidal -->
+              <div class="relative group cursor-pointer" onclick="openIngredientModal('avena')">
+                <span class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-surface-container-lowest font-label-sm text-label-sm text-on-surface shadow-xs transition-all duration-200 group-hover:bg-primary group-hover:text-on-primary group-hover:shadow-md">
+                  <span class="material-symbols-outlined text-sm text-secondary group-hover:text-white">grain</span>
+                  <span>Avena coloidal</span>
+                </span>
+                <div class="pointer-events-none absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-56 p-2.5 rounded-xl bg-primary text-white text-xs leading-snug text-center opacity-0 group-hover:opacity-100 transition-all duration-200 transform group-hover:-translate-y-1 shadow-lg z-50">
+                  Alivia comezón, calma rojeces y suaviza pieles sensibles.
+                  <div class="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-primary"></div>
+                </div>
+              </div>
+
+              <!-- 9. Leche de cabra -->
+              <div class="relative group cursor-pointer" onclick="openIngredientModal('leche-cabra')">
+                <span class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-surface-container-lowest font-label-sm text-label-sm text-on-surface shadow-xs transition-all duration-200 group-hover:bg-primary group-hover:text-on-primary group-hover:shadow-md">
+                  <span class="material-symbols-outlined text-sm text-secondary group-hover:text-white">water_drop</span>
+                  <span>Leche de cabra</span>
+                </span>
+                <div class="pointer-events-none absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-56 p-2.5 rounded-xl bg-primary text-white text-xs leading-snug text-center opacity-0 group-hover:opacity-100 transition-all duration-200 transform group-hover:-translate-y-1 shadow-lg z-50">
+                  Nutre con ácidos grasos naturales y suaviza la textura de la piel.
+                  <div class="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-primary"></div>
+                </div>
+              </div>
+
+              <!-- 10. Aceite de coco -->
+              <div class="relative group cursor-pointer" onclick="openIngredientModal('aceite-coco')">
+                <span class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-surface-container-lowest font-label-sm text-label-sm text-on-surface shadow-xs transition-all duration-200 group-hover:bg-primary group-hover:text-on-primary group-hover:shadow-md">
+                  <span class="material-symbols-outlined text-sm text-secondary group-hover:text-white">nature</span>
+                  <span>Aceite de coco</span>
+                </span>
+                <div class="pointer-events-none absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-56 p-2.5 rounded-xl bg-primary text-white text-xs leading-snug text-center opacity-0 group-hover:opacity-100 transition-all duration-200 transform group-hover:-translate-y-1 shadow-lg z-50">
+                  Aporta espuma cremosa, hidratación intensa y elasticidad.
+                  <div class="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-primary"></div>
+                </div>
+              </div>
+
+              <!-- 11. Agua de rosas -->
+              <div class="relative group cursor-pointer" onclick="openIngredientModal('agua-rosas')">
+                <span class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-surface-container-lowest font-label-sm text-label-sm text-on-surface shadow-xs transition-all duration-200 group-hover:bg-primary group-hover:text-on-primary group-hover:shadow-md">
+                  <span class="material-symbols-outlined text-sm text-secondary group-hover:text-white">local_florist</span>
+                  <span>Agua de rosas</span>
+                </span>
+                <div class="pointer-events-none absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-56 p-2.5 rounded-xl bg-primary text-white text-xs leading-snug text-center opacity-0 group-hover:opacity-100 transition-all duration-200 transform group-hover:-translate-y-1 shadow-lg z-50">
+                  Tonifica, refresca y equilibra el pH natural del rostro.
+                  <div class="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-primary"></div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="mt-8 pt-6">
+              <p class="font-headline-md text-headline-md text-secondary italic">
+                “Hecho a mano, pensado para ti”
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ==================== 6. PRECIOS Y CÓMO PEDIR ==================== -->
+      <section class="w-full py-20 bg-surface-container-low px-6 lg:px-12" id="como-pedir">
+        <div class="max-w-5xl mx-auto">
+          
+          <div class="text-center max-w-2xl mx-auto mb-12">
+            <span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Simple y Transparente</span>
+            <h2 class="font-headline-lg text-headline-lg text-primary mt-2">¿Cómo pedir?</h2>
+            <p class="font-body-md text-body-md text-on-surface-variant mt-2">
+              Pedir tu jabón favorito es directo, seguro y sin complicaciones.
+            </p>
+          </div>
+
+          <!-- Tarjeta destacada de Precio Único -->
+          <div class="bg-surface-container-lowest rounded-2xl p-8 lg:p-10 text-center max-w-xl mx-auto mb-12 shadow-[0_4px_20px_-4px_rgba(47,74,31,0.12)] border border-surface-container relative overflow-hidden">
+            <div class="inline-block px-3 py-1 rounded-full bg-surface-container text-secondary font-label-sm text-xs font-bold uppercase tracking-wider mb-2">Precio transparente</div>
+            <div class="font-display text-display text-primary my-2 leading-none flex items-center justify-center gap-2">
+              <span>$50</span>
+              <span class="text-headline-md font-sans font-normal text-on-surface-variant">MXN</span>
+            </div>
+            <div class="font-title-md text-title-md text-primary font-bold">Cada barra artesanal de 70 g</div>
+            <p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+              Elige los que quieras, mezcla fórmulas o pide paquetes para regalo.
+            </p>
+            <div class="mt-6 flex flex-wrap justify-center gap-3">
+              <button onclick="openCartDrawer()" class="px-5 py-2.5 rounded-lg bg-primary text-on-primary font-label-lg font-semibold hover:bg-secondary transition-colors shadow-xs">
+                Armar pedido ahora
+              </button>
+            </div>
+          </div>
+
+          <!-- 4 Pasos de Compra (2x2) -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+            
+            <!-- 1. WhatsApp -->
+            <div class="bg-surface-container-lowest p-6 rounded-xl flex flex-col justify-between shadow-xs hover:shadow-md transition-shadow cursor-pointer border border-transparent hover:border-surface-container" onclick="openCartDrawer()">
+              <div>
+                <div class="w-12 h-12 rounded-lg bg-surface-container text-primary flex items-center justify-center mb-4">
+                  <span class="material-symbols-outlined text-2xl">chat</span>
+                </div>
+                <h3 class="font-headline-sm text-headline-sm text-primary mb-2">1. Pide por WhatsApp o redes sociales</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                  Escríbenos por WhatsApp o vía mensaje directo en nuestras redes sociales con el nombre del jabón y la cantidad que deseas. Te atenderemos de forma personalizada para confirmar tu pedido.
+                </p>
+              </div>
+              <div class="mt-4 pt-2 text-primary font-label-sm text-label-sm flex items-center gap-1 font-semibold">
+                <span class="material-symbols-outlined text-sm text-primary">verified</span>
+                <span>Atención directa vía mensaje (Toca para pedir)</span>
+              </div>
+            </div>
+
+            <!-- 2. Envíos y Entregas -->
+            <div class="bg-surface-container-lowest p-6 rounded-xl flex flex-col justify-between shadow-xs hover:shadow-md transition-shadow cursor-pointer border border-transparent hover:border-surface-container" onclick="openInfoModal('envios')">
+              <div>
+                <div class="w-12 h-12 rounded-lg bg-surface-container text-primary flex items-center justify-center mb-4">
+                  <span class="material-symbols-outlined text-2xl">local_shipping</span>
+                </div>
+                <h3 class="font-headline-sm text-headline-sm text-primary mb-2">2. Entregas y Envíos</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                  Entregas locales en Culiacán (el costo se estima al realizar tu pedido según tu dirección). Envíos fuera de Culiacán: <strong class="text-secondary font-bold">PRÓXIMAMENTE</strong>.
+                </p>
+              </div>
+              <div class="mt-4 pt-2 text-on-surface-variant font-label-sm text-label-sm flex items-center justify-between">
+                <span>Fuera de Culiacán: <strong class="text-secondary">PRÓXIMAMENTE</strong></span>
+                <span class="text-secondary font-bold text-xs">Ver detalles →</span>
+              </div>
+            </div>
+
+            <!-- 3. Puntos de Entrega -->
+            <div class="bg-surface-container-lowest p-6 rounded-xl flex flex-col justify-between shadow-xs hover:shadow-md transition-shadow cursor-pointer border border-transparent hover:border-surface-container" onclick="openInfoModal('puntos')">
+              <div>
+                <div class="w-12 h-12 rounded-lg bg-surface-container text-primary flex items-center justify-center mb-4">
+                  <span class="material-symbols-outlined text-2xl">pin_drop</span>
+                </div>
+                <h3 class="font-headline-sm text-headline-sm text-primary mb-2">3. Puntos de Entrega</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                  Entregas a domicilio o en puntos de encuentro acordados en Culiacán. El costo de entrega se estimará al momento de realizar el pedido.
+                </p>
+              </div>
+              <div class="mt-4 pt-2 text-primary font-label-sm text-label-sm flex items-center justify-between">
+                <span class="flex items-center gap-1 text-on-surface-variant">
+                  <span class="material-symbols-outlined text-sm text-secondary">location_on</span>
+                  <span>Culiacán: Fórum, Ceiba, Centro o domicilio</span>
+                </span>
+                <span class="text-secondary font-bold text-xs">Ver puntos →</span>
+              </div>
+            </div>
+
+            <!-- 4. Formas de Pago -->
+            <div class="bg-surface-container-lowest p-6 rounded-xl flex flex-col justify-between shadow-xs hover:shadow-md transition-shadow cursor-pointer border border-transparent hover:border-surface-container" onclick="openInfoModal('pagos')">
+              <div>
+                <div class="w-12 h-12 rounded-lg bg-surface-container text-primary flex items-center justify-center mb-4">
+                  <span class="material-symbols-outlined text-2xl">payments</span>
+                </div>
+                <h3 class="font-headline-sm text-headline-sm text-primary mb-2">4. Formas de Pago</h3>
+                <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                  Aceptamos pago en efectivo contra entrega local. Para pago con transferencia electrónica, pregúntanos por WhatsApp al levantar tu pedido.
+                </p>
+              </div>
+              <div class="mt-4 pt-2 text-on-surface-variant font-label-sm text-label-sm flex items-center justify-between">
+                <span class="text-primary font-semibold">Transferencia: preguntar por WhatsApp</span>
+                <span class="text-secondary font-bold text-xs">Ver opciones →</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Apartado de Correo Electrónico de Contacto -->
+          <div class="p-6 rounded-xl bg-surface-container-lowest border border-surface-container shadow-xs flex flex-col sm:flex-row items-center justify-between gap-4 mb-6">
+            <div class="flex items-center gap-4 text-left">
+              <div class="w-12 h-12 rounded-lg bg-surface-container text-primary flex items-center justify-center shrink-0">
+                <span class="material-symbols-outlined text-2xl">mail</span>
+              </div>
+              <div>
+                <span class="text-xs uppercase font-bold tracking-wider text-secondary">Atención y Contacto</span>
+                <p class="font-headline-sm text-base text-primary font-bold">
+                  Correo de contacto: <a href="mailto:servicioterranua@gmail.com" class="text-primary hover:text-secondary underline transition-colors">"servicioterranua@gmail.com"</a>
+                </p>
+                <p class="text-xs text-on-surface-variant">Para dudas, cotizaciones de pedidos especiales o eventos, también puedes escribirnos por correo electrónico.</p>
+              </div>
+            </div>
+            <a href="mailto:servicioterranua@gmail.com" class="shrink-0 px-5 py-2.5 rounded-lg bg-primary hover:bg-secondary text-on-primary font-bold text-xs flex items-center gap-2 transition-colors shadow-xs">
+              <span class="material-symbols-outlined text-sm">alternate_email</span>
+              <span>Enviar Correo</span>
+            </a>
+          </div>
+
+          <!-- Nota cálida interactiva -->
+          <div class="bg-surface-container p-6 rounded-xl text-center flex flex-col sm:flex-row items-center justify-center gap-4 hover:bg-surface-container-high transition-colors cursor-pointer" onclick="openWhatsAppChat('Hola Terra Nua, tengo dudas sobre qué jabón pedir para mi piel.')">
+            <span class="material-symbols-outlined text-secondary text-2xl">contact_support</span>
+            <span class="font-body-md text-body-md text-on-surface">
+              ¿Tienes dudas sobre qué jabón pedir? <strong class="text-primary underline">Escríbenos y con gusto te asesoramos de forma personalizada.</strong>
+            </span>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ==================== 7. CONTACTO Y REDES SOCIALES ==================== -->
+      <section class="w-full py-16 lg:py-24 bg-primary text-on-primary px-6 lg:px-12 relative overflow-hidden" id="contacto">
+        <!-- Botanical background touches -->
+        <div class="absolute -top-32 -right-32 w-80 h-80 rounded-full bg-white/5 blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-32 -left-32 w-80 h-80 rounded-full bg-white/5 blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-2xl mx-auto flex flex-col items-center justify-center text-center relative z-10">
+          
+          <div class="w-20 h-20 rounded-full bg-on-primary/10 p-3 mb-6 flex items-center justify-center ring-2 ring-white/10 shadow-lg">
+            <img alt="Terra Nua" class="w-full h-full object-contain rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaAuQA5YtKIynRLMvU6DM0MCGuxV3XLFxNTcEsRF3SM1ymjhQH6T9l0qXndhCuxViVm_c2GfMN8JI4S-tTJWMsUzLUvEbh_P6O8VygnEad3FAq9HTekgbuTZVcaO0BewtjnwD2DQNc9x6Oi8wjc4X21w5H6sJRvI8WLaVnIXFRhigYTLjtDKiTUGo4rfqbZMbPKix6aeJM1uSpV1Q9vOsn84ZhTv4_9cEmK_iAN_U7_arV6zq7ctY1bz-21OxrYjz-K3Q">
+          </div>
+
+          <span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-fixed font-bold">Estamos para atenderte</span>
+          
+          <h2 class="font-headline-lg text-headline-lg text-on-primary mt-2 mb-4">Hablemos</h2>
+          
+          <p class="font-body-lg text-body-lg text-on-primary/80 max-w-lg mb-10 text-center leading-relaxed">
+            ¿Deseas hacer un pedido, solicitar pedidos especiales para eventos o resolver cualquier pregunta? Conéctate con nosotros.
+          </p>
+
+          <!-- Botones de Redes, Teléfono y Correo -->
+          <div class="flex flex-wrap items-center justify-center gap-4 mb-12">
+            <!-- WhatsApp / Teléfono -->
+            <a class="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-lg bg-on-primary/15 hover:bg-on-primary/25 text-on-primary font-title-md text-title-md transition-all shadow-sm transform hover:-translate-y-0.5 active:translate-y-0" href="https://wa.me/526672311505?text=Hola%20Terra%20Nua%2C%20quisiera%20hacer%20un%20pedido%20o%20consulta" target="_blank" rel="noopener noreferrer">
+              <span class="material-symbols-outlined text-xl text-green-300">call</span>
+              <span>+52 667 231 1505</span>
+            </a>
+
+            <!-- Correo de Contacto -->
+            <a class="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-lg bg-on-primary/15 hover:bg-on-primary/25 text-on-primary font-title-md text-title-md transition-all shadow-sm transform hover:-translate-y-0.5 active:translate-y-0" href="mailto:servicioterranua@gmail.com">
+              <span class="material-symbols-outlined text-xl text-amber-300">mail</span>
+              <span>servicioterranua@gmail.com</span>
+            </a>
+
+            <!-- Instagram -->
+            <a class="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-lg bg-on-primary/15 text-on-primary font-title-md text-title-md hover:bg-on-primary/25 transition-all shadow-sm transform hover:-translate-y-0.5 active:translate-y-0" href="https://www.instagram.com/terranua_terranua/" rel="noopener noreferrer" target="_blank">
+              <span class="material-symbols-outlined text-xl text-rose-300">photo_camera</span>
+              <span>Instagram (@terranua_terranua)</span>
+            </a>
+          </div>
+
+          <!-- Ubicación y Cierre -->
+          <div class="flex items-center justify-center gap-2 text-on-primary/80 font-body-md text-body-md mb-6">
+            <span class="material-symbols-outlined text-primary-fixed">location_on</span>
+            <span>Culiacán, Sinaloa, México</span>
+          </div>
+
+          <div class="w-24 h-px bg-on-primary/20 mb-6 mx-auto"></div>
+
+          <p class="font-headline-sm text-headline-sm italic text-primary-fixed mb-2 text-center">
+            “Naturaleza que se siente en tu piel”
+          </p>
+          
+          <p class="font-label-sm text-label-sm text-on-primary/60 text-center">
+            © 2026 Terra Nua. Cuida tu piel, cuida el planeta.
+          </p>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ==================== PIE DE PÁGINA ==================== -->
+  <footer class="w-full bg-surface-container-low border-t border-surface-container">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 py-12 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="flex flex-col items-center md:items-start gap-1">
+        <div class="flex items-center gap-3">
+          <img alt="Terra Nua" class="h-8 w-8 rounded-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaAuQA5YtKIynRLMvU6DM0MCGuxV3XLFxNTcEsRF3SM1ymjhQH6T9l0qXndhCuxViVm_c2GfMN8JI4S-tTJWMsUzLUvEbh_P6O8VygnEad3FAq9HTekgbuTZVcaO0BewtjnwD2DQNc9x6Oi8wjc4X21w5H6sJRvI8WLaVnIXFRhigYTLjtDKiTUGo4rfqbZMbPKix6aeJM1uSpV1Q9vOsn84ZhTv4_9cEmK_iAN_U7_arV6zq7ctY1bz-21OxrYjz-K3Q">
+          <span class="font-headline-sm text-headline-sm text-primary font-semibold">Terra Nua</span>
+        </div>
+        <p class="font-body-sm text-body-sm text-on-surface-variant">OCT - 2026 - JAYLK · Correo: <a href="mailto:servicioterranua@gmail.com" class="underline hover:text-primary">servicioterranua@gmail.com</a></p>
+      </div>
+      <div class="font-label-sm text-label-sm text-on-surface-variant text-center md:text-right">
+        © 2026 Terra Nua. Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== FLOATING WHATSAPP CHAT BUTTON ==================== -->
+  <div class="fixed bottom-6 right-6 z-40 flex flex-col items-end">
+    
+    <!-- Mini Popup de WhatsApp -->
+    <div id="whatsapp-popup" class="hidden mb-3 w-80 sm:w-88 bg-surface-container-lowest rounded-2xl p-5 shadow-2xl border border-surface-container text-left transition-all duration-300">
+      <div class="flex items-center justify-between pb-3 border-b border-surface-container mb-3">
+        <div class="flex items-center gap-2.5">
+          <div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white">
+            <span class="material-symbols-outlined text-xl">spa</span>
+          </div>
+          <div>
+            <h4 class="font-bold text-sm text-primary">Terra Nua Botánica</h4>
+            <span class="text-[11px] text-green-700 font-semibold flex items-center gap-1">
+              <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span> En línea ahora
+            </span>
+          </div>
+        </div>
+        <button onclick="toggleWhatsAppPopup()" class="text-on-surface-variant hover:text-primary">
+          <span class="material-symbols-outlined text-lg">close</span>
+        </button>
+      </div>
+      <p class="text-xs text-on-surface-variant mb-3 leading-relaxed">
+        ¡Hola! 🌿 Somos el equipo de Terra Nua en Culiacán. ¿En qué podemos asesorarte hoy?
+      </p>
+      <div class="flex flex-col gap-2">
+        <button onclick="openWhatsAppChat('Hola Terra Nua, me gustaría encargar jabones artesanales')" class="text-left text-xs p-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors text-primary font-semibold flex items-center justify-between">
+          <span>🌿 Quiero hacer un pedido</span>
+          <span class="material-symbols-outlined text-xs">arrow_forward</span>
+        </button>
+        <button onclick="openWhatsAppChat('Hola, tengo dudas sobre qué jabón me recomiendan para mi tipo de piel')" class="text-left text-xs p-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors text-primary font-semibold flex items-center justify-between">
+          <span>✨ Asesoría para mi tipo de piel</span>
+          <span class="material-symbols-outlined text-xs">arrow_forward</span>
+        </button>
+        <button onclick="openWhatsAppChat('Hola, quisiera consultar costos y zonas de entrega en Culiacán')" class="text-left text-xs p-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors text-primary font-semibold flex items-center justify-between">
+          <span>📦 Preguntar sobre entregas y envíos</span>
+          <span class="material-symbols-outlined text-xs">arrow_forward</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Botón Circular Flotante -->
+    <button onclick="toggleWhatsAppPopup()" class="flex items-center gap-2.5 px-4 py-3 rounded-full bg-[#25D366] text-white shadow-[0_6px_20px_rgba(37,211,102,0.4)] hover:shadow-xl hover:scale-105 active:scale-95 transition-all group" aria-label="Abrir chat de WhatsApp">
+      <span class="material-symbols-outlined text-2xl">chat</span>
+      <span class="font-bold text-sm hidden sm:inline">¿Hablamos por WhatsApp?</span>
+    </button>
+  </div>
+
+  <!-- ==================== DRAWER / CARRITO DE COMPRAS ==================== -->
+  <div id="cart-drawer-overlay" class="fixed inset-0 z-50 modal-backdrop hidden transition-opacity duration-300">
+    <div class="fixed inset-y-0 right-0 max-w-full flex pl-10">
+      <div class="w-screen max-w-md bg-surface-container-lowest shadow-2xl flex flex-col justify-between" id="cart-drawer-content">
+        
+        <!-- Header del Carrito -->
+        <div class="p-6 border-b border-surface-container flex items-center justify-between bg-surface-container-low">
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-2xl text-primary">shopping_bag</span>
+            <h3 class="font-headline-sm text-headline-sm text-primary">Tu Pedido Terra Nua</h3>
+          </div>
+          <button onclick="closeCartDrawer()" class="p-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" aria-label="Cerrar carrito">
+            <span class="material-symbols-outlined text-2xl">close</span>
+          </button>
+        </div>
+
+        <!-- Lista de Productos en el Carrito -->
+        <div class="p-6 overflow-y-auto flex-1 space-y-4" id="cart-items-list">
+          <!-- Renderizado dinámico -->
+        </div>
+
+        <!-- Footer del Carrito con Formularios y Checkout de WhatsApp -->
+        <div class="p-6 border-t border-surface-container bg-surface-container-low space-y-4">
+          
+          <!-- Selector de Método de Entrega -->
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider text-secondary mb-1">Método de entrega en Culiacán</label>
+            <select id="cart-delivery-method" onchange="updateCartTotals()" class="w-full p-2.5 text-sm bg-surface-container-lowest rounded-lg border border-surface-container text-on-surface font-semibold focus:outline-none focus:ring-2 focus:ring-primary">
+              <option value="local">Entrega a domicilio en Culiacán (Costo a estimar al pedir)</option>
+              <option value="recoger">Punto de encuentro en Culiacán (A coordinar al pedir)</option>
+              <option value="nacional" disabled>Envíos fuera de Culiacán (PRÓXIMAMENTE)</option>
+            </select>
+            <p class="text-[11px] text-on-surface-variant mt-1.5 leading-tight italic">
+              * El costo de entrega local no es fijo y se estimará una vez que proporciones tu dirección al confirmar el pedido.
+            </p>
+          </div>
+
+          <!-- Campos de Contacto -->
+          <div class="grid grid-cols-1 gap-2">
+            <input type="text" id="order-customer-name" placeholder="Tu nombre y apellido *" class="w-full px-3 py-2 text-sm bg-surface-container-lowest rounded-lg border border-surface-container focus:outline-none focus:ring-2 focus:ring-primary">
+            <input type="text" id="order-customer-phone" placeholder="Teléfono de contacto (opcional)" class="w-full px-3 py-2 text-sm bg-surface-container-lowest rounded-lg border border-surface-container focus:outline-none focus:ring-2 focus:ring-primary">
+            <input type="text" id="order-customer-notes" placeholder="Dirección para entrega / Punto preferido en Culiacán *" class="w-full px-3 py-2 text-sm bg-surface-container-lowest rounded-lg border border-surface-container focus:outline-none focus:ring-2 focus:ring-primary">
+          </div>
+
+          <!-- Subtotales y Totales -->
+          <div class="space-y-1.5 pt-2 border-t border-surface-container text-sm">
+            <div class="flex justify-between text-on-surface-variant">
+              <span>Subtotal jabones:</span>
+              <span id="cart-subtotal" class="font-bold text-primary">$0 MXN</span>
+            </div>
+            <div class="flex justify-between text-on-surface-variant">
+              <span>Costo de entrega:</span>
+              <span id="cart-shipping-cost" class="font-semibold text-secondary">A estimar al pedir</span>
+            </div>
+            <div class="flex justify-between text-base font-bold text-primary pt-2 border-t border-surface-container">
+              <span>Total productos:</span>
+              <span id="cart-total" class="text-secondary font-title-lg text-title-lg">$0 MXN</span>
+            </div>
+            <p class="text-[11px] text-on-surface-variant text-right italic">+ costo de entrega a estimar según tu ubicación</p>
+          </div>
+
+          <!-- Botón de Envío de Pedido a WhatsApp -->
+          <button onclick="sendOrderViaWhatsApp()" class="w-full py-3.5 px-4 rounded-xl bg-primary hover:bg-secondary text-on-primary font-bold text-sm flex items-center justify-center gap-2 shadow-md transition-all active:scale-98">
+            <span class="material-symbols-outlined text-xl">send</span>
+            <span>Confirmar y Enviar por WhatsApp</span>
+          </button>
+
+          <div class="text-center pt-1">
+            <p class="text-xs text-on-surface-variant">
+              💳 ¿Pago con transferencia? <strong>Pregunta por WhatsApp al levantar tu pedido.</strong>
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== MODAL: DETALLES DE PRODUCTO (FICHA BOTÁNICA) ==================== -->
+  <div id="product-modal" class="fixed inset-0 z-50 modal-backdrop hidden flex items-center justify-center p-4">
+    <div class="bg-surface-container-lowest max-w-2xl w-full rounded-2xl shadow-2xl overflow-hidden border border-surface-container transform transition-all max-h-[90vh] flex flex-col">
+      
+      <!-- Modal Header -->
+      <div class="relative h-60 sm:h-72 bg-surface-container overflow-hidden shrink-0" id="product-modal-image-container">
+        <!-- Rendered dynamically -->
+        <button onclick="closeProductModal()" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-surface/90 text-primary flex items-center justify-center hover:bg-surface shadow-md transition-all z-20">
+          <span class="material-symbols-outlined text-xl">close</span>
+        </button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="p-6 sm:p-8 overflow-y-auto space-y-5" id="product-modal-body">
+        <!-- Rendered dynamically -->
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="p-6 bg-surface-container-low border-t border-surface-container flex flex-col sm:flex-row items-center justify-between gap-4 shrink-0">
+        <div class="flex items-center gap-3">
+          <span class="text-xs uppercase font-bold text-on-surface-variant">Cantidad:</span>
+          <div class="flex items-center border border-surface-container rounded-lg bg-surface-container-lowest overflow-hidden">
+            <button onclick="adjustModalQty(-1)" class="px-3 py-1.5 hover:bg-surface-container text-primary font-bold">-</button>
+            <span id="modal-product-qty" class="px-3 py-1.5 font-bold text-sm min-w-[32px] text-center">1</span>
+            <button onclick="adjustModalQty(1)" class="px-3 py-1.5 hover:bg-surface-container text-primary font-bold">+</button>
+          </div>
+          <span id="modal-product-total" class="font-bold text-secondary text-base">$50 MXN</span>
+        </div>
+        <div class="flex gap-2 w-full sm:w-auto">
+          <button id="modal-add-cart-btn" class="flex-1 sm:flex-none px-6 py-3 rounded-lg bg-primary text-on-primary font-label-lg font-bold hover:bg-secondary transition-colors shadow-xs">
+            Agregar al carrito
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ==================== MODAL: TEST DE PIEL (DIAGNÓSTICO COMPLETO) ==================== -->
+  <div id="skin-quiz-modal" class="fixed inset-0 z-50 modal-backdrop hidden flex items-center justify-center p-4">
+    <div class="bg-surface-container-lowest max-w-xl w-full rounded-2xl shadow-2xl overflow-hidden border border-surface-container p-6 sm:p-8 relative">
+      
+      <button onclick="closeSkinQuizModal()" class="absolute top-4 right-4 p-2 rounded-full text-on-surface-variant hover:text-primary">
+        <span class="material-symbols-outlined text-2xl">close</span>
+      </button>
+
+      <div id="quiz-container">
+        <!-- Paso 1 -->
+        <div class="quiz-step" id="quiz-step-1">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-xs font-bold uppercase tracking-wider text-secondary">Paso 1 de 3</span>
+            <div class="h-1 flex-1 bg-surface-container rounded-full overflow-hidden">
+              <div class="w-1/3 h-full bg-secondary"></div>
+            </div>
+          </div>
+          <h3 class="font-headline-sm text-headline-sm text-primary mb-2">¿Cómo sientes tu piel durante el día?</h3>
+          <p class="font-body-sm text-body-sm text-on-surface-variant mb-6">Selecciona la opción que mejor describa la sensación en tu rostro:</p>
+
+          <div class="space-y-3">
+            <button onclick="selectQuizAnswer(1, 'grasa')" class="w-full text-left p-4 rounded-xl border border-surface-container hover:border-primary hover:bg-surface-container-low transition-all flex items-center justify-between group">
+              <div>
+                <strong class="text-sm text-primary block">Con brillo, poros abiertos o brotes</strong>
+                <span class="text-xs text-on-surface-variant">Tiende a engrasarse rápido, especialmente frente y nariz.</span>
+              </div>
+              <span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary">arrow_forward</span>
+            </button>
+
+            <button onclick="selectQuizAnswer(1, 'mixta')" class="w-full text-left p-4 rounded-xl border border-surface-container hover:border-primary hover:bg-surface-container-low transition-all flex items-center justify-between group">
+              <div>
+                <strong class="text-sm text-primary block">Zona T grasa y mejillas normales o secas</strong>
+                <span class="text-xs text-on-surface-variant">Equilibrio mixto: algunas zonas brillantes, otras neutras.</span>
+              </div>
+              <span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary">arrow_forward</span>
+            </button>
+
+            <button onclick="selectQuizAnswer(1, 'sensible')" class="w-full text-left p-4 rounded-xl border border-surface-container hover:border-primary hover:bg-surface-container-low transition-all flex items-center justify-between group">
+              <div>
+                <strong class="text-sm text-primary block">Sensible, reactiva o con enrojecimiento</strong>
+                <span class="text-xs text-on-surface-variant">Se irrita fácilmente con el sol, jabones comunes o cambios de clima.</span>
+              </div>
+              <span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary">arrow_forward</span>
+            </button>
+
+            <button onclick="selectQuizAnswer(1, 'seca')" class="w-full text-left p-4 rounded-xl border border-surface-container hover:border-primary hover:bg-surface-container-low transition-all flex items-center justify-between group">
+              <div>
+                <strong class="text-sm text-primary block">Seca, tirante o con descamación leve</strong>
+                <span class="text-xs text-on-surface-variant">Necesita hidratación calmante y nutrición emoliente profunda.</span>
+              </div>
+              <span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary">arrow_forward</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Paso 2 -->
+        <div class="quiz-step hidden" id="quiz-step-2">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-xs font-bold uppercase tracking-wider text-secondary">Paso 2 de 3</span>
+            <div class="h-1 flex-1 bg-surface-container rounded-full overflow-hidden">
+              <div class="w-2/3 h-full bg-secondary"></div>
+            </div>
+          </div>
+          <h3 class="font-headline-sm text-headline-sm text-primary mb-2">¿Cuál es tu principal meta de cuidado?</h3>
+          <p class="font-body-sm text-body-sm text-on-surface-variant mb-6">Elige el resultado que más anhelas ver en tu piel:</p>
+
+          <div class="space-y-3">
+            <button onclick="selectQuizAnswer(2, 'limpieza')" class="w-full text-left p-4 rounded-xl border border-surface-container hover:border-primary hover:bg-surface-container-low transition-all flex items-center justify-between group">
+              <div>
+                <strong class="text-sm text-primary block">Desintoxicar y controlar grasa</strong>
+                <span class="text-xs text-on-surface-variant">Limpieza profunda de poros y prevención de impurezas.</span>
+              </div>
+              <span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary">arrow_forward</span>
+            </button>
+
+            <button onclick="selectQuizAnswer(2, 'iluminar')" class="w-full text-left p-4 rounded-xl border border-surface-container hover:border-primary hover:bg-surface-container-low transition-all flex items-center justify-between group">
+              <div>
+                <strong class="text-sm text-primary block">Aportar luminosidad y revitalizar tono</strong>
+                <span class="text-xs text-on-surface-variant">Piel apagada que busca recuperar brillo y vitalidad.</span>
+              </div>
+              <span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary">arrow_forward</span>
+            </button>
+
+            <button onclick="selectQuizAnswer(2, 'calmar')" class="w-full text-left p-4 rounded-xl border border-surface-container hover:border-primary hover:bg-surface-container-low transition-all flex items-center justify-between group">
+              <div>
+                <strong class="text-sm text-primary block">Calmar irritaciones y máxima suavidad</strong>
+                <span class="text-xs text-on-surface-variant">Cuidado reconfortante, hipoalergénico y delicado.</span>
+              </div>
+              <span class="material-symbols-outlined text-on-surface-variant group-hover:text-primary">arrow_forward</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Paso 3: Resultado Recomendado -->
+        <div class="quiz-step hidden" id="quiz-step-3">
+          <div class="text-center py-4">
+            <div class="w-16 h-16 rounded-full bg-primary/10 text-primary flex items-center justify-center mx-auto mb-4">
+              <span class="material-symbols-outlined text-3xl">auto_awesome</span>
+            </div>
+            <span class="text-xs font-bold uppercase tracking-wider text-secondary">Diagnóstico Botánico Personalizado</span>
+            <h3 class="font-headline-sm text-headline-sm text-primary mt-1 mb-2">¡Tu fórmula perfecta!</h3>
+            <p class="font-body-sm text-body-sm text-on-surface-variant mb-6" id="quiz-recommendation-desc">
+              Basado en tus respuestas, este es el jabón que mejor nutrirá y equilibrará tu piel:
+            </p>
+
+            <div id="quiz-recommended-card" class="bg-surface-container-low p-6 rounded-2xl border border-surface-container text-left mb-6">
+              <!-- Rendered via JS -->
+            </div>
+
+            <div class="flex gap-3">
+              <button onclick="resetSkinQuiz()" class="flex-1 py-3 px-4 rounded-xl bg-surface-container text-primary font-bold text-sm hover:bg-surface-container-high transition-colors">
+                Repetir test
+              </button>
+              <button onclick="closeSkinQuizModal()" class="flex-1 py-3 px-4 rounded-xl bg-primary text-on-primary font-bold text-sm hover:bg-secondary transition-colors">
+                Entendido
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ==================== MODAL: DETALLES DE INGREDIENTE ==================== -->
+  <div id="ingredient-modal" class="fixed inset-0 z-50 modal-backdrop hidden flex items-center justify-center p-4">
+    <div class="bg-surface-container-lowest max-w-lg w-full rounded-2xl shadow-2xl overflow-hidden border border-surface-container p-6 sm:p-8 relative">
+      <button onclick="closeIngredientModal()" class="absolute top-4 right-4 p-2 rounded-full text-on-surface-variant hover:text-primary">
+        <span class="material-symbols-outlined text-2xl">close</span>
+      </button>
+      <div id="ingredient-modal-content">
+        <!-- Rendered via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== MODAL: INFORMACIÓN GENERAL (ENVÍOS, PUNTOS, PAGOS) ==================== -->
+  <div id="info-modal" class="fixed inset-0 z-50 modal-backdrop hidden flex items-center justify-center p-4">
+    <div class="bg-surface-container-lowest max-w-lg w-full rounded-2xl shadow-2xl overflow-hidden border border-surface-container p-6 sm:p-8 relative">
+      <button onclick="closeInfoModal()" class="absolute top-4 right-4 p-2 rounded-full text-on-surface-variant hover:text-primary">
+        <span class="material-symbols-outlined text-2xl">close</span>
+      </button>
+      <div id="info-modal-content">
+        <!-- Rendered via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== TOAST NOTIFICATION CONTAINER ==================== -->
+  <div id="toast-container" class="fixed bottom-20 left-1/2 -translate-x-1/2 z-50 pointer-events-none flex flex-col items-center gap-2"></div>
+
+
+  <!-- ==================== JAVASCRIPT DE LA APLICACIÓN ==================== -->
+  <script>
+    /* ============================================================
+       BASE DE DATOS DE PRODUCTOS BOTÁNICOS TERRA NUA
+       ============================================================ */
+    const SOAPS = {
+      'vino': {
+        id: 'vino',
+        name: 'Vino & Rosas',
+        badge: 'Ideal para piel mixta',
+        price: 50,
+        color: '#7A1F33',
+        icon: 'wine_bar',
+        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAn1injnKRrXV1-JzcEi3sExaKXqVTgOXx0CFDHxhU3TqvJyW_77h-wSh74G8731NeacypysYdWTypDFRdiEN_fi3Ls8IfzmZ7CxopnFK1ZdlCgpdE46dz2kX3psviylgzwuN5y3Alohfsnsk2Xi6Ms9IqXq-H07WH36p2TxHNVdRCARBTA5bkON6XYqFl9B4cB33J3fSoH5EnGfXvzOLTiPDuhSpJhI302OAgTtlGscygETAsUDcLoE-lBbtRD0b-JQ6I',
+        shortDesc: 'Limpieza suave que revitaliza la textura opaca y devuelve una luminosidad aterciopelada.',
+        fullDesc: 'Inspirado en los rituales antioxidantes europeos adaptados con botánica local. La combinación de glicerina pura infusionada con vino tinto y arcilla rosa francesa tonifica la piel apagada, combate el daño de radicales libres y aporta una delicada fragancia de agua destilada de rosas.',
+        ingredients: 'Glicerina con vino tinto, arcilla rosa y agua de rosas pura.',
+        aroma: 'Rosas frescas y vino joven',
+        skinTypes: ['mixta', 'normal', 'apagada'],
+        properties: ['Antioxidante de alta potencia', 'Revitalizante dérmico', 'Tonifica poros sin resecar', 'Suaviza líneas superficiales']
+      },
+      'carbon': {
+        id: 'carbon',
+        name: 'Carbón Activado',
+        badge: 'Ideal para piel grasa o acné',
+        price: 50,
+        color: '#2b2b2b',
+        icon: 'masks',
+        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDlkRkf6t6Kmpo1PjXA9DAn3Vd2qv1AAEsiQD_xikiYY3MFseF3NKSDhKXbNKVjl-Vvx2JANXt-Q571bpckhUg-VZNLm0X_xszSksYUEAsPSftXz3bmi__N2-R_42hs2HPUsh5Kz-S4hL21rNaYSKKCYjcZGbBXZcuZHKMRwmPhc_LiKNIEGlBjIaD_AH3OqtJ2B43M2ktufwZ2eXGEn0lKcBV6nrZmQLj2J-GD9UfE45JbKa3eTaF-8fNYngoVzka2Kpk',
+        shortDesc: 'Limpieza profunda que desintoxica impurezas, destapa poros y controla el exceso de grasa.',
+        fullDesc: 'La barra purificante definitiva. El carbón vegetal activado actúa como un potente imán para atrapar impurezas profundas y contaminación urbana, mientras que la arcilla roja y el aceite del árbol del té (tea tree) calman brotes e inhiben bacterias que originan el acné.',
+        ingredients: 'Carbón activado, arcilla roja, aceite de coco y árbol del té.',
+        aroma: 'Coco botánico con notas herbales',
+        skinTypes: ['grasa', 'acne', 'mixta'],
+        properties: ['Absorbe el exceso de sebo', 'Efecto mate duradero', 'Acción antibacteriana natural', 'Descongestiona poros dilatados']
+      },
+      'tepezcohuite': {
+        id: 'tepezcohuite',
+        name: 'Tepezcohuite',
+        badge: 'Ideal para piel mixta a grasa',
+        price: 50,
+        color: '#6B4A3A',
+        icon: 'park',
+        isGraphic: true,
+        graphicBg: '#6B4A3A',
+        shortDesc: 'Regenerador ancestral con polvo de corteza de tepezcohuite y arcilla blanca purificante.',
+        fullDesc: 'Conocido como el "árbol de la piel" en la herbolaria prehispánica de México. Este jabón aprovecha la altísima concentración de taninos y bioflavonoides del tepezcohuite para estimular la regeneración de la barrera cutánea, sanar marcas superficiales y regular el manto lipídico junto con arcilla caolín.',
+        ingredients: 'Polvo de corteza de tepezcohuite y arcilla blanca.',
+        aroma: 'Maderas nobles y tierra tibia',
+        skinTypes: ['mixta', 'grasa', 'cicatrices'],
+        properties: ['Acelera regeneración celular', 'Calma cicatrices y marcas leves', 'Astringente noble no agresivo', 'Equilibra el brillo de la zona T']
+      },
+      'miel': {
+        id: 'miel',
+        name: 'Miel Pura',
+        badge: 'Ideal para piel sensible',
+        price: 50,
+        color: '#B8892B',
+        icon: 'hive',
+        isGraphic: true,
+        graphicBg: '#B8892B',
+        shortDesc: 'Cuidado reconfortante y ultra suave diseñado con mimo absoluto para calmar pieles reactivas.',
+        fullDesc: 'Formulado para las pieles más vulnerables y reactivas. Enriquecido con miel virgen de abeja cosechada sustentablemente, que actúa como humectante biológico activo fijando la humedad natural del cutis, desinflamando rojeces y creando una película protectora satinada.',
+        ingredients: 'Base de glicerina vegetal pura enriquecida con miel de abeja natural.',
+        aroma: 'Dulce natural apícola',
+        skinTypes: ['sensible', 'reactiva', 'seca', 'todo'],
+        properties: ['Hipoalergénico y reconfortante', 'Humectación profunda y prolongada', 'Alivia la tirantez de inmediato', 'Restaura la suavidad natural']
+      },
+      'curcuma': {
+        id: 'curcuma',
+        name: 'Cúrcuma y Miel',
+        badge: 'Ideal para piel mixta',
+        price: 50,
+        color: '#D49A3D',
+        icon: 'flare',
+        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCGSWA0am1-MVIhis5W0KXxYyLOznMb6LEbd9gWVKc2BGY1eBTmKQn4O94yvooolXPv0kwIVxx_CG8SJ3ttc8miApA273yOjuUUn6Eiy31ZPzZTP0RDO9Cd0v6T7PMDSGFvZYURPjlpFSsxYhRyqyg5sdrJjzLE4X_Vj3W6DOBwBbrIzl7oguwwlRfDoOeCIsB6EW1N5BnNeVCer2BunAxiLuWjd7uswtOeoybRXUsBM3lm4z6Bjq-vKUmE2j5zo4qAMUI',
+        shortDesc: 'Nutrición con leche de cabra, cúrcuma y miel que ilumina, tonifica y empareja la dermis cansada.',
+        fullDesc: 'Una joya dorada botánica. La cúrcuma orgánica desinflama y ayuda a desvanecer manchas de sol o acné, mientras la leche de cabra fresca aporta ácido láctico natural que exfolia con suprema suavidad y deja un brillo saludable radiante.',
+        ingredients: 'Base de leche de cabra, cúrcuma, arcilla blanca, miel y avena coloidal.',
+        aroma: 'Verbena cítrica y bergamota',
+        skinTypes: ['mixta', 'manchas', 'todo'],
+        properties: ['Unifica el tono dérmico', 'Brillo saludable ("glow" natural)', 'Acción antiinflamatoria dorada', 'Micro-nutrición con leche de cabra']
+      },
+      'avena': {
+        id: 'avena',
+        name: 'Avena & Miel',
+        badge: 'Ideal para piel sensible o seca',
+        price: 50,
+        color: '#8f6412',
+        icon: 'grain',
+        image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAwcD0-sNtocTxHcRzmOJFfsi_ZMgV0lopq1jnZHeWkQAz3zqoZH-sHiDs8-RQukATs_1FzgvBC97qxPYYuVWLhEY4v9lUiodi7Yi35KD-33iAn4kjg0LpWoOW5g0RuWzk_mW3jmeZ7yqVVmtmAzmWFiPyA_k4f1Jy7b6aX3vedhVUXKGSSnZss47k4enJbORESxzUvshQ8SqYmrZQg5OtyJSsdGlR8SZN5Ylr9uBSt7p7V0WrX78L6JziKuxxRKQmMbjs',
+        shortDesc: 'Nutrición calmante y exfoliación ultra suave que alivia, suaviza e hidrata profundamente.',
+        fullDesc: 'La barra de confort por excelencia. Las micropartículas de avena coloidal brindan una exfoliación sedosa que elimina células muertas sin rayar la piel, mientras la leche de cabra y la miel sellan la nutrición para dejar un cutis terso como terciopelo.',
+        ingredients: 'Base de leche de cabra, avena coloidal, arcilla blanca, miel y extractos botánicos.',
+        aroma: 'Miel tibia y avena silvestre',
+        skinTypes: ['sensible', 'seca', 'reactiva'],
+        properties: ['Exfoliación no agresiva', 'Alivia picor y resequedad', 'Espuma densa y ultra cremosa', 'Nutrición rica en lípidos naturales']
+      }
+    };
+
+    /* ============================================================
+       INGREDIENTES BOTÁNICOS ESTRELLA (11 ACTIVOS)
+       ============================================================ */
+    const INGREDIENTS = {
+      'arcilla-rosa': {
+        name: 'Arcilla Rosa Francesa',
+        origin: 'Sedimento mineral natural rico en caolinita y hierro.',
+        desc: 'Fusión equilibrada de arcilla blanca y roja. Es la arcilla más suave conocida, ideal para desintoxicar pieles hiperreactivas o apagadas sin provocar rojeces.',
+        benefits: ['Restaura la luminosidad apagada', 'Desintoxica suavemente', 'Estimula la renovación de colágeno'],
+        usedIn: ['Vino & Rosas']
+      },
+      'arcilla-roja': {
+        name: 'Arcilla Roja Ilita',
+        origin: 'Tierra arcillosa rica en óxidos de hierro y oligoelementos.',
+        desc: 'Conocida por estimular la microcirculación superficial cutánea, tonificar tejidos laxos y purificar poros profundos con efecto astringente moderado.',
+        benefits: ['Reactiva el riego sanguíneo dérmico', 'Absorbe impurezas', 'Tonifica cutis cansado'],
+        usedIn: ['Carbón Activado']
+      },
+      'arcilla-blanca': {
+        name: 'Arcilla Blanca (Caolín)',
+        origin: 'Mineral natural ultrafino de pureza botánica.',
+        desc: 'Reguladora del sebo y calmante natural con pH neutro. Descongestiona poros y deja una película sedosa que no reseca.',
+        benefits: ['pH respetuoso de la barrera cutánea', 'Efecto mate suave', 'Descongestión de poros'],
+        usedIn: ['Tepezcohuite', 'Cúrcuma y Miel', 'Avena & Miel']
+      },
+      'carbon-activado': {
+        name: 'Carbón Vegetal Activado',
+        origin: 'Cáscara de coco vegetal carbonizada y microporosa.',
+        desc: 'Posee una estructura porosa microscópica con capacidad milagrosa de adsorber hasta 200 veces su peso en toxinas, sebo y polución ambiental.',
+        benefits: ['Purificación celular profunda', 'Control de brillos y grasa', 'Previene puntos negros'],
+        usedIn: ['Carbón Activado']
+      },
+      'tepezcohuite': {
+        name: 'Corteza de Tepezcohuite (Mimosa Tenuiflora)',
+        origin: 'Árbol autóctono de México de uso herbolario milenario.',
+        desc: 'Legendario activo mexicano utilizado para la regeneración dérmica intensiva tras quemaduras y heridas. Regenera células y refuerza la barrera epidérmica.',
+        benefits: ['Regeneración celular demostrada', 'Cicatrizante natural', 'Antiinflamatorio potente'],
+        usedIn: ['Tepezcohuite']
+      },
+      'curcuma': {
+        name: 'Cúrcuma Pura (Curcuma Longa)',
+        origin: 'Rizoma botánico cosechado y micropulverizado.',
+        desc: 'La reina de los antioxidantes botánicos. Su componente bioactivo, la curcumina, empareja el tono, calma espinillas inflamadas y aporta luminosidad dorada.',
+        benefits: ['Combate manchas solares leves', 'Poderoso antioxidante', 'Efecto glow natural'],
+        usedIn: ['Cúrcuma y Miel']
+      },
+      'miel': {
+        name: 'Miel Virgen Natural de Abeja',
+        origin: 'Cosecha apícola sustentable sin pasteurización.',
+        desc: 'Elixir humectante biológico con enzimas vivas que atraen el agua ambiental hacia la piel y actúan como antimicrobiano natural contra bacterias del cutis.',
+        benefits: ['Humectante biológico activo', 'Antibacteriana suave', 'Acelera recuperación de heridas'],
+        usedIn: ['Miel Pura', 'Cúrcuma y Miel', 'Avena & Miel']
+      },
+      'avena': {
+        name: 'Avena Coloidal Pura',
+        origin: 'Grano integral micronizado rico en beta-glucanos.',
+        desc: 'Ingrediente dermatológico noble que alivia de inmediato la comezón, la tirantez y la dermatitis por sequedad ambiental.',
+        benefits: ['Calma comezón e irritación', 'Microexfoliación no invasiva', 'Barrera emoliente sedosa'],
+        usedIn: ['Avena & Miel', 'Cúrcuma y Miel']
+      },
+      'leche-cabra': {
+        name: 'Leche Fresca de Cabra',
+        origin: 'Leche de granja con alto contenido lipídico y vitamínico.',
+        desc: 'Rica en ácidos grasos de cadena corta y ácido láctico suave que exfolia células muertas al tiempo que nutre y fortalece el manto ácido.',
+        benefits: ['Ácido láctico exfoliante suave', 'Nutrición rica en lípidos', 'Ultra hidratante'],
+        usedIn: ['Cúrcuma y Miel', 'Avena & Miel']
+      },
+      'aceite-coco': {
+        name: 'Aceite de Coco Virgen Prensado',
+        origin: 'Pulpa de coco fresca sin refinar.',
+        desc: 'Aporta una espuma cremosa y abundante en el jabón artesanal sin necesidad de sulfatos sintéticos nocivos como SLS.',
+        benefits: ['Genera espuma densa natural', 'Ácido láurico protector', 'Elasticidad y tersura'],
+        usedIn: ['Carbón Activado']
+      },
+      'agua-rosas': {
+        name: 'Agua Destilada de Rosas Puras',
+        origin: 'Destilación por vapor de pétalos frescos.',
+        desc: 'Tónico astringente botánico tradicional que regula el pH del rostro tras la limpieza, calma rojeces y perfuma delicadamente.',
+        benefits: ['Equilibra el pH facial', 'Astringente noble', 'Aroma floral aromaterapéutico'],
+        usedIn: ['Vino & Rosas']
+      }
+    };
+
+    /* ============================================================
+       ESTADO GLOBAL DEL CARRITO DE COMPRAS
+       ============================================================ */
+    let cart = [];
+
+    // Cargar carrito desde localStorage
+    try {
+      const savedCart = localStorage.getItem('terranua_cart');
+      if (savedCart) {
+        cart = JSON.parse(savedCart);
+      }
+    } catch (e) {
+      console.warn('LocalStorage no disponible');
+    }
+
+    function saveCart() {
+      try {
+        localStorage.setItem('terranua_cart', JSON.stringify(cart));
+      } catch (e) {}
+      renderCartUI();
+    }
+
+    function addToCart(soapId, quantity = 1) {
+      const soap = SOAPS[soapId];
+      if (!soap) return;
+
+      const existingItem = cart.find(item => item.id === soapId);
+      if (existingItem) {
+        existingItem.quantity += quantity;
+      } else {
+        cart.push({
+          id: soap.id,
+          name: soap.name,
+          price: soap.price,
+          quantity: quantity,
+          color: soap.color,
+          badge: soap.badge
+        });
+      }
+
+      saveCart();
+      showNotification(`🌿 ¡${soap.name} (${quantity}) añadido a tu pedido!`);
+      
+      // Abrir drawer opcionalmente tras añadir
+      openCartDrawer();
+    }
+
+    function adjustCartItemQty(soapId, delta) {
+      const item = cart.find(i => i.id === soapId);
+      if (!item) return;
+
+      item.quantity += delta;
+      if (item.quantity <= 0) {
+        cart = cart.filter(i => i.id !== soapId);
+        showNotification('Barra eliminada del pedido');
+      }
+      saveCart();
+    }
+
+    function removeFromCart(soapId) {
+      cart = cart.filter(i => i.id !== soapId);
+      saveCart();
+      showNotification('Barra eliminada del pedido');
+    }
+
+    function renderCartUI() {
+      const badge = document.getElementById('cart-badge');
+      const listContainer = document.getElementById('cart-items-list');
+      
+      const totalCount = cart.reduce((acc, item) => acc + item.quantity, 0);
+      if (badge) {
+        badge.textContent = totalCount;
+        if (totalCount > 0) {
+          badge.classList.remove('opacity-0');
+        }
+      }
+
+      if (!listContainer) return;
+
+      if (cart.length === 0) {
+        listContainer.innerHTML = `
+          <div class="text-center py-12 flex flex-col items-center justify-center">
+            <div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant mb-4">
+              <span class="material-symbols-outlined text-3xl">shopping_basket</span>
+            </div>
+            <h4 class="font-headline-sm text-primary mb-1">Tu canasta está vacía</h4>
+            <p class="text-xs text-on-surface-variant max-w-xs mb-6">Elige tus barras favoritas de glicerina botánica para armar tu pedido personalizado.</p>
+            <a href="#nuestros-jabones" onclick="closeCartDrawer()" class="px-5 py-2.5 rounded-lg bg-primary text-on-primary text-xs font-bold hover:bg-secondary transition-colors">
+              Explorar Catálogo ($50 MXN c/u)
+            </a>
+          </div>
+        `;
+      } else {
+        listContainer.innerHTML = cart.map(item => `
+          <div class="flex items-center justify-between p-3.5 bg-surface-container-low rounded-xl border border-surface-container">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-lg flex items-center justify-center text-white font-bold text-xs shadow-xs" style="background-color: ${item.color || '#2F4A1F'}">
+                <span class="material-symbols-outlined text-lg">spa</span>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-primary">${item.name}</h4>
+                <div class="text-xs text-secondary font-semibold">$${item.price} MXN c/u</div>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-2">
+              <div class="flex items-center border border-surface-container rounded-lg bg-surface-container-lowest">
+                <button onclick="adjustCartItemQty('${item.id}', -1)" class="px-2 py-1 text-xs hover:bg-surface-container text-primary font-bold">-</button>
+                <span class="px-2 py-1 text-xs font-bold min-w-[20px] text-center">${item.quantity}</span>
+                <button onclick="adjustCartItemQty('${item.id}', 1)" class="px-2 py-1 text-xs hover:bg-surface-container text-primary font-bold">+</button>
+              </div>
+              <button onclick="removeFromCart('${item.id}')" class="p-1.5 text-on-surface-variant hover:text-error transition-colors" title="Eliminar">
+                <span class="material-symbols-outlined text-lg">delete</span>
+              </button>
+            </div>
+          </div>
+        `).join('');
+      }
+
+      updateCartTotals();
+    }
+
+    function updateCartTotals() {
+      const subtotalEl = document.getElementById('cart-subtotal');
+      const shippingEl = document.getElementById('cart-shipping-cost');
+      const totalEl = document.getElementById('cart-total');
+      const methodSelect = document.getElementById('cart-delivery-method');
+
+      const subtotal = cart.reduce((acc, item) => acc + (item.price * item.quantity), 0);
+      let shippingText = 'A estimar al pedir';
+
+      if (methodSelect) {
+        const method = methodSelect.value;
+        if (method === 'local') {
+          shippingText = 'A estimar al pedir';
+        } else if (method === 'recoger') {
+          shippingText = 'A coordinar al pedir';
+        } else if (method === 'nacional') {
+          shippingText = 'PRÓXIMAMENTE';
+        }
+      }
+
+      if (subtotalEl) subtotalEl.textContent = `$${subtotal} MXN`;
+      if (shippingEl) shippingEl.textContent = subtotal > 0 ? shippingText : 'A estimar al pedir';
+      if (totalEl) totalEl.textContent = subtotal > 0 ? `$${subtotal} MXN` : '$0 MXN';
+    }
+
+    function openCartDrawer() {
+      const drawer = document.getElementById('cart-drawer-overlay');
+      if (drawer) {
+        drawer.classList.remove('hidden');
+        renderCartUI();
+        document.body.style.overflow = 'hidden';
+      }
+    }
+
+    function closeCartDrawer() {
+      const drawer = document.getElementById('cart-drawer-overlay');
+      if (drawer) {
+        drawer.classList.add('hidden');
+        document.body.style.overflow = '';
+      }
+    }
+
+    // Checkout por WhatsApp con mensaje estructurado
+    function sendOrderViaWhatsApp() {
+      if (cart.length === 0) {
+        showNotification('Tu carrito está vacío. Agrega jabones para pedir.');
+        return;
+      }
+
+      const name = document.getElementById('order-customer-name')?.value.trim() || 'Cliente';
+      const phone = document.getElementById('order-customer-phone')?.value.trim();
+      const notes = document.getElementById('order-customer-notes')?.value.trim();
+      const methodSelect = document.getElementById('cart-delivery-method');
+      const methodText = methodSelect?.options[methodSelect.selectedIndex]?.text || 'Entrega en Culiacán (Costo a estimar al pedir)';
+
+      const subtotal = cart.reduce((acc, item) => acc + (item.price * item.quantity), 0);
+
+      // Crear desglose de productos
+      let itemsBreakdown = '';
+      cart.forEach(item => {
+        itemsBreakdown += `• ${item.quantity}x ${item.name} ($${item.price * item.quantity} MXN)\n`;
+      });
+
+      let message = `🌿 *NUEVO PEDIDO TERRA NUA*\n\n`;
+      message += `Hola, me gustaría solicitar el siguiente pedido de jabones artesanales:\n\n`;
+      message += `*CLIENTE:* ${name}\n`;
+      if (phone) message += `*TELÉFONO:* ${phone}\n`;
+      message += `\n*DETALLE DEL PEDIDO:*\n${itemsBreakdown}\n`;
+      message += `*MÉTODO DE ENTREGA:* ${methodText}\n`;
+      message += `*SUBTOTAL JABONES:* $${subtotal} MXN\n`;
+      message += `*COSTO DE ENTREGA:* Se estimará con mi dirección al coordinar el pedido\n`;
+      message += `*TOTAL JABONES:* $${subtotal} MXN (+ entrega por calcular)\n`;
+      if (notes) message += `\n*DIRECCIÓN / NOTAS:* ${notes}\n`;
+      message += `\nQuedo al pendiente para confirmar el costo de entrega, coordinar el pago (Efectivo / Transferencia por WhatsApp) y ultimar detalles. ¡Muchas gracias!`;
+
+      const encodedMessage = encodeURIComponent(message);
+      const whatsappUrl = `https://wa.me/526672311505?text=${encodedMessage}`;
+
+      window.open(whatsappUrl, '_blank');
+      showNotification('¡Redirigiendo a WhatsApp para confirmar!');
+    }
+
+    /* ============================================================
+       MODAL DE DETALLES DE PRODUCTO (FICHA BOTÁNICA)
+       ============================================================ */
+    let currentModalSoapId = null;
+    let currentModalQty = 1;
+
+    function openProductModal(soapId) {
+      const soap = SOAPS[soapId];
+      if (!soap) return;
+
+      currentModalSoapId = soapId;
+      currentModalQty = 1;
+
+      const modal = document.getElementById('product-modal');
+      const imageContainer = document.getElementById('product-modal-image-container');
+      const bodyContainer = document.getElementById('product-modal-body');
+      const qtyEl = document.getElementById('modal-product-qty');
+      const totalEl = document.getElementById('modal-product-total');
+      const addBtn = document.getElementById('modal-add-cart-btn');
+
+      if (imageContainer) {
+        if (soap.isGraphic) {
+          imageContainer.innerHTML = `
+            <div class="w-full h-full flex flex-col items-center justify-center p-6 text-white" style="background-color: ${soap.graphicBg}">
+              <div class="w-24 h-24 rounded-2xl bg-white/20 border-2 border-white/40 flex flex-col items-center justify-center p-3 text-center mb-2">
+                <span class="material-symbols-outlined text-4xl mb-1">${soap.icon}</span>
+                <span class="font-bold text-xs uppercase tracking-wider">Terra Nua</span>
+                <span class="text-[10px] opacity-80">70 g</span>
+              </div>
+              <span class="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-white/90 text-primary">
+                ${soap.badge}
+              </span>
+            </div>
+            <button onclick="closeProductModal()" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-surface/90 text-primary flex items-center justify-center hover:bg-surface shadow-md transition-all z-20">
+              <span class="material-symbols-outlined text-xl">close</span>
+            </button>
+          `;
+        } else {
+          imageContainer.innerHTML = `
+            <img alt="${soap.name}" src="${soap.image}" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+            <span class="absolute top-4 left-4 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-surface/90 text-primary shadow-xs">
+              ${soap.badge}
+            </span>
+            <button onclick="closeProductModal()" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-surface/90 text-primary flex items-center justify-center hover:bg-surface shadow-md transition-all z-20">
+              <span class="material-symbols-outlined text-xl">close</span>
+            </button>
+          `;
+        }
+      }
+
+      if (bodyContainer) {
+        bodyContainer.innerHTML = `
+          <div>
+            <div class="flex items-start justify-between gap-4 mb-2">
+              <h2 class="font-headline-lg text-2xl sm:text-3xl text-primary font-bold">${soap.name}</h2>
+              <span class="font-title-lg text-xl sm:text-2xl text-secondary font-bold shrink-0">$${soap.price} MXN</span>
+            </div>
+            <p class="font-body-md text-sm sm:text-base text-on-surface-variant leading-relaxed">
+              ${soap.fullDesc}
+            </p>
+          </div>
+
+          <div class="bg-surface-container-low p-4 rounded-xl space-y-2.5 text-xs sm:text-sm">
+            <div class="flex items-start gap-2">
+              <span class="material-symbols-outlined text-secondary text-base shrink-0 mt-0.5">grain</span>
+              <span><strong>Ingredientes clave:</strong> ${soap.ingredients}</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-secondary text-base shrink-0">view_in_ar_new</span>
+              <span><strong>Aroma botánico:</strong> ${soap.aroma}</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-secondary text-base shrink-0">scale</span>
+              <span><strong>Presentación:</strong> Barra artesanal de 70 gramos en caja o envoltorio botánico.</span>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="font-title-md text-xs uppercase font-bold tracking-wider text-secondary mb-2">Beneficios dérmicos comprobados:</h4>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-on-surface-variant">
+              ${soap.properties.map(p => `
+                <div class="flex items-center gap-2 p-2 bg-surface-container rounded-lg">
+                  <span class="material-symbols-outlined text-sm text-primary">check_circle</span>
+                  <span>${p}</span>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+
+          <div class="p-3 bg-surface-container rounded-lg text-xs text-on-surface-variant flex items-center gap-2">
+            <span class="material-symbols-outlined text-base text-secondary">tips_and_updates</span>
+            <span><strong>Tip de conservación:</strong> Para prolongar la vida de tu barra, déjala escurrir en una jabonera seca entre usos.</span>
+          </div>
+        `;
+      }
+
+      if (qtyEl) qtyEl.textContent = '1';
+      if (totalEl) totalEl.textContent = `$${soap.price} MXN`;
+      if (addBtn) {
+        addBtn.onclick = () => {
+          addToCart(soap.id, currentModalQty);
+          closeProductModal();
+        };
+      }
+
+      if (modal) {
+        modal.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      }
+    }
+
+    function adjustModalQty(delta) {
+      if (!currentModalSoapId) return;
+      currentModalQty = Math.max(1, currentModalQty + delta);
+      const soap = SOAPS[currentModalSoapId];
+      
+      const qtyEl = document.getElementById('modal-product-qty');
+      const totalEl = document.getElementById('modal-product-total');
+
+      if (qtyEl) qtyEl.textContent = currentModalQty;
+      if (totalEl && soap) totalEl.textContent = `$${soap.price * currentModalQty} MXN`;
+    }
+
+    function closeProductModal() {
+      const modal = document.getElementById('product-modal');
+      if (modal) {
+        modal.classList.add('hidden');
+        document.body.style.overflow = '';
+      }
+    }
+
+    /* ============================================================
+       MODAL DE INGREDIENTES ESTRELLA
+       ============================================================ */
+    function openIngredientModal(ingredientId) {
+      const ing = INGREDIENTS[ingredientId];
+      if (!ing) return;
+
+      const modal = document.getElementById('ingredient-modal');
+      const content = document.getElementById('ingredient-modal-content');
+
+      if (content) {
+        content.innerHTML = `
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-12 h-12 rounded-xl bg-primary text-white flex items-center justify-center shadow-xs">
+              <span class="material-symbols-outlined text-2xl">eco</span>
+            </div>
+            <div>
+              <span class="text-xs uppercase font-bold text-secondary tracking-wider">Ingrediente Estrella</span>
+              <h3 class="font-headline-sm text-xl text-primary font-bold">${ing.name}</h3>
+            </div>
+          </div>
+
+          <div class="space-y-4 text-sm text-on-surface-variant leading-relaxed">
+            <p>${ing.desc}</p>
+            
+            <div class="p-3 bg-surface-container rounded-lg text-xs">
+              <strong class="text-primary block mb-1">Origen botánico:</strong>
+              <span>${ing.origin}</span>
+            </div>
+
+            <div>
+              <strong class="text-xs uppercase font-bold text-secondary tracking-wider block mb-2">Propiedades principales:</strong>
+              <div class="space-y-1.5">
+                ${ing.benefits.map(b => `
+                  <div class="flex items-center gap-2 text-xs">
+                    <span class="material-symbols-outlined text-primary text-sm">check</span>
+                    <span>${b}</span>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+
+            <div class="pt-3 border-t border-surface-container">
+              <strong class="text-xs uppercase font-bold text-primary block mb-2">Presente en nuestros jabones:</strong>
+              <div class="flex flex-wrap gap-2">
+                ${ing.usedIn.map(name => `
+                  <span class="px-3 py-1 rounded-full bg-surface-container-high text-primary text-xs font-semibold">
+                    ${name}
+                  </span>
+                `).join('')}
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-6 flex justify-end">
+            <button onclick="closeIngredientModal()" class="px-5 py-2.5 rounded-lg bg-primary text-on-primary text-xs font-bold hover:bg-secondary transition-colors">
+              Cerrar ficha
+            </button>
+          </div>
+        `;
+      }
+
+      if (modal) {
+        modal.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      }
+    }
+
+    function closeIngredientModal() {
+      const modal = document.getElementById('ingredient-modal');
+      if (modal) {
+        modal.classList.add('hidden');
+        document.body.style.overflow = '';
+      }
+    }
+
+    /* ============================================================
+       MODAL DE INFORMACIÓN (ENVÍOS, PUNTOS, PAGOS)
+       ============================================================ */
+    function openInfoModal(type) {
+      const modal = document.getElementById('info-modal');
+      const content = document.getElementById('info-modal-content');
+      if (!content) return;
+
+      if (type === 'envios') {
+        content.innerHTML = `
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-12 h-12 rounded-xl bg-primary text-white flex items-center justify-center">
+              <span class="material-symbols-outlined text-2xl">local_shipping</span>
+            </div>
+            <div>
+              <span class="text-xs uppercase font-bold text-secondary tracking-wider">Logística y Entregas</span>
+              <h3 class="font-headline-sm text-xl text-primary font-bold">Información de Entregas</h3>
+            </div>
+          </div>
+          <div class="space-y-3 text-sm text-on-surface-variant leading-relaxed">
+            <div class="p-3 bg-surface-container rounded-xl">
+              <h4 class="font-bold text-primary mb-1 flex items-center gap-1.5">
+                <span class="material-symbols-outlined text-secondary text-base">location_on</span>
+                📍 Entregas Locales en Culiacán, Sinaloa
+              </h4>
+              <p class="text-xs">
+                Realizamos entregas a domicilio y en puntos de encuentro acordados dentro de Culiacán. El costo de entrega es variable según la zona, distancia y tiempo; <strong>el precio se estimará al momento de realizar tu pedido</strong> una vez que proporciones tu dirección.
+              </p>
+            </div>
+            <div class="p-3 bg-surface-container rounded-xl border border-dashed border-secondary/40">
+              <div class="flex items-center justify-between mb-1">
+                <h4 class="font-bold text-primary flex items-center gap-1.5">
+                  <span class="material-symbols-outlined text-secondary text-base">near_me</span>
+                  🇲🇽 Envíos fuera de Culiacán
+                </h4>
+                <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-secondary/15 text-secondary uppercase tracking-wider">Próximamente</span>
+              </div>
+              <p class="text-xs">
+                Aún no tenemos el alcance necesario como para realizar entregas fuera de la ciudad de Culiacán. En cuanto ampliemos nuestra cobertura logística lo estaremos anunciando. ¡Muy pronto!
+              </p>
+            </div>
+          </div>
+          <div class="mt-6 flex justify-end">
+            <button onclick="closeInfoModal()" class="px-5 py-2.5 rounded-lg bg-primary text-on-primary text-xs font-bold hover:bg-secondary transition-colors">
+              Entendido
+            </button>
+          </div>
+        `;
+      } else if (type === 'puntos') {
+        content.innerHTML = `
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-12 h-12 rounded-xl bg-primary text-white flex items-center justify-center">
+              <span class="material-symbols-outlined text-2xl">pin_drop</span>
+            </div>
+            <div>
+              <span class="text-xs uppercase font-bold text-secondary tracking-wider">Entregas Personales</span>
+              <h3 class="font-headline-sm text-xl text-primary font-bold">Puntos de Entrega en Culiacán</h3>
+            </div>
+          </div>
+          <div class="space-y-3 text-sm text-on-surface-variant leading-relaxed">
+            <p>Podemos coordinar entregas personales en zonas concurridas y céntricas de Culiacán. La logística y posible costo de entrega se estimarán al momento de realizar tu pedido:</p>
+            <div class="space-y-2 text-xs">
+              <div class="p-2.5 bg-surface-container rounded-lg flex items-center gap-2">
+                <span class="material-symbols-outlined text-secondary">storefront</span>
+                <span><strong>Plaza Fórum Culiacán</strong> (Área de café / acceso principal)</span>
+              </div>
+              <div class="p-2.5 bg-surface-container rounded-lg flex items-center gap-2">
+                <span class="material-symbols-outlined text-secondary">domain</span>
+                <span><strong>Plaza Ceiba Culiacán</strong></span>
+              </div>
+              <div class="p-2.5 bg-surface-container rounded-lg flex items-center gap-2">
+                <span class="material-symbols-outlined text-secondary">location_city</span>
+                <span><strong>Centro Histórico de Culiacán</strong> (Plazuela Obregón / Catedral)</span>
+              </div>
+            </div>
+            <p class="text-xs text-on-surface-variant italic">
+              * El día, hora exacta y costo de entrega se coordinan cómodamente vía WhatsApp al confirmar tu pedido.
+            </p>
+          </div>
+          <div class="mt-6 flex justify-end">
+            <button onclick="closeInfoModal()" class="px-5 py-2.5 rounded-lg bg-primary text-on-primary text-xs font-bold hover:bg-secondary transition-colors">
+              Cerrar
+            </button>
+          </div>
+        `;
+      } else if (type === 'pagos') {
+        content.innerHTML = `
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-12 h-12 rounded-xl bg-primary text-white flex items-center justify-center">
+              <span class="material-symbols-outlined text-2xl">payments</span>
+            </div>
+            <div>
+              <span class="text-xs uppercase font-bold text-secondary tracking-wider">Opciones de Pago</span>
+              <h3 class="font-headline-sm text-xl text-primary font-bold">Formas de Pago</h3>
+            </div>
+          </div>
+          <div class="space-y-3 text-sm text-on-surface-variant leading-relaxed">
+            <div class="p-4 bg-surface-container rounded-xl border border-surface-container-high">
+              <div class="text-xs font-bold uppercase tracking-wider text-secondary mb-2 flex items-center gap-1.5">
+                <span class="material-symbols-outlined text-base">account_balance</span>
+                <span>Pago con Transferencia</span>
+              </div>
+              <p class="text-xs text-on-surface-variant leading-relaxed mb-3">
+                Si deseas pagar mediante transferencia electrónica, por favor pregúntanos directamente por WhatsApp al levantar tu pedido y con gusto te brindaremos la información correspondiente.
+              </p>
+              <button onclick="openWhatsAppChat('Hola Terra Nua, me gustaría solicitar los datos para pagar por transferencia mi pedido.'); closeInfoModal();" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-[#25D366] text-white text-xs font-bold hover:opacity-90 transition-opacity shadow-xs">
+                <span class="material-symbols-outlined text-sm">chat</span> Preguntar por WhatsApp
+              </button>
+            </div>
+            <div class="p-3 bg-surface-container rounded-xl text-xs">
+              <strong class="text-primary block mb-1">Efectivo contra entrega:</strong>
+              <span>Aceptamos efectivo exacto al momento de entregarte tus jabones en Culiacán.</span>
+            </div>
+          </div>
+          <div class="mt-6 flex justify-end">
+            <button onclick="closeInfoModal()" class="px-5 py-2.5 rounded-lg bg-primary text-on-primary text-xs font-bold hover:bg-secondary transition-colors">
+              Entendido
+            </button>
+          </div>
+        `;
+      }
+
+      if (modal) {
+        modal.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      }
+    }
+
+    function closeInfoModal() {
+      const modal = document.getElementById('info-modal');
+      if (modal) {
+        modal.classList.add('hidden');
+        document.body.style.overflow = '';
+      }
+    }
+
+    /* ============================================================
+       TEST DE PIEL INTERACTIVO (DIAGNÓSTICO PERSONALIZADO)
+       ============================================================ */
+    let quizAnswers = {};
+
+    function openSkinQuizModal() {
+      const modal = document.getElementById('skin-quiz-modal');
+      resetSkinQuiz();
+      if (modal) {
+        modal.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      }
+    }
+
+    function closeSkinQuizModal() {
+      const modal = document.getElementById('skin-quiz-modal');
+      if (modal) {
+        modal.classList.add('hidden');
+        document.body.style.overflow = '';
+      }
+    }
+
+    function resetSkinQuiz() {
+      quizAnswers = {};
+      document.getElementById('quiz-step-1')?.classList.remove('hidden');
+      document.getElementById('quiz-step-2')?.classList.add('hidden');
+      document.getElementById('quiz-step-3')?.classList.add('hidden');
+    }
+
+    function selectQuizAnswer(step, answer) {
+      quizAnswers[step] = answer;
+      if (step === 1) {
+        document.getElementById('quiz-step-1')?.classList.add('hidden');
+        document.getElementById('quiz-step-2')?.classList.remove('hidden');
+      } else if (step === 2) {
+        document.getElementById('quiz-step-2')?.classList.add('hidden');
+        calculateQuizResult();
+        document.getElementById('quiz-step-3')?.classList.remove('hidden');
+      }
+    }
+
+    function calculateQuizResult() {
+      const skinType = quizAnswers[1] || 'mixta';
+      const goal = quizAnswers[2] || 'limpieza';
+
+      let recommendedId = 'vino';
+
+      if (skinType === 'grasa') {
+        recommendedId = 'carbon';
+      } else if (skinType === 'sensible') {
+        recommendedId = 'miel';
+      } else if (skinType === 'seca') {
+        recommendedId = 'avena';
+      } else {
+        // Mixta
+        if (goal === 'iluminar') {
+          recommendedId = 'curcuma';
+        } else if (goal === 'limpieza') {
+          recommendedId = 'tepezcohuite';
+        } else {
+          recommendedId = 'vino';
+        }
+      }
+
+      const soap = SOAPS[recommendedId];
+      const cardEl = document.getElementById('quiz-recommended-card');
+      const descEl = document.getElementById('quiz-recommendation-desc');
+
+      if (descEl) {
+        descEl.textContent = `Para tu cutis (${skinType.toUpperCase()}) con objetivo de ${goal.toUpperCase()}, te sugerimos iniciar con:`;
+      }
+
+      if (cardEl && soap) {
+        cardEl.innerHTML = `
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs px-3 py-1 rounded-full bg-surface-container font-bold text-secondary">
+              ${soap.badge}
+            </span>
+            <span class="font-bold text-primary text-base">$${soap.price} MXN (70 g)</span>
+          </div>
+          <h4 class="font-headline-sm text-2xl text-primary font-bold mb-2">${soap.name}</h4>
+          <p class="text-xs text-on-surface-variant mb-4 leading-relaxed">${soap.shortDesc}</p>
+          <div class="flex gap-2">
+            <button onclick="addToCart('${soap.id}'); closeSkinQuizModal();" class="flex-1 py-2.5 px-4 rounded-lg bg-primary text-on-primary font-bold text-xs hover:bg-secondary transition-colors">
+              Añadir a mi pedido
+            </button>
+            <button onclick="openProductModal('${soap.id}'); closeSkinQuizModal();" class="px-4 py-2.5 rounded-lg bg-surface-container text-primary font-bold text-xs hover:bg-surface-container-high transition-colors">
+              Ver detalles
+            </button>
+          </div>
+        `;
+      }
+    }
+
+    /* ============================================================
+       SELECTOR DINÁMICO DE DIAGNÓSTICO EN LA PÁGINA
+       ============================================================ */
+    const skinRecommendations = {
+      'grasa': ['carbon', 'tepezcohuite'],
+      'mixta': ['vino', 'curcuma', 'tepezcohuite'],
+      'sensible': ['miel', 'avena'],
+      'todo': ['miel', 'curcuma', 'avena']
+    };
+
+    function renderDiagnosticTab(skinType) {
+      const resultsGrid = document.getElementById('results-grid');
+      const tabs = document.querySelectorAll('.skin-tab-btn');
+
+      tabs.forEach(btn => {
+        if (btn.getAttribute('data-type') === skinType) {
+          btn.classList.remove('bg-surface-container', 'text-on-surface');
+          btn.classList.add('bg-primary', 'text-on-primary', 'shadow-md');
+        } else {
+          btn.classList.remove('bg-primary', 'text-on-primary', 'shadow-md');
+          btn.classList.add('bg-surface-container', 'text-on-surface');
+        }
+      });
+
+      if (!resultsGrid) return;
+      resultsGrid.innerHTML = '';
+
+      const soapKeys = skinRecommendations[skinType] || skinRecommendations['todo'];
+
+      soapKeys.forEach(key => {
+        const soap = SOAPS[key];
+        if (!soap) return;
+
+        const card = document.createElement('div');
+        card.className = 'bg-surface-container-lowest p-6 rounded-xl shadow-sm flex flex-col justify-between border-t-4 transition-all duration-300 hover:shadow-md';
+        card.style.borderTopColor = soap.color;
+
+        card.innerHTML = `
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-lg text-white flex items-center justify-center shadow-xs" style="background-color: ${soap.color}">
+                <span class="material-symbols-outlined text-2xl">${soap.icon}</span>
+              </div>
+              <span class="font-label-sm text-xs px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-semibold">
+                ${soap.badge}
+              </span>
+            </div>
+            <h4 class="font-headline-sm text-headline-sm text-primary mb-2">${soap.name}</h4>
+            <p class="font-body-sm text-body-sm text-on-surface-variant mb-6 leading-relaxed">${soap.shortDesc}</p>
+          </div>
+          <div class="flex items-center justify-between pt-4 border-t border-surface-container">
+            <span class="font-title-md text-title-md font-bold text-secondary">$${soap.price} MXN</span>
+            <div class="flex items-center gap-2">
+              <button onclick="openProductModal('${soap.id}')" class="inline-flex items-center gap-1 font-label-lg text-label-lg text-primary hover:text-secondary font-bold transition-colors">
+                <span>Ver detalles</span>
+                <span class="material-symbols-outlined text-sm">visibility</span>
+              </button>
+              <button onclick="addToCart('${soap.id}')" class="p-2 rounded-lg bg-primary hover:bg-secondary text-white transition-colors" title="Agregar al pedido">
+                <span class="material-symbols-outlined text-sm">add_shopping_cart</span>
+              </button>
+            </div>
+          </div>
+        `;
+        resultsGrid.appendChild(card);
+      });
+    }
+
+    /* ============================================================
+       FILTRADO DEL CATÁLOGO
+       ============================================================ */
+    function filterCatalog(category) {
+      const cards = document.querySelectorAll('.soap-card');
+      const buttons = document.querySelectorAll('.catalog-filter-btn');
+
+      buttons.forEach(btn => {
+        if (btn.getAttribute('data-filter') === category) {
+          btn.classList.remove('bg-surface-container', 'text-on-surface');
+          btn.classList.add('bg-primary', 'text-on-primary', 'shadow-xs');
+        } else {
+          btn.classList.remove('bg-primary', 'text-on-primary', 'shadow-xs');
+          btn.classList.add('bg-surface-container', 'text-on-surface');
+        }
+      });
+
+      cards.forEach(card => {
+        if (category === 'todos' || card.getAttribute('data-category') === category) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+
+    /* ============================================================
+       POPUP FLOTANTE DE WHATSAPP
+       ============================================================ */
+    function toggleWhatsAppPopup() {
+      const popup = document.getElementById('whatsapp-popup');
+      if (popup) {
+        popup.classList.toggle('hidden');
+      }
+    }
+
+    function openWhatsAppChat(customText = '') {
+      const text = customText || 'Hola Terra Nua, me gustaría consultar información sobre sus jabones.';
+      const url = `https://wa.me/526672311505?text=${encodeURIComponent(text)}`;
+      window.open(url, '_blank');
+      toggleWhatsAppPopup();
+    }
+
+    /* ============================================================
+       TOAST NOTIFICATIONS
+       ============================================================ */
+    function showNotification(text) {
+      const container = document.getElementById('toast-container');
+      if (!container) return;
+
+      const toast = document.createElement('div');
+      toast.className = 'px-4 py-2.5 rounded-full bg-primary text-white text-xs sm:text-sm font-semibold shadow-xl flex items-center gap-2 transform transition-all duration-300 opacity-0 translate-y-2 pointer-events-auto';
+      toast.innerHTML = `
+        <span class="material-symbols-outlined text-sm text-green-300">spa</span>
+        <span>${text}</span>
+      `;
+
+      container.appendChild(toast);
+
+      setTimeout(() => {
+        toast.classList.remove('opacity-0', 'translate-y-2');
+      }, 20);
+
+      setTimeout(() => {
+        toast.classList.add('opacity-0', '-translate-y-2');
+        setTimeout(() => toast.remove(), 300);
+      }, 3500);
+    }
+
+    /* ============================================================
+       SCROLLSPY Y NAVEGACIÓN ACTIVA
+       ============================================================ */
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Inicializar selector de diagnóstico en "todo" tipo de piel
+      renderDiagnosticTab('todo');
+
+      // Asignar listeners a los botones de tabs
+      document.querySelectorAll('.skin-tab-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const type = btn.getAttribute('data-type');
+          renderDiagnosticTab(type);
+        });
+      });
+
+      // 2. Renderizar carrito inicial
+      renderCartUI();
+
+      // 3. Menú móvil toggle
+      const mobileBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      if (mobileBtn && mobileMenu) {
+        mobileBtn.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+          link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+          });
+        });
+      }
+
+      // 4. Botón de abrir carrito
+      const cartBtn = document.getElementById('open-cart-btn');
+      if (cartBtn) {
+        cartBtn.addEventListener('click', openCartDrawer);
+      }
+
+      // 5. Cerrar drawers/modales con Escape
+      window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          closeCartDrawer();
+          closeProductModal();
+          closeSkinQuizModal();
+          closeIngredientModal();
+          closeInfoModal();
+          const wpPopup = document.getElementById('whatsapp-popup');
+          if (wpPopup && !wpPopup.classList.contains('hidden')) {
+            wpPopup.classList.add('hidden');
+          }
+        }
+      });
+
+      // 6. Scrollspy para iluminar el link de navegación activo
+      const sections = document.querySelectorAll('section[id]');
+      const navLinks = document.querySelectorAll('#desktop-nav .nav-item');
+
+      window.addEventListener('scroll', () => {
+        let current = '';
+        const scrollY = window.pageYOffset;
+
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop - 120;
+          const sectionHeight = section.offsetHeight;
+          if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+            current = section.getAttribute('id');
+          }
+        });
+
+        navLinks.forEach(link => {
+          if (link.getAttribute('data-path') === current) {
+            link.classList.add('bg-primary-container', 'text-on-primary-container', 'font-semibold');
+            link.classList.remove('text-on-surface-variant');
+          } else {
+            link.classList.remove('bg-primary-container', 'text-on-primary-container', 'font-semibold');
+            link.classList.add('text-on-surface-variant');
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
