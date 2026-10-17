@@ -1042,13 +1042,13 @@
                 </div>
                 <h3 class="font-headline-sm text-headline-sm text-primary mb-2">3. Puntos de Entrega</h3>
                 <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-                  Entregas a domicilio o en puntos de encuentro acordados en Culiacán. El costo de entrega se estimará al momento de realizar el pedido.
+                  Puntos de encuentro en Culiacán (sin compra mínima) o entrega a domicilio (mínimo 4 jabones). El costo de entrega se estimará al momento de realizar el pedido.
                 </p>
               </div>
               <div class="mt-4 pt-2 text-primary font-label-sm text-label-sm flex items-center justify-between">
                 <span class="flex items-center gap-1 text-on-surface-variant">
                   <span class="material-symbols-outlined text-sm text-secondary">location_on</span>
-                  <span>Culiacán: Fórum, Ceiba, Centro o domicilio</span>
+                  <span>Las Quintas, Tierra blanca, Catedral, Valle Alto, Centro</span>
                 </span>
                 <span class="text-secondary font-bold text-xs">Ver puntos →</span>
               </div>
@@ -1062,11 +1062,11 @@
                 </div>
                 <h3 class="font-headline-sm text-headline-sm text-primary mb-2">4. Formas de Pago</h3>
                 <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
-                  Aceptamos pago en efectivo contra entrega local. Para pago con transferencia electrónica, pregúntanos por WhatsApp al levantar tu pedido.
+                  Aceptamos pago en efectivo contra entrega local o por transferencia electrónica. Selecciona tu forma de pago preferida directamente en el carrito de compras.
                 </p>
               </div>
               <div class="mt-4 pt-2 text-on-surface-variant font-label-sm text-label-sm flex items-center justify-between">
-                <span class="text-primary font-semibold">Transferencia: preguntar por WhatsApp</span>
+                <span class="text-primary font-semibold">Efectivo o Transferencia</span>
                 <span class="text-secondary font-bold text-xs">Ver opciones →</span>
               </div>
             </div>
@@ -1252,26 +1252,86 @@
         </div>
 
         <!-- Footer del Carrito con Formularios y Checkout de WhatsApp -->
-        <div class="p-6 border-t border-surface-container bg-surface-container-low space-y-4">
+        <div class="p-5 sm:p-6 border-t border-surface-container bg-surface-container-low space-y-3.5 max-h-[60vh] overflow-y-auto">
           
+          <!-- Banner dinámico de Compra Mínima para Entrega a Domicilio -->
+          <div id="cart-min-order-notice" class="p-3 rounded-xl bg-surface-container border border-outline-variant/30 text-xs hidden">
+            <!-- Renderizado dinámicamente -->
+          </div>
+
           <!-- Selector de Método de Entrega -->
           <div>
             <label class="block text-xs font-bold uppercase tracking-wider text-secondary mb-1">Método de entrega en Culiacán</label>
-            <select id="cart-delivery-method" onchange="updateCartTotals()" class="w-full p-2.5 text-sm bg-surface-container-lowest rounded-lg border border-surface-container text-on-surface font-semibold focus:outline-none focus:ring-2 focus:ring-primary">
-              <option value="local">Entrega a domicilio en Culiacán (Costo a estimar al pedir)</option>
-              <option value="recoger">Punto de encuentro en Culiacán (A coordinar al pedir)</option>
+            <select id="cart-delivery-method" onchange="onDeliveryMethodChange()" class="w-full p-2.5 text-sm bg-surface-container-lowest rounded-lg border border-surface-container text-on-surface font-semibold focus:outline-none focus:ring-2 focus:ring-primary">
+              <option value="recoger">Punto de encuentro en Culiacán (Sin compra mínima)</option>
+              <option value="local">Entrega a domicilio en Culiacán (Mínimo 4 jabones)</option>
               <option value="nacional" disabled>Envíos fuera de Culiacán (PRÓXIMAMENTE)</option>
             </select>
-            <p class="text-[11px] text-on-surface-variant mt-1.5 leading-tight italic">
-              * El costo de entrega local no es fijo y se estimará una vez que proporciones tu dirección al confirmar el pedido.
+            <p id="delivery-method-hint" class="text-[11px] text-on-surface-variant mt-1 leading-tight italic">
+              * Punto de encuentro disponible para cualquier cantidad. Entrega a domicilio requiere mínimo 4 jabones.
             </p>
           </div>
 
+          <!-- Selector de Punto de Encuentro (visible para Punto de encuentro) -->
+          <div id="cart-pickup-container">
+            <label class="block text-xs font-bold uppercase tracking-wider text-secondary mb-1 flex items-center gap-1">
+              <span class="material-symbols-outlined text-sm">pin_drop</span>
+              <span>Lugar de entrega / Punto de encuentro</span>
+            </label>
+            <select id="cart-pickup-point" class="w-full p-2.5 text-sm bg-surface-container-lowest rounded-lg border border-surface-container text-on-surface font-medium focus:outline-none focus:ring-2 focus:ring-primary">
+              <option value="Las Quintas">Las Quintas</option>
+              <option value="Tierra blanca">Tierra blanca</option>
+              <option value="Catedral">Catedral</option>
+              <option value="Valle Alto">Valle Alto</option>
+              <option value="Centro">Centro</option>
+            </select>
+          </div>
+
+          <!-- Dirección para Entrega a Domicilio (visible para Entrega a domicilio) -->
+          <div id="cart-address-container" class="hidden">
+            <label class="block text-xs font-bold uppercase tracking-wider text-secondary mb-1 flex items-center gap-1">
+              <span class="material-symbols-outlined text-sm">home_pin</span>
+              <span>Dirección para Entrega a Domicilio *</span>
+            </label>
+            <input type="text" id="order-customer-address" placeholder="Calle, número, colonia y referencias de tu domicilio" class="w-full px-3 py-2 text-sm bg-surface-container-lowest rounded-lg border border-surface-container focus:outline-none focus:ring-2 focus:ring-primary">
+          </div>
+
           <!-- Campos de Contacto -->
-          <div class="grid grid-cols-1 gap-2">
-            <input type="text" id="order-customer-name" placeholder="Tu nombre y apellido *" class="w-full px-3 py-2 text-sm bg-surface-container-lowest rounded-lg border border-surface-container focus:outline-none focus:ring-2 focus:ring-primary">
-            <input type="text" id="order-customer-phone" placeholder="Teléfono de contacto (opcional)" class="w-full px-3 py-2 text-sm bg-surface-container-lowest rounded-lg border border-surface-container focus:outline-none focus:ring-2 focus:ring-primary">
-            <input type="text" id="order-customer-notes" placeholder="Dirección para entrega / Punto preferido en Culiacán *" class="w-full px-3 py-2 text-sm bg-surface-container-lowest rounded-lg border border-surface-container focus:outline-none focus:ring-2 focus:ring-primary">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <input type="text" id="order-customer-name" placeholder="Tu nombre *" class="w-full px-3 py-2 text-sm bg-surface-container-lowest rounded-lg border border-surface-container focus:outline-none focus:ring-2 focus:ring-primary">
+            <input type="text" id="order-customer-phone" placeholder="Teléfono (opcional)" class="w-full px-3 py-2 text-sm bg-surface-container-lowest rounded-lg border border-surface-container focus:outline-none focus:ring-2 focus:ring-primary">
+          </div>
+          <input type="text" id="order-customer-notes" placeholder="Horario preferido o referencias adicionales (opcional)" class="w-full px-3 py-2 text-sm bg-surface-container-lowest rounded-lg border border-surface-container focus:outline-none focus:ring-2 focus:ring-primary">
+
+          <!-- Selector de Forma de Pago -->
+          <div class="pt-1">
+            <label class="block text-xs font-bold uppercase tracking-wider text-secondary mb-1.5 flex items-center gap-1">
+              <span class="material-symbols-outlined text-sm">payments</span>
+              <span>Forma de Pago</span>
+            </label>
+            <div class="grid grid-cols-2 gap-2" id="payment-methods-group">
+              <label id="payment-label-efectivo" class="cursor-pointer flex items-center gap-2 p-2.5 rounded-lg border-2 border-primary bg-primary/5 transition-all">
+                <input type="radio" name="cart-payment-method" value="efectivo" checked onchange="onPaymentMethodChange()" class="accent-primary w-4 h-4 text-primary">
+                <div class="text-xs">
+                  <div class="font-bold text-primary flex items-center gap-1">
+                    <span>💵 Efectivo</span>
+                  </div>
+                  <div class="text-[10px] text-on-surface-variant leading-tight">Al entregar</div>
+                </div>
+              </label>
+              <label id="payment-label-transferencia" class="cursor-pointer flex items-center gap-2 p-2.5 rounded-lg border border-surface-container bg-surface-container-lowest hover:border-primary transition-all">
+                <input type="radio" name="cart-payment-method" value="transferencia" onchange="onPaymentMethodChange()" class="accent-primary w-4 h-4 text-primary">
+                <div class="text-xs">
+                  <div class="font-bold text-primary flex items-center gap-1">
+                    <span>💳 Transferencia</span>
+                  </div>
+                  <div class="text-[10px] text-on-surface-variant leading-tight">Datos por WhatsApp</div>
+                </div>
+              </label>
+            </div>
+            <p id="payment-method-hint" class="text-[11px] text-on-surface-variant mt-1.5 leading-tight italic">
+              * Pagas en efectivo al momento de recibir tus jabones.
+            </p>
           </div>
 
           <!-- Subtotales y Totales -->
@@ -1282,13 +1342,13 @@
             </div>
             <div class="flex justify-between text-on-surface-variant">
               <span>Costo de entrega:</span>
-              <span id="cart-shipping-cost" class="font-semibold text-secondary">A estimar al pedir</span>
+              <span id="cart-shipping-cost" class="font-semibold text-secondary">A coordinar al pedir</span>
             </div>
-            <div class="flex justify-between text-base font-bold text-primary pt-2 border-t border-surface-container">
+            <div class="flex justify-between text-base font-bold text-primary pt-1.5 border-t border-surface-container">
               <span>Total productos:</span>
               <span id="cart-total" class="text-secondary font-title-lg text-title-lg">$0 MXN</span>
             </div>
-            <p class="text-[11px] text-on-surface-variant text-right italic">+ costo de entrega a estimar según tu ubicación</p>
+            <p class="text-[11px] text-on-surface-variant text-right italic">+ costo de entrega a estimar según logística</p>
           </div>
 
           <!-- Botón de Envío de Pedido a WhatsApp -->
@@ -1296,12 +1356,6 @@
             <span class="material-symbols-outlined text-xl">send</span>
             <span>Confirmar y Enviar por WhatsApp</span>
           </button>
-
-          <div class="text-center pt-1">
-            <p class="text-xs text-on-surface-variant">
-              💳 ¿Pago con transferencia? <strong>Pregunta por WhatsApp al levantar tu pedido.</strong>
-            </p>
-          </div>
 
         </div>
 
@@ -1805,15 +1859,123 @@
       updateCartTotals();
     }
 
+    function onDeliveryMethodChange() {
+      const methodSelect = document.getElementById('cart-delivery-method');
+      const pickupContainer = document.getElementById('cart-pickup-container');
+      const addressContainer = document.getElementById('cart-address-container');
+      const hint = document.getElementById('delivery-method-hint');
+      const totalCount = cart.reduce((acc, item) => acc + item.quantity, 0);
+
+      if (!methodSelect) return;
+      const method = methodSelect.value;
+
+      if (method === 'local') {
+        if (totalCount < 4) {
+          showNotification('La entrega a domicilio requiere mínimo 4 jabones. Elige un punto de encuentro o agrega más jabones.');
+          methodSelect.value = 'recoger';
+          if (pickupContainer) pickupContainer.classList.remove('hidden');
+          if (addressContainer) addressContainer.classList.add('hidden');
+          if (hint) hint.textContent = '* Punto de encuentro disponible para cualquier cantidad. Entrega a domicilio requiere mínimo 4 jabones.';
+          updateCartTotals();
+          return;
+        }
+        if (pickupContainer) pickupContainer.classList.add('hidden');
+        if (addressContainer) addressContainer.classList.remove('hidden');
+        if (hint) hint.textContent = '* El costo de entrega se estimará según tu dirección al coordinar el pedido.';
+      } else {
+        if (pickupContainer) pickupContainer.classList.remove('hidden');
+        if (addressContainer) addressContainer.classList.add('hidden');
+        if (hint) hint.textContent = '* Elige tu punto de encuentro preferido (Las Quintas, Tierra blanca, Catedral, Valle Alto o Centro).';
+      }
+
+      updateCartTotals();
+    }
+
+    function onPaymentMethodChange() {
+      const paymentRadio = document.querySelector('input[name="cart-payment-method"]:checked');
+      const hint = document.getElementById('payment-method-hint');
+      const labelEfectivo = document.getElementById('payment-label-efectivo');
+      const labelTransferencia = document.getElementById('payment-label-transferencia');
+      
+      const val = paymentRadio ? paymentRadio.value : 'efectivo';
+
+      if (val === 'transferencia') {
+        if (hint) hint.textContent = '* Te compartiremos los datos bancarios por WhatsApp al confirmar tu pedido.';
+        if (labelTransferencia) {
+          labelTransferencia.className = 'cursor-pointer flex items-center gap-2 p-2.5 rounded-lg border-2 border-primary bg-primary/5 transition-all';
+        }
+        if (labelEfectivo) {
+          labelEfectivo.className = 'cursor-pointer flex items-center gap-2 p-2.5 rounded-lg border border-surface-container bg-surface-container-lowest hover:border-primary transition-all';
+        }
+      } else {
+        if (hint) hint.textContent = '* Pagas en efectivo al momento de recibir tus jabones.';
+        if (labelEfectivo) {
+          labelEfectivo.className = 'cursor-pointer flex items-center gap-2 p-2.5 rounded-lg border-2 border-primary bg-primary/5 transition-all';
+        }
+        if (labelTransferencia) {
+          labelTransferencia.className = 'cursor-pointer flex items-center gap-2 p-2.5 rounded-lg border border-surface-container bg-surface-container-lowest hover:border-primary transition-all';
+        }
+      }
+    }
+
     function updateCartTotals() {
       const subtotalEl = document.getElementById('cart-subtotal');
       const shippingEl = document.getElementById('cart-shipping-cost');
       const totalEl = document.getElementById('cart-total');
       const methodSelect = document.getElementById('cart-delivery-method');
+      const noticeContainer = document.getElementById('cart-min-order-notice');
+      const pickupContainer = document.getElementById('cart-pickup-container');
+      const addressContainer = document.getElementById('cart-address-container');
 
       const subtotal = cart.reduce((acc, item) => acc + (item.price * item.quantity), 0);
-      let shippingText = 'A estimar al pedir';
+      const totalCount = cart.reduce((acc, item) => acc + item.quantity, 0);
 
+      // Actualizar opciones del select de entrega según cantidad
+      if (methodSelect) {
+        const localOption = methodSelect.querySelector('option[value="local"]');
+        if (localOption) {
+          if (totalCount < 4) {
+            localOption.textContent = `Entrega a domicilio en Culiacán (Mínimo 4 jabones - Faltan ${4 - totalCount})`;
+            if (methodSelect.value === 'local') {
+              methodSelect.value = 'recoger';
+              if (pickupContainer) pickupContainer.classList.remove('hidden');
+              if (addressContainer) addressContainer.classList.add('hidden');
+            }
+          } else {
+            localOption.textContent = 'Entrega a domicilio en Culiacán (Mínimo 4 jabones cumplido)';
+          }
+        }
+      }
+
+      // Banner dinámico de compra mínima
+      if (noticeContainer) {
+        if (cart.length === 0) {
+          noticeContainer.classList.add('hidden');
+          noticeContainer.innerHTML = '';
+        } else if (totalCount < 4) {
+          noticeContainer.classList.remove('hidden');
+          noticeContainer.className = 'p-3 rounded-xl bg-surface-container border border-secondary/25 text-xs flex items-start gap-2.5';
+          noticeContainer.innerHTML = `
+            <span class="material-symbols-outlined text-secondary text-lg shrink-0 mt-0.5">storefront</span>
+            <div class="leading-snug text-on-surface-variant">
+              <strong class="text-primary block font-bold mb-0.5">Compra mínima para entrega a domicilio: 4 jabones</strong>
+              Llevas <strong>${totalCount} ${totalCount === 1 ? 'jabón' : 'jabones'}</strong> (te faltan <strong>${4 - totalCount}</strong> para envío a domicilio). Puedes pasar por tu pedido sin compra mínima en alguno de nuestros puntos de encuentro: <em>Las Quintas, Tierra blanca, Catedral, Valle Alto o Centro</em>.
+            </div>
+          `;
+        } else {
+          noticeContainer.classList.remove('hidden');
+          noticeContainer.className = 'p-3 rounded-xl bg-primary/10 border border-primary/20 text-xs flex items-start gap-2.5';
+          noticeContainer.innerHTML = `
+            <span class="material-symbols-outlined text-primary text-lg shrink-0 mt-0.5">verified</span>
+            <div class="leading-snug text-primary">
+              <strong class="block font-bold mb-0.5">¡Tu pedido califica para Entrega a Domicilio!</strong>
+              Llevas <strong>${totalCount} jabones</strong>. Puedes recibir en tu domicilio o elegir punto de encuentro según tu preferencia.
+            </div>
+          `;
+        }
+      }
+
+      let shippingText = 'A coordinar al pedir';
       if (methodSelect) {
         const method = methodSelect.value;
         if (method === 'local') {
@@ -1826,7 +1988,7 @@
       }
 
       if (subtotalEl) subtotalEl.textContent = `$${subtotal} MXN`;
-      if (shippingEl) shippingEl.textContent = subtotal > 0 ? shippingText : 'A estimar al pedir';
+      if (shippingEl) shippingEl.textContent = subtotal > 0 ? shippingText : 'A coordinar al pedir';
       if (totalEl) totalEl.textContent = subtotal > 0 ? `$${subtotal} MXN` : '$0 MXN';
     }
 
@@ -1835,6 +1997,8 @@
       if (drawer) {
         drawer.classList.remove('hidden');
         renderCartUI();
+        onDeliveryMethodChange();
+        onPaymentMethodChange();
         document.body.style.overflow = 'hidden';
       }
     }
@@ -1854,11 +2018,46 @@
         return;
       }
 
+      const totalCount = cart.reduce((acc, item) => acc + item.quantity, 0);
       const name = document.getElementById('order-customer-name')?.value.trim() || 'Cliente';
       const phone = document.getElementById('order-customer-phone')?.value.trim();
       const notes = document.getElementById('order-customer-notes')?.value.trim();
       const methodSelect = document.getElementById('cart-delivery-method');
-      const methodText = methodSelect?.options[methodSelect.selectedIndex]?.text || 'Entrega en Culiacán (Costo a estimar al pedir)';
+      const method = methodSelect ? methodSelect.value : 'recoger';
+
+      // Validación de compra mínima para entrega a domicilio
+      if (method === 'local' && totalCount < 4) {
+        showNotification('La entrega a domicilio requiere mínimo 4 jabones. Elige un punto de encuentro o agrega más jabones.');
+        if (methodSelect) methodSelect.value = 'recoger';
+        onDeliveryMethodChange();
+        return;
+      }
+
+      // Datos de entrega
+      let deliveryDetails = '';
+      let deliveryTitle = '';
+      if (method === 'local') {
+        const address = document.getElementById('order-customer-address')?.value.trim();
+        if (!address) {
+          showNotification('Por favor escribe tu dirección para la entrega a domicilio.');
+          document.getElementById('order-customer-address')?.focus();
+          return;
+        }
+        deliveryTitle = `Entrega a domicilio en Culiacán (Mínimo de 4 cumplido: ${totalCount} jabones)`;
+        deliveryDetails = `*DIRECCIÓN DE ENTREGA:* ${address}\n*COSTO DE ENTREGA:* Se estimará según tu dirección al coordinar pedido`;
+      } else {
+        const pickupPoint = document.getElementById('cart-pickup-point')?.value || 'Punto por acordar';
+        deliveryTitle = 'Punto de encuentro en Culiacán (Sin compra mínima)';
+        deliveryDetails = `*PUNTO DE ENCUENTRO SELECCIONADO:* ${pickupPoint}\n*COSTO DE ENTREGA:* A coordinar fecha y hora al confirmar pedido`;
+      }
+
+      // Forma de pago
+      const paymentRadio = document.querySelector('input[name="cart-payment-method"]:checked');
+      const paymentMethod = paymentRadio ? paymentRadio.value : 'efectivo';
+      const paymentText = paymentMethod === 'transferencia' 
+        ? 'Transferencia electrónica (solicitaré datos bancarios por WhatsApp)' 
+        : 'Efectivo contra entrega (al momento de recibir)';
+      const paymentClosing = paymentMethod === 'transferencia' ? 'Transferencia' : 'Efectivo';
 
       const subtotal = cart.reduce((acc, item) => acc + (item.price * item.quantity), 0);
 
@@ -1872,13 +2071,14 @@
       message += `Hola, me gustaría solicitar el siguiente pedido de jabones artesanales:\n\n`;
       message += `*CLIENTE:* ${name}\n`;
       if (phone) message += `*TELÉFONO:* ${phone}\n`;
-      message += `\n*DETALLE DEL PEDIDO:*\n${itemsBreakdown}\n`;
-      message += `*MÉTODO DE ENTREGA:* ${methodText}\n`;
+      message += `\n*DETALLE DEL PEDIDO (${totalCount} ${totalCount === 1 ? 'jabón' : 'jabones'}):*\n${itemsBreakdown}\n`;
+      message += `*FORMA DE PAGO:* ${paymentText}\n`;
+      message += `*MÉTODO DE ENTREGA:* ${deliveryTitle}\n`;
+      message += `${deliveryDetails}\n`;
       message += `*SUBTOTAL JABONES:* $${subtotal} MXN\n`;
-      message += `*COSTO DE ENTREGA:* Se estimará con mi dirección al coordinar el pedido\n`;
       message += `*TOTAL JABONES:* $${subtotal} MXN (+ entrega por calcular)\n`;
-      if (notes) message += `\n*DIRECCIÓN / NOTAS:* ${notes}\n`;
-      message += `\nQuedo al pendiente para confirmar el costo de entrega, coordinar el pago (Efectivo / Transferencia por WhatsApp) y ultimar detalles. ¡Muchas gracias!`;
+      if (notes) message += `\n*NOTAS / HORARIO PREFERIDO:* ${notes}\n`;
+      message += `\nQuedo al pendiente para confirmar el costo de entrega, coordinar el pago (${paymentClosing}) y ultimar detalles. ¡Muchas gracias!`;
 
       const encodedMessage = encodeURIComponent(message);
       const whatsappUrl = `https://wa.me/526672311505?text=${encodedMessage}`;
@@ -2120,8 +2320,8 @@
                 <span class="material-symbols-outlined text-secondary text-base">location_on</span>
                 📍 Entregas Locales en Culiacán, Sinaloa
               </h4>
-              <p class="text-xs">
-                Realizamos entregas a domicilio y en puntos de encuentro acordados dentro de Culiacán. El costo de entrega es variable según la zona, distancia y tiempo; <strong>el precio se estimará al momento de realizar tu pedido</strong> una vez que proporciones tu dirección.
+              <p class="text-xs leading-relaxed">
+                Realizamos entregas a domicilio (con <strong>compra mínima de 4 jabones</strong>) y entregas en puntos de encuentro acordados (<strong>Las Quintas, Tierra blanca, Catedral, Valle Alto y Centro</strong>, sin mínimo de compra). El costo de entrega es variable según la zona, distancia y tiempo; <strong>el precio se estimará al momento de realizar tu pedido</strong> una vez acordada la dirección o punto.
               </p>
             </div>
             <div class="p-3 bg-surface-container rounded-xl border border-dashed border-secondary/40">
@@ -2132,7 +2332,7 @@
                 </h4>
                 <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-secondary/15 text-secondary uppercase tracking-wider">Próximamente</span>
               </div>
-              <p class="text-xs">
+              <p class="text-xs leading-relaxed">
                 Aún no tenemos el alcance necesario como para realizar entregas fuera de la ciudad de Culiacán. En cuanto ampliemos nuestra cobertura logística lo estaremos anunciando. ¡Muy pronto!
               </p>
             </div>
@@ -2150,28 +2350,39 @@
               <span class="material-symbols-outlined text-2xl">pin_drop</span>
             </div>
             <div>
-              <span class="text-xs uppercase font-bold text-secondary tracking-wider">Entregas Personales</span>
+              <span class="text-xs uppercase font-bold text-secondary tracking-wider">Puntos de Encuentro</span>
               <h3 class="font-headline-sm text-xl text-primary font-bold">Puntos de Entrega en Culiacán</h3>
             </div>
           </div>
           <div class="space-y-3 text-sm text-on-surface-variant leading-relaxed">
-            <p>Podemos coordinar entregas personales en zonas concurridas y céntricas de Culiacán. La logística y posible costo de entrega se estimarán al momento de realizar tu pedido:</p>
+            <p>Puedes pasar por tu pedido en cualquiera de nuestros puntos de encuentro acordados dentro de Culiacán sin mínimo de compra. Si tu pedido es menor a 4 jabones, te damos la opción de recogerlo en uno de estos puntos:</p>
             <div class="space-y-2 text-xs">
               <div class="p-2.5 bg-surface-container rounded-lg flex items-center gap-2">
-                <span class="material-symbols-outlined text-secondary">storefront</span>
-                <span><strong>Plaza Fórum Culiacán</strong> (Área de café / acceso principal)</span>
+                <span class="material-symbols-outlined text-secondary text-lg">location_on</span>
+                <span><strong>Las Quintas</strong></span>
               </div>
               <div class="p-2.5 bg-surface-container rounded-lg flex items-center gap-2">
-                <span class="material-symbols-outlined text-secondary">domain</span>
-                <span><strong>Plaza Ceiba Culiacán</strong></span>
+                <span class="material-symbols-outlined text-secondary text-lg">location_on</span>
+                <span><strong>Tierra blanca</strong></span>
               </div>
               <div class="p-2.5 bg-surface-container rounded-lg flex items-center gap-2">
-                <span class="material-symbols-outlined text-secondary">location_city</span>
-                <span><strong>Centro Histórico de Culiacán</strong> (Plazuela Obregón / Catedral)</span>
+                <span class="material-symbols-outlined text-secondary text-lg">church</span>
+                <span><strong>Catedral</strong></span>
+              </div>
+              <div class="p-2.5 bg-surface-container rounded-lg flex items-center gap-2">
+                <span class="material-symbols-outlined text-secondary text-lg">location_on</span>
+                <span><strong>Valle Alto</strong></span>
+              </div>
+              <div class="p-2.5 bg-surface-container rounded-lg flex items-center gap-2">
+                <span class="material-symbols-outlined text-secondary text-lg">storefront</span>
+                <span><strong>Centro</strong></span>
               </div>
             </div>
+            <div class="p-3 bg-surface-container-high rounded-xl text-xs text-primary">
+              💡 <strong>Compra mínima para entrega a domicilio:</strong> Se requieren al menos <strong>4 jabones</strong> para entrega a domicilio en Culiacán. Para pedidos de 1 a 3 jabones, te invitamos a elegir alguno de los puntos de encuentro anteriores.
+            </div>
             <p class="text-xs text-on-surface-variant italic">
-              * El día, hora exacta y costo de entrega se coordinan cómodamente vía WhatsApp al confirmar tu pedido.
+              * El día, hora exacta y posible costo de entrega se coordinan cómodamente vía WhatsApp al confirmar tu pedido.
             </p>
           </div>
           <div class="mt-6 flex justify-end">
@@ -2193,20 +2404,25 @@
           </div>
           <div class="space-y-3 text-sm text-on-surface-variant leading-relaxed">
             <div class="p-4 bg-surface-container rounded-xl border border-surface-container-high">
-              <div class="text-xs font-bold uppercase tracking-wider text-secondary mb-2 flex items-center gap-1.5">
+              <div class="text-xs font-bold uppercase tracking-wider text-secondary mb-1.5 flex items-center gap-1.5">
+                <span class="material-symbols-outlined text-base">payments</span>
+                <span>1. Efectivo al Momento de Entregar</span>
+              </div>
+              <p class="text-xs text-on-surface-variant leading-relaxed">
+                Pagas en efectivo al recibir tus jabones, ya sea en entrega a domicilio o en el punto de encuentro seleccionado en Culiacán.
+              </p>
+            </div>
+            <div class="p-4 bg-surface-container rounded-xl border border-surface-container-high">
+              <div class="text-xs font-bold uppercase tracking-wider text-secondary mb-1.5 flex items-center gap-1.5">
                 <span class="material-symbols-outlined text-base">account_balance</span>
-                <span>Pago con Transferencia</span>
+                <span>2. Pago con Transferencia Electrónica</span>
               </div>
               <p class="text-xs text-on-surface-variant leading-relaxed mb-3">
-                Si deseas pagar mediante transferencia electrónica, por favor pregúntanos directamente por WhatsApp al levantar tu pedido y con gusto te brindaremos la información correspondiente.
+                Puedes seleccionar <strong>Transferencia</strong> en tu carrito. Al confirmar tu pedido por WhatsApp te proporcionaremos los datos bancarios para realizar tu transferencia electrónica de manera rápida y segura.
               </p>
-              <button onclick="openWhatsAppChat('Hola Terra Nua, me gustaría solicitar los datos para pagar por transferencia mi pedido.'); closeInfoModal();" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-[#25D366] text-white text-xs font-bold hover:opacity-90 transition-opacity shadow-xs">
-                <span class="material-symbols-outlined text-sm">chat</span> Preguntar por WhatsApp
+              <button onclick="openWhatsAppChat('Hola Terra Nua, me gustaría solicitar informes sobre el pago por transferencia.'); closeInfoModal();" class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-[#25D366] text-white text-xs font-bold hover:opacity-90 transition-opacity shadow-xs">
+                <span class="material-symbols-outlined text-sm">chat</span> Consultar por WhatsApp
               </button>
-            </div>
-            <div class="p-3 bg-surface-container rounded-xl text-xs">
-              <strong class="text-primary block mb-1">Efectivo contra entrega:</strong>
-              <span>Aceptamos efectivo exacto al momento de entregarte tus jabones en Culiacán.</span>
             </div>
           </div>
           <div class="mt-6 flex justify-end">
