@@ -6,24 +6,8 @@
   <title>Terra Nua | Jabones Artesanales Botánicos - Culiacán, Sinaloa</title>
   <meta name="description" content="Jabones artesanales botánicos de 70g hechos a mano en Culiacán, Sinaloa. Ingredientes naturales, puros y conscientes para el cuidado de tu piel.">
   
-  <link rel="canonical" href="https://terranua.github.io/terranua/">
-
-  <!-- Vista previa al compartir el enlace (WhatsApp, Facebook, Instagram, X) -->
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="es_MX">
-  <meta property="og:site_name" content="Terra Nua">
-  <meta property="og:title" content="Terra Nua | Jabones Artesanales Botánicos">
-  <meta property="og:description" content="Jabones artesanales botánicos hechos a mano en Culiacán, Sinaloa. Encuentra el ideal para tu tipo de piel y pide por WhatsApp.">
-  <meta property="og:url" content="https://terranua.github.io/terranua/">
-  <meta property="og:image" content="https://terranua.github.io/terranua/img/jabon-vino-rosas.jpg">
-  <meta property="og:image:width" content="1512">
-  <meta property="og:image:height" content="1512">
-  <meta property="og:image:alt" content="Jabón artesanal Vino & Rosas de Terra Nua">
-  <meta name="twitter:card" content="summary_large_image">
-
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="img/logo.png">
-  <link rel="apple-touch-icon" href="img/logo.png">
+  <link rel="icon" type="image/png" href="https://lh3.googleusercontent.com/aida-public/AB6AXuCaAuQA5YtKIynRLMvU6DM0MCGuxV3XLFxNTcEsRF3SM1ymjhQH6T9l0qXndhCuxViVm_c2GfMN8JI4S-tTJWMsUzLUvEbh_P6O8VygnEad3FAq9HTekgbuTZVcaO0BewtjnwD2DQNc9x6Oi8wjc4X21w5H6sJRvI8WLaVnIXFRhigYTLjtDKiTUGo4rfqbZMbPKix6aeJM1uSpV1Q9vOsn84ZhTv4_9cEmK_iAN_U7_arV6zq7ctY1bz-21OxrYjz-K3Q">
   
   <!-- Fonts & Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -75,8 +59,115 @@
     }
   </style>
 
-  <!-- Estilos de Tailwind compilados (ver tailwind.config.js y src/input.css) -->
-  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-tint": "#4a6638",
+            "surface": "#fef9ef",
+            "error-container": "#ffdad6",
+            "inverse-primary": "#afd098",
+            "on-tertiary-fixed-variant": "#5e4100",
+            "on-secondary-fixed": "#390c00",
+            "inverse-on-surface": "#f5f0e6",
+            "on-tertiary-fixed": "#271900",
+            "on-secondary-container": "#78351e",
+            "on-primary": "#ffffff",
+            "secondary": "#934a31",
+            "primary-container": "#2f4a1f",
+            "on-error": "#ffffff",
+            "on-secondary-fixed-variant": "#75331c",
+            "on-primary-fixed": "#082100",
+            "primary-fixed": "#cbedb2",
+            "outline": "#74796d",
+            "on-error-container": "#93000a",
+            "on-surface": "#1d1c16",
+            "surface-container-low": "#f8f3e9",
+            "surface-container": "#f2ede3",
+            "secondary-container": "#fea182",
+            "background": "#fef9ef",
+            "surface-variant": "#e7e2d8",
+            "on-primary-fixed-variant": "#334e22",
+            "on-primary-container": "#99b983",
+            "on-background": "#1d1c16",
+            "primary": "#19330a",
+            "primary-fixed-dim": "#afd098",
+            "tertiary-fixed-dim": "#f3be5b",
+            "error": "#ba1a1a",
+            "outline-variant": "#c4c8bb",
+            "on-tertiary": "#ffffff",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-high": "#ede8de",
+            "secondary-fixed": "#ffdbd0",
+            "secondary-fixed-dim": "#ffb59d",
+            "on-surface-variant": "#43483e",
+            "tertiary-container": "#5a3e00",
+            "tertiary-fixed": "#ffdea9",
+            "tertiary": "#3d2900",
+            "on-tertiary-container": "#dba847",
+            "surface-dim": "#dedad0",
+            "surface-container-highest": "#e7e2d8",
+            "inverse-surface": "#32302a",
+            "on-secondary": "#ffffff",
+            "surface-bright": "#fef9ef"
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "2xl": "1rem",
+            "3xl": "1.5rem",
+            "full": "9999px"
+          },
+          spacing: {
+            "space-lg": "1.5rem",
+            "space-xl": "2.5rem",
+            "space-md": "1rem",
+            "margin-mobile": "1.25rem",
+            "gutter-mobile": "1rem",
+            "space-sm": "0.5rem",
+            "space-2xl": "4rem",
+            "gutter": "1.5rem",
+            "margin": "3rem",
+            "space-xs": "0.25rem"
+          },
+          fontFamily: {
+            "headline-lg-mobile": ["Playfair Display", "serif"],
+            "label-sm": ["Nunito Sans", "sans-serif"],
+            "headline-sm": ["Playfair Display", "serif"],
+            "label-lg": ["Nunito Sans", "sans-serif"],
+            "headline-md": ["Playfair Display", "serif"],
+            "display-mobile": ["Playfair Display", "serif"],
+            "title-md": ["Nunito Sans", "sans-serif"],
+            "headline-lg": ["Playfair Display", "serif"],
+            "title-lg": ["Nunito Sans", "sans-serif"],
+            "body-sm": ["Nunito Sans", "sans-serif"],
+            "body-md": ["Nunito Sans", "sans-serif"],
+            "body-lg": ["Nunito Sans", "sans-serif"],
+            "display": ["Playfair Display", "serif"]
+          },
+          fontSize: {
+            "headline-lg-mobile": ["1.75rem", { "lineHeight": "2.25rem", "fontWeight": "600" }],
+            "label-sm": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.06em", "fontWeight": "600" }],
+            "headline-sm": ["1.25rem", { "lineHeight": "1.75rem", "fontWeight": "500" }],
+            "label-lg": ["0.875rem", { "lineHeight": "1.25rem", "letterSpacing": "0.04em", "fontWeight": "600" }],
+            "headline-md": ["1.75rem", { "lineHeight": "2.25rem", "fontWeight": "500" }],
+            "display-mobile": ["2.25rem", { "lineHeight": "2.75rem", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "title-md": ["1rem", { "lineHeight": "1.5rem", "fontWeight": "600" }],
+            "headline-lg": ["2.5rem", { "lineHeight": "3rem", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "title-lg": ["1.125rem", { "lineHeight": "1.625rem", "fontWeight": "700" }],
+            "body-sm": ["0.875rem", { "lineHeight": "1.375rem", "fontWeight": "400" }],
+            "body-md": ["1rem", { "lineHeight": "1.6rem", "fontWeight": "400" }],
+            "body-lg": ["1.125rem", { "lineHeight": "1.75rem", "fontWeight": "400" }],
+            "display": ["3.5rem", { "lineHeight": "4rem", "letterSpacing": "-0.02em", "fontWeight": "600" }]
+          }
+        }
+      }
+    };
+  </script>
 </head>
 <body class="bg-surface font-body-md text-on-surface antialiased min-h-screen relative selection:bg-primary-container selection:text-on-primary-container">
 
@@ -86,7 +177,7 @@
       
       <!-- Logotipo & Nombre -->
       <a class="flex items-center gap-3 group" href="#quienes-somos" aria-label="Ir al inicio">
-        <img alt="Terra Nua" class="h-12 w-12 object-contain rounded-full ring-2 ring-primary/20 group-hover:ring-primary/50 transition-all duration-300" src="img/logo.png">
+        <img alt="Terra Nua" class="h-12 w-12 object-contain rounded-full ring-2 ring-primary/20 group-hover:ring-primary/50 transition-all duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaAuQA5YtKIynRLMvU6DM0MCGuxV3XLFxNTcEsRF3SM1ymjhQH6T9l0qXndhCuxViVm_c2GfMN8JI4S-tTJWMsUzLUvEbh_P6O8VygnEad3FAq9HTekgbuTZVcaO0BewtjnwD2DQNc9x6Oi8wjc4X21w5H6sJRvI8WLaVnIXFRhigYTLjtDKiTUGo4rfqbZMbPKix6aeJM1uSpV1Q9vOsn84ZhTv4_9cEmK_iAN_U7_arV6zq7ctY1bz-21OxrYjz-K3Q">
         <span class="font-headline-sm text-primary tracking-tight font-semibold hidden sm:inline-block">Terra Nua</span>
       </a>
 
@@ -162,7 +253,7 @@
 
           <!-- Logotipo Emblemático -->
           <div class="mb-8 w-32 h-32 md:w-40 md:h-40 rounded-full bg-surface-container-lowest p-4 shadow-[0_8px_30px_rgba(47,74,31,0.08)] flex items-center justify-center transform hover:scale-105 transition-transform duration-500 cursor-pointer" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" title="Terra Nua">
-            <img alt="Terra Nua" class="w-full h-full object-contain rounded-full" src="img/logo.png">
+            <img alt="Terra Nua" class="w-full h-full object-contain rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCurX1DSYrSKGWYw5Es4Ug5RKzoNdb7iR6ERnyfaLNrqGcbDkE_crvJjmIUsu8DAhypS_DR5QVdkz3TZWe6XVjyDPXvuLeC6rpT-McZBa7YwKzWLtByq8mVysUA9OOBRJHbXi0_0oyyy8eQfEmbxYcRygBf8lsHMQ163G8nBoffiIfQSS9gMuLzfTZl_LI-H4rGvoX9mPrbKGwUXe-ZGOStfzfx4lYVbSOyX__tBWdCumJSIvKxgWzAq_Mq61jW8EPNgKs">
           </div>
 
           <!-- Título Grande Serif -->
@@ -786,7 +877,7 @@
         <div class="max-w-2xl mx-auto flex flex-col items-center justify-center text-center relative z-10">
           
           <div class="w-20 h-20 rounded-full bg-on-primary/10 p-3 mb-6 flex items-center justify-center ring-2 ring-white/10 shadow-lg">
-            <img alt="Terra Nua" class="w-full h-full object-contain rounded-full" src="img/logo.png">
+            <img alt="Terra Nua" class="w-full h-full object-contain rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaAuQA5YtKIynRLMvU6DM0MCGuxV3XLFxNTcEsRF3SM1ymjhQH6T9l0qXndhCuxViVm_c2GfMN8JI4S-tTJWMsUzLUvEbh_P6O8VygnEad3FAq9HTekgbuTZVcaO0BewtjnwD2DQNc9x6Oi8wjc4X21w5H6sJRvI8WLaVnIXFRhigYTLjtDKiTUGo4rfqbZMbPKix6aeJM1uSpV1Q9vOsn84ZhTv4_9cEmK_iAN_U7_arV6zq7ctY1bz-21OxrYjz-K3Q">
           </div>
 
           <span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-fixed font-bold">Estamos para atenderte</span>
@@ -831,7 +922,7 @@
           </p>
           
           <p class="font-label-sm text-label-sm text-on-primary/60 text-center">
-            Cuida tu piel, cuida el planeta.
+            © 2026 Terra Nua. Cuida tu piel, cuida el planeta.
           </p>
 
         </div>
@@ -845,7 +936,7 @@
     <div class="max-w-7xl mx-auto px-6 lg:px-12 py-12 flex flex-col md:flex-row items-center justify-between gap-6">
       <div class="flex flex-col items-center md:items-start gap-1">
         <div class="flex items-center gap-3">
-          <img alt="Terra Nua" class="h-8 w-8 rounded-full object-contain" src="img/logo.png">
+          <img alt="Terra Nua" class="h-8 w-8 rounded-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaAuQA5YtKIynRLMvU6DM0MCGuxV3XLFxNTcEsRF3SM1ymjhQH6T9l0qXndhCuxViVm_c2GfMN8JI4S-tTJWMsUzLUvEbh_P6O8VygnEad3FAq9HTekgbuTZVcaO0BewtjnwD2DQNc9x6Oi8wjc4X21w5H6sJRvI8WLaVnIXFRhigYTLjtDKiTUGo4rfqbZMbPKix6aeJM1uSpV1Q9vOsn84ZhTv4_9cEmK_iAN_U7_arV6zq7ctY1bz-21OxrYjz-K3Q">
           <span class="font-headline-sm text-headline-sm text-primary font-semibold">Terra Nua</span>
         </div>
         <p class="font-body-sm text-body-sm text-on-surface-variant">OCT - 2026 - JAYLK · Correo: <a href="mailto:servicioterranua@gmail.com" class="underline hover:text-primary">servicioterranua@gmail.com</a></p>
@@ -940,7 +1031,7 @@
           <!-- Selector de Método de Entrega -->
           <div>
             <label class="block text-xs font-bold uppercase tracking-wider text-secondary mb-1">Método de entrega en Culiacán</label>
-            <select id="cart-delivery-method" aria-label="Método de entrega" onchange="onDeliveryMethodChange()" class="w-full p-2.5 text-sm bg-surface-container-lowest rounded-lg border border-surface-container text-on-surface font-semibold focus:outline-none focus:ring-2 focus:ring-primary">
+            <select id="cart-delivery-method" onchange="onDeliveryMethodChange()" class="w-full p-2.5 text-sm bg-surface-container-lowest rounded-lg border border-surface-container text-on-surface font-semibold focus:outline-none focus:ring-2 focus:ring-primary">
               <option value="recoger">Punto de encuentro en Culiacán (Sin compra mínima)</option>
               <option value="local">Entrega a domicilio en Culiacán (Mínimo 4 productos)</option>
               <option value="nacional" disabled>Envíos fuera de Culiacán (PRÓXIMAMENTE)</option>
@@ -956,7 +1047,7 @@
               <span class="material-symbols-outlined text-sm">pin_drop</span>
               <span>Lugar de entrega / Punto de encuentro</span>
             </label>
-            <select id="cart-pickup-point" aria-label="Punto de encuentro" class="w-full p-2.5 text-sm bg-surface-container-lowest rounded-lg border border-surface-container text-on-surface font-medium focus:outline-none focus:ring-2 focus:ring-primary">
+            <select id="cart-pickup-point" class="w-full p-2.5 text-sm bg-surface-container-lowest rounded-lg border border-surface-container text-on-surface font-medium focus:outline-none focus:ring-2 focus:ring-primary">
               <option value="Las Quintas">Las Quintas</option>
               <option value="Tierra blanca">Tierra blanca</option>
               <option value="Catedral">Catedral</option>
@@ -971,15 +1062,15 @@
               <span class="material-symbols-outlined text-sm">home_pin</span>
               <span>Dirección para Entrega a Domicilio *</span>
             </label>
-            <input type="text" id="order-customer-address" aria-label="Dirección de entrega" autocomplete="street-address" placeholder="Calle, número, colonia y referencias de tu domicilio" class="w-full px-3 py-2 text-sm bg-surface-container-lowest rounded-lg border border-surface-container focus:outline-none focus:ring-2 focus:ring-primary">
+            <input type="text" id="order-customer-address" placeholder="Calle, número, colonia y referencias de tu domicilio" class="w-full px-3 py-2 text-sm bg-surface-container-lowest rounded-lg border border-surface-container focus:outline-none focus:ring-2 focus:ring-primary">
           </div>
 
           <!-- Campos de Contacto -->
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-            <input type="text" id="order-customer-name" aria-label="Tu nombre" required autocomplete="name" placeholder="Tu nombre *" class="w-full px-3 py-2 text-sm bg-surface-container-lowest rounded-lg border border-surface-container focus:outline-none focus:ring-2 focus:ring-primary">
-            <input type="tel" id="order-customer-phone" aria-label="Teléfono (opcional)" autocomplete="tel" placeholder="Teléfono (opcional)" class="w-full px-3 py-2 text-sm bg-surface-container-lowest rounded-lg border border-surface-container focus:outline-none focus:ring-2 focus:ring-primary">
+            <input type="text" id="order-customer-name" placeholder="Tu nombre *" class="w-full px-3 py-2 text-sm bg-surface-container-lowest rounded-lg border border-surface-container focus:outline-none focus:ring-2 focus:ring-primary">
+            <input type="text" id="order-customer-phone" placeholder="Teléfono (opcional)" class="w-full px-3 py-2 text-sm bg-surface-container-lowest rounded-lg border border-surface-container focus:outline-none focus:ring-2 focus:ring-primary">
           </div>
-          <input type="text" id="order-customer-notes" aria-label="Horario preferido o referencias (opcional)" placeholder="Horario preferido o referencias adicionales (opcional)" class="w-full px-3 py-2 text-sm bg-surface-container-lowest rounded-lg border border-surface-container focus:outline-none focus:ring-2 focus:ring-primary">
+          <input type="text" id="order-customer-notes" placeholder="Horario preferido o referencias adicionales (opcional)" class="w-full px-3 py-2 text-sm bg-surface-container-lowest rounded-lg border border-surface-container focus:outline-none focus:ring-2 focus:ring-primary">
 
           <!-- Selector de Forma de Pago -->
           <div class="pt-1">
@@ -1247,7 +1338,7 @@
               <h3 class="font-headline-sm text-xl sm:text-2xl text-primary font-bold">Gestión de Catálogo</h3>
               <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-primary/10 text-primary border border-primary/20">Admin: Jaylk</span>
             </div>
-            <p class="text-xs text-on-surface-variant mt-0.5">Edita, agrega, pausa o elimina productos y categorías. Para que tus clientes vean los cambios, descarga el HTML actualizado y súbelo a GitHub.</p>
+            <p class="text-xs text-on-surface-variant mt-0.5">Edita, agrega, pausa o elimina productos y categorías. Los cambios son globales.</p>
           </div>
         </div>
 
@@ -1274,7 +1365,7 @@
       <div class="px-6 py-2.5 bg-surface-container/60 border-b border-surface-container flex flex-wrap items-center justify-between text-xs text-on-surface-variant gap-2">
         <div class="flex items-center gap-2">
           <span class="w-2.5 h-2.5 rounded-full bg-green-500 animate-pulse"></span>
-          <span id="sync-status-text">Cambios guardados en este navegador · Publícalos con "Descargar HTML actualizado"</span>
+          <span id="sync-status-text">Sincronización global activa y en tiempo real</span>
         </div>
         <div class="flex items-center gap-3">
           <button onclick="exportUpdatedHTML()" class="inline-flex items-center gap-1 text-primary hover:text-secondary font-bold transition-colors">
@@ -1295,11 +1386,11 @@
           <span class="font-bold text-primary">Sincronización en la Nube (Firebase / REST API)</span>
           <button onclick="toggleCloudConfig()" class="text-on-surface-variant hover:text-primary">✕ Cerrar</button>
         </div>
-        <p class="text-on-surface-variant">Opcional y avanzado. Si algún día creas tu propia base de datos (por ejemplo Firebase, con reglas que solo te permitan escribir a ti), pega aquí su dirección para que los cambios se vean al instante sin subir el HTML. Si no, déjalo vacío.</p>
+        <p class="text-on-surface-variant">Los cambios se guardan localmente y se transmiten a la nube para que todos los usuarios los vean en tiempo real:</p>
         <div class="flex flex-wrap gap-2">
           <input type="text" id="custom-cloud-endpoint-input" class="flex-1 min-w-[240px] px-3 py-1.5 rounded-lg border border-outline-variant bg-surface-container-lowest text-xs" placeholder="https://tu-proyecto-rtdb.firebaseio.com/catalog.json">
           <button onclick="saveCustomCloudEndpoint()" class="px-3 py-1.5 rounded-lg bg-primary text-white font-bold hover:bg-secondary">Guardar</button>
-          <button onclick="resetDefaultCloudEndpoint()" class="px-3 py-1.5 rounded-lg bg-surface-container text-primary font-bold hover:bg-surface-container-high">Desactivar</button>
+          <button onclick="resetDefaultCloudEndpoint()" class="px-3 py-1.5 rounded-lg bg-surface-container text-primary font-bold hover:bg-surface-container-high">Restablecer</button>
         </div>
       </div>
 
@@ -1377,7 +1468,7 @@
             <div class="sm:col-span-2 space-y-2">
               <div>
                 <span class="text-[11px] text-on-surface-variant block mb-1">Opción A: Pegar URL de imagen</span>
-                <input type="text" inputmode="url" id="form-product-image-url" oninput="previewProductImage()" placeholder="https://... o img/foto.jpg" class="w-full px-3 py-2 rounded-lg border border-outline-variant bg-surface-container-lowest text-xs">
+                <input type="url" id="form-product-image-url" oninput="previewProductImage()" placeholder="https://..." class="w-full px-3 py-2 rounded-lg border border-outline-variant bg-surface-container-lowest text-xs">
               </div>
               <div>
                 <span class="text-[11px] text-on-surface-variant block mb-1">Opción B: Subir imagen desde tu dispositivo</span>
@@ -1408,7 +1499,7 @@
             <div class="sm:col-span-2 space-y-2">
               <div>
                 <span class="text-[11px] text-on-surface-variant block mb-1">Opción A: Pegar URL de imagen</span>
-                <input type="text" inputmode="url" id="form-product-image2-url" oninput="previewProductImage('2')" placeholder="https://... o img/foto.jpg" class="w-full px-3 py-2 rounded-lg border border-outline-variant bg-surface-container-lowest text-xs">
+                <input type="url" id="form-product-image2-url" oninput="previewProductImage('2')" placeholder="https://..." class="w-full px-3 py-2 rounded-lg border border-outline-variant bg-surface-container-lowest text-xs">
               </div>
               <div>
                 <span class="text-[11px] text-on-surface-variant block mb-1">Opción B: Subir imagen desde tu dispositivo</span>
@@ -1547,11 +1638,6 @@
 
   <!-- ==================== JAVASCRIPT DE LA APLICACIÓN ==================== -->
   <script>
-    // Copia exacta de la página tal como llegó, ANTES de que este código la modifique.
-    // "Descargar HTML actualizado" la usa si no puede volver a leer el archivo original.
-    // (Este script es lo último de la página, así que aquí ya está completa.)
-    const PRISTINE_PAGE_HTML = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
-
     /* ============================================================
        BASE DE DATOS DE PRODUCTOS BOTÁNICOS TERRA NUA
        ============================================================ */
@@ -1564,7 +1650,7 @@
         "color": "#7A1F33",
         "icon": "wine_bar",
         "category": "sensible",
-        "image": "img/jabon-vino-rosas.jpg",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAn1injnKRrXV1-JzcEi3sExaKXqVTgOXx0CFDHxhU3TqvJyW_77h-wSh74G8731NeacypysYdWTypDFRdiEN_fi3Ls8IfzmZ7CxopnFK1ZdlCgpdE46dz2kX3psviylgzwuN5y3Alohfsnsk2Xi6Ms9IqXq-H07WH36p2TxHNVdRCARBTA5bkON6XYqFl9B4cB33J3fSoH5EnGfXvzOLTiPDuhSpJhI302OAgTtlGscygETAsUDcLoE-lBbtRD0b-JQ6I",
         "shortDesc": "Glicerina de vino y agua florida de rosas que nutren y devuelven luminosidad a la piel seca o madura.",
         "fullDesc": "Un ritual antioxidante para la piel que pide nutrición. La glicerina de vino aporta antioxidantes naturales, el agua florida de rosas tonifica y refresca, la arcilla blanca limpia con suavidad sin resecar y el aceite de oliva deja la piel suave y nutrida.",
         "ingredients": "Base de jabón glicerina de vino, agua florida de rosas, arcilla blanca y aceite de oliva.",
@@ -1589,7 +1675,7 @@
         "color": "#2b2b2b",
         "icon": "masks",
         "category": "grasa",
-        "image": "img/jabon-carbon-activado.jpg",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDlkRkf6t6Kmpo1PjXA9DAn3Vd2qv1AAEsiQD_xikiYY3MFseF3NKSDhKXbNKVjl-Vvx2JANXt-Q571bpckhUg-VZNLm0X_xszSksYUEAsPSftXz3bmi__N2-R_42hs2HPUsh5Kz-S4hL21rNaYSKKCYjcZGbBXZcuZHKMRwmPhc_LiKNIEGlBjIaD_AH3OqtJ2B43M2ktufwZ2eXGEn0lKcBV6nrZmQLj2J-GD9UfE45JbKa3eTaF-8fNYngoVzka2Kpk",
         "shortDesc": "Limpieza profunda que desintoxica impurezas, destapa poros y controla el exceso de grasa.",
         "fullDesc": "La barra purificante. El polvo de carbón activado atrapa impurezas y el exceso de grasa, la arcilla roja limpia los poros a profundidad y el extracto del árbol del té ayuda a calmar los brotes, mientras el aceite de coco evita que la piel se reseque.",
         "ingredients": "Base de jabón glicerina, polvo de carbón activado, arcilla roja, aceite de coco y extracto del árbol del té.",
@@ -1667,7 +1753,7 @@
         "color": "#D49A3D",
         "icon": "flare",
         "category": "mixta",
-        "image": "img/jabon-curcuma-miel.jpg",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCGSWA0am1-MVIhis5W0KXxYyLOznMb6LEbd9gWVKc2BGY1eBTmKQn4O94yvooolXPv0kwIVxx_CG8SJ3ttc8miApA273yOjuUUn6Eiy31ZPzZTP0RDO9Cd0v6T7PMDSGFvZYURPjlpFSsxYhRyqyg5sdrJjzLE4X_Vj3W6DOBwBbrIzl7oguwwlRfDoOeCIsB6EW1N5BnNeVCer2BunAxiLuWjd7uswtOeoybRXUsBM3lm4z6Bjq-vKUmE2j5zo4qAMUI",
         "shortDesc": "Cúrcuma, miel y avena coloidal que iluminan y suavizan. Apto para todo tipo de piel.",
         "fullDesc": "Una barra dorada para el uso diario. La cúrcuma ayuda a unificar el tono y dar luminosidad, la infusión de manzanilla calma, la miel hidrata, la arcilla blanca limpia con suavidad y la avena coloidal deja la piel tersa. Su fórmula equilibrada es apta para todo tipo de piel.",
         "ingredients": "Base de jabón glicerina, infusión de manzanilla, cúrcuma, miel, arcilla blanca y avena coloidal.",
@@ -1691,7 +1777,7 @@
         "color": "#8f6412",
         "icon": "grain",
         "category": "mixta",
-        "image": "img/jabon-avena-miel.jpg",
+        "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuAwcD0-sNtocTxHcRzmOJFfsi_ZMgV0lopq1jnZHeWkQAz3zqoZH-sHiDs8-RQukATs_1FzgvBC97qxPYYuVWLhEY4v9lUiodi7Yi35KD-33iAn4kjg0LpWoOW5g0RuWzk_mW3jmeZ7yqVVmtmAzmWFiPyA_k4f1Jy7b6aX3vedhVUXKGSSnZss47k4enJbORESxzUvshQ8SqYmrZQg5OtyJSsdGlR8SZN5Ylr9uBSt7p7V0WrX78L6JziKuxxRKQmMbjs",
         "shortDesc": "Avena y miel que limpian con suavidad y equilibran la piel mixta o grasa sin resecarla.",
         "fullDesc": "Una limpieza equilibrada para el día a día. El extracto de avena y la avena coloidal exfolian de forma muy suave y ayudan a retirar el exceso de grasa sin resecar, mientras la miel mantiene la hidratación para dejar la piel fresca y suave.",
         "ingredients": "Base de jabón glicerina, extracto de avena, avena coloidal y miel.",
@@ -1884,9 +1970,6 @@
        y subir CATALOG_REVISION a 3.
        ============================================================ */
     const CATALOG_REVISION = 2;
-    // Revisión que YA incluyen los datos de este archivo (DEFAULT_SOAPS).
-    // "Descargar HTML actualizado" la actualiza, para no repetir correcciones sobre tus cambios.
-    const DEFAULTS_REVISION = /*DEFAULTS_REVISION*/2/*END*/;
     const CATALOG_REVISION_KEY = '__revision';
     const CATALOG_FIXES = {
       1: {
@@ -1957,26 +2040,6 @@
     let catalogRevision = 0;
     let catalogFixesPendingUpload = false;
 
-    // Las 4 fotos originales estaban en enlaces temporales de Google (aida-public) y ahora viven en img/.
-    // Si algún dato guardado aún apunta al enlace viejo, se cambia por el archivo propio.
-    const LEGACY_IMAGE_URLS = {
-      'aida-public/AB6AXuAn1injnKRrXV1-JzcEi3sEx': 'img/jabon-vino-rosas.jpg',
-      'aida-public/AB6AXuDlkRkf6t6Kmpo1PjXA9DAn3': 'img/jabon-carbon-activado.jpg',
-      'aida-public/AB6AXuCGSWA0am1-MVIhis5W0KXxY': 'img/jabon-curcuma-miel.jpg',
-      'aida-public/AB6AXuAwcD0-sNtocTxHcRzmOJFfs': 'img/jabon-avena-miel.jpg'
-    };
-
-    function migrateLegacyImages() {
-      Object.keys(SOAPS).forEach(id => {
-        ['image', 'image2'].forEach(field => {
-          const url = String(SOAPS[id][field] || '');
-          if (!url.startsWith('https://lh3.googleusercontent.com/')) return;
-          const key = Object.keys(LEGACY_IMAGE_URLS).find(k => url.includes('/' + k));
-          if (key) SOAPS[id] = Object.assign({}, SOAPS[id], { [field]: LEGACY_IMAGE_URLS[key] });
-        });
-      });
-    }
-
     // Aplica a SOAPS las correcciones posteriores a "fromRevision". Devuelve true si cambió algo.
     function applyCatalogFixes(fromRevision) {
       let changed = false;
@@ -2010,52 +2073,9 @@
         .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
     }
 
-    /* ------------------------------------------------------------
-       SEGURIDAD AL MOSTRAR DATOS
-       Los textos de productos se escapan antes de insertarlos como HTML,
-       y las imágenes, colores, íconos e IDs se validan, para que ningún
-       dato guardado pueda inyectar código en la página.
-       ------------------------------------------------------------ */
-    const SAFE_ID_RE = /^[a-z0-9_-]+$/i;
-
-    // Solo imágenes https, fotos subidas (data:image/...;base64) o archivos propios en img/
-    function safeImageURL(url) {
-      const u = String(url || '').trim();
-      if (/^https:\/\/[^\s"'<>]+$/i.test(u)) return u;
-      if (/^data:image\/(png|jpe?g|gif|webp|avif);base64,[a-z0-9+/=]+$/i.test(u)) return u;
-      if (/^img\/[\w\-./]+$/i.test(u) && !u.includes('..')) return u;
-      return '';
-    }
-
-    function safeColor(color, fallback = '#4a6638') {
-      return /^#[0-9a-f]{3,8}$/i.test(String(color || '')) ? color : fallback;
-    }
-
-    function safeIcon(icon) {
-      return /^[a-z0-9_]+$/.test(String(icon || '')) ? icon : 'spa';
-    }
-
-    // Copia de un producto lista para insertarse como HTML (null si su id no es válido).
-    // Las URLs de imagen quedan validadas; getProductPhotos() las escapa al usarlas.
-    function safeProduct(p) {
-      if (!p || !SAFE_ID_RE.test(String(p.id || ''))) return null;
-      const out = Object.assign({}, p);
-      ['name', 'badge', 'shortDesc', 'fullDesc', 'ingredients', 'aroma', 'presentation'].forEach(k => {
-        if (p[k] != null) out[k] = escapeHTML(p[k]);
-      });
-      out.properties = Array.isArray(p.properties) ? p.properties.map(escapeHTML) : [];
-      out.image = safeImageURL(p.image);
-      out.image2 = safeImageURL(p.image2);
-      out.icon = safeIcon(p.icon);
-      out.color = safeColor(p.color);
-      out.graphicBg = safeColor(p.graphicBg, out.color);
-      out.price = Number(p.price) || 0;
-      return out;
-    }
-
-    // Fotos de un producto (principal y segunda): solo URLs válidas, escapadas para usarse en src="..."
+    // Fotos de un producto (principal y segunda), sin vacíos
     function getProductPhotos(p) {
-      return [p && p.image, p && p.image2].map(safeImageURL).filter(Boolean).map(escapeHTML);
+      return [p && p.image, p && p.image2].map(u => (u || '').trim()).filter(Boolean);
     }
 
     // Tarjeta: la segunda foto aparece al pasar el cursor, con un indicador de "2 fotos"
@@ -2224,44 +2244,6 @@
       renderCartUI();
     }
 
-    // Mantiene el carrito al día con el catálogo: precio y nombre actuales, cantidades válidas,
-    // y quita lo que ya no se puede pedir (eliminado, pausado o "Próximamente").
-    // Devuelve true si cambió algo que el cliente debe revisar.
-    function syncCartWithCatalog() {
-      const before = Array.isArray(cart) ? cart : [];
-      const removed = [];
-      let priceChanged = false;
-      const next = [];
-
-      before.forEach(item => {
-        const p = item && SOAPS[item.id];
-        const qty = Math.min(99, Math.floor(Number(item && item.quantity)) || 0);
-        if (!p || !SAFE_ID_RE.test(String(p.id || '')) || qty <= 0 || p.paused || p.isUpcoming) {
-          if (p && p.name) removed.push(p.name);
-          else if (item && item.name) removed.push(String(item.name));
-          return;
-        }
-        const price = Number(p.price) || 0;
-        if (Number(item.price) !== price) priceChanged = true;
-        const existing = next.find(i => i.id === p.id);
-        if (existing) existing.quantity = Math.min(99, existing.quantity + qty);
-        else next.push({ id: p.id, name: p.name, price, quantity: qty, color: p.color, badge: p.badge });
-      });
-
-      const changed = removed.length > 0 || priceChanged || JSON.stringify(next) !== JSON.stringify(before);
-      cart = next;
-      if (changed) {
-        try { localStorage.setItem('terranua_cart', JSON.stringify(cart)); } catch (e) {}
-      }
-      if (removed.length) {
-        showNotification(`Quitamos de tu pedido lo que ya no está disponible: ${removed.join(', ')}.`);
-      }
-      if (priceChanged) {
-        showNotification('Actualizamos los precios de tu pedido. Revísalo antes de enviarlo.');
-      }
-      return removed.length > 0 || priceChanged;
-    }
-
     function addToCart(soapId, quantity = 1) {
       const soap = SOAPS[soapId];
       if (!soap) return;
@@ -2278,7 +2260,7 @@
 
       const existingItem = cart.find(item => item.id === soapId);
       if (existingItem) {
-        existingItem.quantity = Math.min(99, (Number(existingItem.quantity) || 0) + quantity);
+        existingItem.quantity += quantity;
       } else {
         cart.push({
           id: soap.id,
@@ -2301,10 +2283,10 @@
       const item = cart.find(i => i.id === soapId);
       if (!item) return;
 
-      item.quantity = Math.min(99, (Number(item.quantity) || 0) + delta);
+      item.quantity += delta;
       if (item.quantity <= 0) {
         cart = cart.filter(i => i.id !== soapId);
-        showNotification('Producto eliminado del pedido');
+        showNotification('Barra eliminada del pedido');
       }
       saveCart();
     }
@@ -2312,14 +2294,13 @@
     function removeFromCart(soapId) {
       cart = cart.filter(i => i.id !== soapId);
       saveCart();
-      showNotification('Producto eliminado del pedido');
+      showNotification('Barra eliminada del pedido');
     }
 
     function renderCartUI() {
       const badge = document.getElementById('cart-badge');
       const listContainer = document.getElementById('cart-items-list');
-      syncCartWithCatalog();
-
+      
       const totalCount = cart.reduce((acc, item) => acc + item.quantity, 0);
       if (badge) {
         badge.textContent = totalCount;
@@ -2344,22 +2325,22 @@
           </div>
         `;
       } else {
-        listContainer.innerHTML = cart.filter(item => SAFE_ID_RE.test(String(item.id || ''))).map(item => `
+        listContainer.innerHTML = cart.map(item => `
           <div class="flex items-center justify-between p-3.5 bg-surface-container-low rounded-xl border border-surface-container">
             <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-lg flex items-center justify-center text-white font-bold text-xs shadow-xs" style="background-color: ${safeColor(item.color, '#2F4A1F')}">
+              <div class="w-10 h-10 rounded-lg flex items-center justify-center text-white font-bold text-xs shadow-xs" style="background-color: ${item.color || '#2F4A1F'}">
                 <span class="material-symbols-outlined text-lg">spa</span>
               </div>
               <div>
-                <h4 class="text-sm font-bold text-primary">${escapeHTML(item.name)}</h4>
-                <div class="text-xs text-secondary font-semibold">$${Number(item.price) || 0} MXN c/u</div>
+                <h4 class="text-sm font-bold text-primary">${item.name}</h4>
+                <div class="text-xs text-secondary font-semibold">$${item.price} MXN c/u</div>
               </div>
             </div>
 
             <div class="flex items-center gap-2">
               <div class="flex items-center border border-surface-container rounded-lg bg-surface-container-lowest">
                 <button onclick="adjustCartItemQty('${item.id}', -1)" class="px-2 py-1 text-xs hover:bg-surface-container text-primary font-bold">-</button>
-                <span class="px-2 py-1 text-xs font-bold min-w-[20px] text-center">${Number(item.quantity) || 0}</span>
+                <span class="px-2 py-1 text-xs font-bold min-w-[20px] text-center">${item.quantity}</span>
                 <button onclick="adjustCartItemQty('${item.id}', 1)" class="px-2 py-1 text-xs hover:bg-surface-container text-primary font-bold">+</button>
               </div>
               <button onclick="removeFromCart('${item.id}')" class="p-1.5 text-on-surface-variant hover:text-error transition-colors" title="Eliminar">
@@ -2527,26 +2508,13 @@
 
     // Checkout por WhatsApp con mensaje estructurado
     function sendOrderViaWhatsApp() {
-      // Si cambió algún precio o se quitó un producto, se muestra el pedido actualizado antes de enviarlo
-      if (syncCartWithCatalog()) {
-        renderCartUI();
-        return;
-      }
-
       if (cart.length === 0) {
         showNotification('Tu carrito está vacío. Agrega productos para pedir.');
         return;
       }
 
-      const nameInput = document.getElementById('order-customer-name');
-      const name = nameInput ? nameInput.value.trim() : '';
-      if (!name) {
-        showNotification('Escribe tu nombre para enviar el pedido.');
-        if (nameInput) nameInput.focus();
-        return;
-      }
-
       const totalCount = cart.reduce((acc, item) => acc + item.quantity, 0);
+      const name = document.getElementById('order-customer-name')?.value.trim() || 'Cliente';
       const phone = document.getElementById('order-customer-phone')?.value.trim();
       const notes = document.getElementById('order-customer-notes')?.value.trim();
       const methodSelect = document.getElementById('cart-delivery-method');
@@ -2639,7 +2607,7 @@
     }
 
     function openProductModal(soapId) {
-      const soap = safeProduct(SOAPS[soapId]);
+      const soap = SOAPS[soapId];
       if (!soap) return;
 
       currentModalSoapId = soapId;
@@ -3194,8 +3162,8 @@
       const skin = quizAnswers[1] || 'todo';
       const concern = quizAnswers[2] || 'todo';
       const ranked = rankSoaps(skin, concern);
-      const soap = safeProduct(ranked[0]);
-      const second = safeProduct(ranked[1]);
+      const soap = ranked[0];
+      const second = ranked[1];
 
       const cardEl = document.getElementById('quiz-recommended-card');
       const descEl = document.getElementById('quiz-recommendation-desc');
@@ -3216,7 +3184,7 @@
       if (cardEl) {
         cardEl.innerHTML = `
           <div class="flex items-center justify-between gap-3 mb-3">
-            <span class="text-xs px-3 py-1 rounded-full bg-surface-container font-bold text-secondary">${soap.badge || 'Terra Nua'}</span>
+            <span class="text-xs px-3 py-1 rounded-full bg-surface-container font-bold text-secondary">${escapeHTML(soap.badge || 'Terra Nua')}</span>
             <span class="font-bold text-primary text-base shrink-0">$${soap.price} MXN (70 g)</span>
           </div>
           <h4 class="font-headline-sm text-2xl text-primary font-bold mb-2">${soap.name}</h4>
@@ -3239,7 +3207,7 @@
           <div class="p-4 rounded-xl border border-surface-container flex items-center justify-between gap-3">
             <div class="min-w-0">
               <strong class="text-sm text-primary block">${second.name}</strong>
-              <span class="text-xs text-on-surface-variant">${second.badge || ''}</span>
+              <span class="text-xs text-on-surface-variant">${escapeHTML(second.badge || '')}</span>
             </div>
             <button onclick="openProductModal('${second.id}'); closeSkinQuizModal();" class="px-3 py-2 rounded-lg bg-surface-container text-primary font-bold text-xs hover:bg-surface-container-high transition-colors shrink-0">
               Ver detalles
@@ -3273,7 +3241,7 @@
               <div class="w-12 h-12 rounded-lg text-white flex items-center justify-center shadow-xs shrink-0" style="background-color: ${soap.color || '#4a6638'}">
                 <span class="material-symbols-outlined text-2xl">${soap.icon || 'spa'}</span>
               </div>
-              <span class="font-label-sm text-xs px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-semibold text-right">${soap.badge || 'Terra Nua'}</span>
+              <span class="font-label-sm text-xs px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-semibold text-right">${escapeHTML(soap.badge || 'Terra Nua')}</span>
             </div>
             <h4 class="font-headline-sm text-headline-sm text-primary mb-2">${soap.name}</h4>
             <p class="font-body-sm text-body-sm text-on-surface-variant mb-3 leading-relaxed">${soap.shortDesc || ''}</p>
@@ -3286,7 +3254,7 @@
                 <span>Ver detalles</span>
                 <span class="material-symbols-outlined text-sm">visibility</span>
               </button>
-              <button onclick="addToCart('${soap.id}')" class="p-2 rounded-lg bg-primary hover:bg-secondary text-white transition-colors" title="Agregar al pedido" aria-label="Agregar ${soap.name} al pedido">
+              <button onclick="addToCart('${soap.id}')" class="p-2 rounded-lg bg-primary hover:bg-secondary text-white transition-colors" title="Agregar al pedido" aria-label="Agregar ${escapeHTML(soap.name)} al pedido">
                 <span class="material-symbols-outlined text-sm">add_shopping_cart</span>
               </button>
             </div>
@@ -3323,10 +3291,7 @@
         list = specific.concat(universal);
       }
 
-      let html = list.map(p => {
-        const safe = safeProduct(p);
-        return safe ? diagnosticCardHTML(safe) : '';
-      }).join('');
+      let html = list.map(diagnosticCardHTML).join('');
 
       if (currentSkinTab === 'todo') {
         html += `
@@ -3423,9 +3388,7 @@
     }
 
     const CLOUD_STORAGE_KEY = 'terranua_cloud_endpoint';
-    // Sin nube por defecto: la página vive en GitHub y los cambios se publican con
-    // "Descargar HTML actualizado". Solo se sincroniza si el admin configura SU propia base de datos.
-    const DEFAULT_CLOUD_URL = '';
+    const DEFAULT_CLOUD_URL = 'https://terranua-botanica-default-rtdb.firebaseio.com/catalog.json';
 
     let currentCatalogFilter = 'todos';
 
@@ -3448,12 +3411,9 @@
       localStorage.removeItem(CLOUD_STORAGE_KEY);
       const input = document.getElementById('custom-cloud-endpoint-input');
       if (input) input.value = DEFAULT_CLOUD_URL;
-      const statusEl = document.getElementById('sync-status-text');
-      if (statusEl) statusEl.textContent = LOCAL_STATUS_TEXT;
-      showNotification('☁️ Sincronización con la nube desactivada.');
+      showNotification('☁️ Endpoint restablecido al por defecto.');
+      syncWithCloud(false);
     }
-
-    const LOCAL_STATUS_TEXT = 'Cambios guardados en este navegador · Publícalos con "Descargar HTML actualizado"';
 
     function toggleCloudConfig() {
       const box = document.getElementById('admin-cloud-config-box');
@@ -3484,7 +3444,6 @@
               try { localStorage.setItem(CATEGORIES_STORAGE_KEY, JSON.stringify(CATEGORIES)); } catch (e) {}
             }
             SOAPS = Object.assign({}, DEFAULT_SOAPS, products);
-            migrateLegacyImages();
             // Correcciones pendientes: todos las ven ya; se guardan en la nube cuando entra el administrador
             catalogFixesPendingUpload = revision < CATALOG_REVISION && applyCatalogFixes(revision);
             if (revision >= CATALOG_REVISION) catalogRevision = revision;
@@ -3493,7 +3452,6 @@
             if (catalogFixesPendingUpload && isAdminAuthenticated()) uploadCatalogFixes();
             renderCatalogGrid(currentCatalogFilter);
             renderMoreProductsGrid();
-            renderCartUI();
             const adminModal = document.getElementById('admin-panel-modal');
             if (adminModal && !adminModal.classList.contains('hidden')) {
               renderAdminProductsList();
@@ -3564,15 +3522,11 @@
             SOAPS = Object.assign({}, DEFAULT_SOAPS, splitStoredCatalog(parsed).products);
           }
         }
-        // Sin datos guardados en este navegador, la base es el propio archivo
-        const localRevision = saved
-          ? (Number(localStorage.getItem('terranua_catalog_revision')) || 0)
-          : DEFAULTS_REVISION;
+        const localRevision = Number(localStorage.getItem('terranua_catalog_revision')) || 0;
         applyCatalogFixes(localRevision);
-        migrateLegacyImages();
       } catch (e) {
         console.warn('No se pudo leer base de datos local:', e);
-        applyCatalogFixes(DEFAULTS_REVISION);
+        applyCatalogFixes(0);
       }
 
       // Render inicial del catálogo
@@ -3680,8 +3634,7 @@
       }
 
       grid.innerHTML = filteredKeys.map(key => {
-        const soap = safeProduct(SOAPS[key]);
-        if (!soap) return '';
+        const soap = SOAPS[key];
         const isUpcoming = Boolean(soap.isUpcoming);
         const isPaused = Boolean(soap.paused) && !isUpcoming;
         const photos = getProductPhotos(soap);
@@ -3801,8 +3754,7 @@
       if (moreKeys.length === 0) return;
 
       grid.innerHTML = moreKeys.map(key => {
-        const p = safeProduct(SOAPS[key]);
-        if (!p) return '';
+        const p = SOAPS[key];
         const isPaused = Boolean(p.paused);
         const isUpcoming = Boolean(p.isUpcoming);
         const photos = getProductPhotos(p);
@@ -4048,8 +4000,7 @@
       }
 
       container.innerHTML = keys.map(id => {
-        const p = safeProduct(SOAPS[id]);
-        if (!p) return '';
+        const p = SOAPS[id];
         const isPaused = Boolean(p.paused);
         const isUpcoming = Boolean(p.isUpcoming);
         const thumb = getProductPhotos(p)[0];
@@ -4561,13 +4512,6 @@
       const image1 = imageUrlInput.value.trim();
       const image2 = image2UrlInput ? image2UrlInput.value.trim() : '';
 
-      // Solo se aceptan fotos https://, subidas desde el dispositivo o archivos propios en img/
-      const badImage = [image1, image2].find(u => u && !safeImageURL(u));
-      if (badImage) {
-        showNotification('⚠️ La dirección de una foto no es válida. Usa un enlace que empiece con https:// o una ruta como img/foto.jpg.');
-        return;
-      }
-
       const name = nameInput.value.trim();
       if (!name) {
         showNotification('Por favor escribe un nombre para el producto.');
@@ -4626,53 +4570,20 @@
       showNotification(isEditing ? `✅ "${name}" ha sido actualizado.` : `🌿 Nuevo producto "${name}" agregado.`);
     }
 
-    /* ============================================================
-       DESCARGAR HTML ACTUALIZADO (para subirlo a GitHub)
-       Parte del archivo ORIGINAL (no de la página en pantalla) y solo
-       reemplaza los datos: productos, categorías y revisión.
-       ============================================================ */
+    function exportUpdatedHTML() {
+      let html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
 
-    // JSON seguro dentro de la etiqueta script: escribir "<" como < evita que un texto
-    // que contenga el cierre de la etiqueta script termine el código antes de tiempo y rompa la página
-    function serializeForScript(value) {
-      return JSON.stringify(value, null, 2).replace(/</g, '\\u003c');
-    }
-
-    function buildUpdatedSource(source) {
-      const soapsRe = /const DEFAULT_SOAPS = [\s\S]*?;(\s*)let SOAPS = /;
-      const catsRe = /\/\*CATEGORIES_START\*\/[\s\S]*?\/\*CATEGORIES_END\*\//;
-      const revRe = /\/\*DEFAULTS_REVISION\*\/\s*\d+\s*\/\*END\*\//;
-      if (!soapsRe.test(source) || !catsRe.test(source) || !revRe.test(source)) return null;
-      return source
-        .replace(soapsRe, (m, space) => `const DEFAULT_SOAPS = ${serializeForScript(SOAPS)};${space}let SOAPS = `)
-        .replace(catsRe, () => `/*CATEGORIES_START*/const DEFAULT_CATEGORIES = ${serializeForScript(CATEGORIES)};/*CATEGORIES_END*/`)
-        .replace(revRe, () => `/*DEFAULTS_REVISION*/${catalogRevision}/*END*/`);
-    }
-
-    // 1º intenta leer el archivo publicado tal cual; si no se puede (p. ej. abierto como archivo local),
-    // usa la copia que se tomó al cargar la página, antes de cualquier cambio.
-    async function getOriginalPageSource() {
-      if (location.protocol === 'http:' || location.protocol === 'https:') {
-        try {
-          const res = await fetch(location.href.split('#')[0], { cache: 'no-store' });
-          if (res.ok) {
-            const text = await res.text();
-            if (text.includes('const DEFAULT_SOAPS')) return text;
-          }
-        } catch (e) {
-          console.warn('No se pudo releer el archivo; se usa la copia inicial:', e.message);
-        }
+      const soapsJson = JSON.stringify(SOAPS, null, 2);
+      // Termina justo antes de "let SOAPS", así funciona también con archivos ya exportados
+      const regex = /const DEFAULT_SOAPS = [\s\S]*?;(\s*)let SOAPS = /;
+      if (regex.test(html)) {
+        html = html.replace(regex, (m, space) => `const DEFAULT_SOAPS = ${soapsJson};${space}let SOAPS = `);
       }
-      // Sin los estilos que Tailwind (versión CDN) inyecta al cargar, para que no se acumulen
-      return PRISTINE_PAGE_HTML.replace(/<style>\*, ::before, ::after\{--tw-[\s\S]*?<\/style>/g, '');
-    }
 
-    async function exportUpdatedHTML() {
-      const source = await getOriginalPageSource();
-      const html = buildUpdatedSource(source);
-      if (!html) {
-        showNotification('⚠️ No se pudo preparar el archivo. Recarga la página e inténtalo de nuevo.');
-        return;
+      const catsRegex = /\/\*CATEGORIES_START\*\/[\s\S]*?\/\*CATEGORIES_END\*\//;
+      if (catsRegex.test(html)) {
+        const catsJson = JSON.stringify(CATEGORIES, null, 2);
+        html = html.replace(catsRegex, () => `/*CATEGORIES_START*/const DEFAULT_CATEGORIES = ${catsJson};/*CATEGORIES_END*/`);
       }
 
       const blob = new Blob([html], { type: 'text/html;charset=utf-8' });
@@ -4682,8 +4593,7 @@
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);
-      setTimeout(() => URL.revokeObjectURL(a.href), 1000);
-      showNotification('📥 index.html descargado. Súbelo a tu repositorio de GitHub para publicar los cambios.');
+      showNotification('📥 Archivo index.html actualizado y descargado con éxito.');
     }
 
     /* ============================================================
@@ -4712,9 +4622,10 @@
 
       const toast = document.createElement('div');
       toast.className = 'px-4 py-2.5 rounded-full bg-primary text-white text-xs sm:text-sm font-semibold shadow-xl flex items-center gap-2 transform transition-all duration-300 opacity-0 translate-y-2 pointer-events-auto';
-      toast.innerHTML = `<span class="material-symbols-outlined text-sm text-green-300">spa</span><span></span>`;
-      // Texto plano: un nombre de producto nunca se interpreta como HTML
-      toast.lastElementChild.textContent = text;
+      toast.innerHTML = `
+        <span class="material-symbols-outlined text-sm text-green-300">spa</span>
+        <span>${text}</span>
+      `;
 
       container.appendChild(toast);
 
