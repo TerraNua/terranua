@@ -1,0 +1,5 @@
+/* Entrada de Tailwind. Genera styles.css con:
+   npx tailwindcss@3.4.17 -i src/input.css -o styles.css --minify */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
