@@ -13,7 +13,7 @@ La página vive en GitHub Pages: https://terranua.github.io/terranua/
 
 ## Cambiar productos (lo más común)
 
-1. Abre la página publicada y entra al **panel de administrador**: botón **"Gestión"** arriba a la derecha de la sección "Cómo pedir" (también hay un ícono dentro del carrito).
+1. Abre la página publicada (recárgala si ya la tenías abierta) y entra al **panel de administrador**: abre el carrito ("Pedido", arriba a la derecha) y toca el ícono de escudo junto a "Tu Pedido Terra Nua".
 2. Agrega, edita, pausa o marca productos como "Próximamente". Los cambios se guardan **solo en tu navegador**.
 3. Presiona **"Descargar HTML actualizado"**. Se descarga un `index.html` nuevo con tus cambios.
 4. Sube ese `index.html` al repositorio de GitHub y reemplaza el anterior. En uno o dos minutos tus clientes verán los cambios.
