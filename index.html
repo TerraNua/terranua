@@ -1648,285 +1648,293 @@
        BASE DE DATOS DE PRODUCTOS BOTÁNICOS TERRA NUA
        ============================================================ */
     const DEFAULT_SOAPS = {
-      "vino": {
-        "id": "vino",
-        "name": "Vino & Rosas",
-        "badge": "Ideal para piel seca o madura",
-        "price": 50,
-        "color": "#7A1F33",
-        "icon": "wine_bar",
-        "category": "sensible",
-        "image": "img/productos/vino-rosas.jpg",
-        "shortDesc": "Glicerina de vino y agua florida de rosas que nutren y devuelven luminosidad a la piel seca o madura.",
-        "fullDesc": "Un ritual antioxidante para la piel que pide nutrición. La glicerina de vino aporta antioxidantes naturales, el agua florida de rosas tonifica y refresca, la arcilla blanca limpia con suavidad sin resecar y el aceite de oliva deja la piel suave y nutrida.",
-        "ingredients": "Base de jabón glicerina de vino, agua florida de rosas, arcilla blanca y aceite de oliva.",
-        "aroma": "Rosas frescas y vino joven",
-        "skinTypes": [
-          "seca",
-          "madura"
-        ],
-        "properties": [
-          "Antioxidante natural",
-          "Nutre la piel seca",
-          "Limpieza suave sin resecar",
-          "Ideal para piel madura"
-        ],
-        "paused": false,
-        "isGraphic": false
-      },
-      "carbon": {
-        "id": "carbon",
-        "name": "Carbón Activado",
-        "badge": "Ideal para piel grasa o acné",
-        "price": 50,
-        "color": "#2b2b2b",
-        "icon": "masks",
-        "category": "grasa",
-        "image": "img/productos/carbon-activado.jpg",
-        "shortDesc": "Limpieza profunda que desintoxica impurezas, destapa poros y controla el exceso de grasa.",
-        "fullDesc": "La barra purificante. El polvo de carbón activado atrapa impurezas y el exceso de grasa, la arcilla roja limpia los poros a profundidad y el extracto del árbol del té ayuda a calmar los brotes, mientras el aceite de coco evita que la piel se reseque.",
-        "ingredients": "Base de jabón glicerina, polvo de carbón activado, arcilla roja, aceite de coco y extracto del árbol del té.",
-        "aroma": "Coco botánico con notas herbales",
-        "skinTypes": [
-          "grasa"
-        ],
-        "properties": [
-          "Absorbe el exceso de sebo",
-          "Efecto mate duradero",
-          "Acción antibacteriana natural",
-          "Descongestiona poros dilatados"
-        ],
-        "paused": false,
-        "isGraphic": false
-      },
-      "tepezcohuite": {
-        "id": "tepezcohuite",
-        "name": "Tepezcohuite",
-        "badge": "Ideal para piel seca, sensible, normal y madura",
-        "price": 50,
-        "color": "#6B4A3A",
-        "icon": "park",
-        "category": "sensible",
-        "isGraphic": false,
-        "graphicBg": "#6B4A3A",
-        "shortDesc": "Regenerador ancestral con tepezcohuite, manzanilla y aceites nutritivos de oliva, cacao y cacahuate.",
-        "fullDesc": "Conocido como el \"árbol de la piel\" en la herbolaria tradicional de México. El polvo de tepezcohuite se usa tradicionalmente para ayudar a la piel a recuperarse de marcas; la infusión de manzanilla calma, los aceites de oliva, cacao y cacahuate nutren, y la arcilla blanca limpia con suavidad. Contiene cacahuate: no lo uses si tienes alergia.",
-        "ingredients": "Base de jabón glicerina, infusión de manzanilla, polvo de tepezcohuite, aceite de oliva, aceite de cacao, aceite de cacahuate y arcilla blanca.",
-        "aroma": "Maderas nobles y tierra tibia",
-        "skinTypes": [
-          "seca",
-          "sensible",
-          "normal",
-          "madura"
-        ],
-        "properties": [
-          "Ayuda a la piel a recuperarse de marcas",
-          "Nutre con aceites de oliva, cacao y cacahuate",
-          "Calma con manzanilla",
-          "Ideal para piel seca, sensible y madura"
-        ],
-        "paused": false,
-        "image": "img/productos/tepezcohuite.jpg"
-      },
-      "miel": {
-        "id": "miel",
-        "name": "Manzanilla & Miel",
-        "badge": "Ideal para piel sensible y seca",
-        "price": 50,
-        "color": "#B8892B",
-        "icon": "hive",
-        "category": "sensible",
-        "isGraphic": false,
-        "graphicBg": "#B8892B",
-        "shortDesc": "Manzanilla y miel que calman y reconfortan la piel sensible y seca.",
-        "fullDesc": "Formulado para las pieles más delicadas. La infusión de manzanilla ayuda a calmar la irritación y las rojeces, mientras la miel actúa como humectante natural que retiene la hidratación y deja la piel suave y reconfortada.",
-        "ingredients": "Base de jabón glicerina, infusión de manzanilla y miel.",
-        "aroma": "Dulce natural apícola",
-        "skinTypes": [
-          "sensible",
-          "seca"
-        ],
-        "properties": [
-          "Calma la irritación y las rojeces",
-          "Humectación natural con miel",
-          "Alivia la tirantez",
-          "Ultra suave para piel sensible"
-        ],
-        "paused": false,
-        "image": "img/productos/manzanilla-miel.jpg"
-      },
-      "curcuma": {
-        "id": "curcuma",
-        "name": "Cúrcuma & Miel",
-        "badge": "Para todo tipo de piel",
-        "price": 50,
-        "color": "#D49A3D",
-        "icon": "flare",
-        "category": "mixta",
-        "image": "img/productos/curcuma-miel.jpg",
-        "shortDesc": "Cúrcuma, miel y avena coloidal que iluminan y suavizan. Apto para todo tipo de piel.",
-        "fullDesc": "Una barra dorada para el uso diario. La cúrcuma ayuda a unificar el tono y dar luminosidad, la infusión de manzanilla calma, la miel hidrata, la arcilla blanca limpia con suavidad y la avena coloidal deja la piel tersa. Su fórmula equilibrada es apta para todo tipo de piel.",
-        "ingredients": "Base de jabón glicerina, infusión de manzanilla, cúrcuma, miel, arcilla blanca y avena coloidal.",
-        "aroma": "Verbena cítrica y bergamota",
-        "skinTypes": [
-          "todo"
-        ],
-        "properties": [
-          "Unifica el tono",
-          "Luminosidad natural",
-          "Calma con manzanilla",
-          "Apto para todo tipo de piel"
-        ],
-        "paused": false,
-        "isGraphic": false
-      },
-      "avena": {
-        "id": "avena",
-        "name": "Avena & Miel",
-        "badge": "Ideal para piel mixta o grasa",
-        "price": 50,
-        "color": "#df9c20",
-        "icon": "grain",
-        "category": "mixta",
-        "image": "img/productos/avena-miel.jpg",
-        "shortDesc": "Avena y miel que limpian con suavidad y equilibran la piel mixta o grasa sin resecarla.",
-        "fullDesc": "Una limpieza equilibrada para el día a día. El extracto de avena y la avena coloidal exfolian de forma muy suave y ayudan a retirar el exceso de grasa sin resecar, mientras la miel mantiene la hidratación para dejar la piel fresca y suave.",
-        "ingredients": "Base de jabón glicerina, extracto de avena, avena coloidal y miel.",
-        "aroma": "Miel tibia y avena silvestre",
-        "skinTypes": [
-          "mixta",
-          "grasa"
-        ],
-        "properties": [
-          "Exfoliación suave",
-          "Equilibra sin resecar",
-          "Hidratación con miel",
-          "Ideal para piel mixta o grasa"
-        ],
-        "paused": false,
-        "isGraphic": false
-      },
-      "balsamo-neutro": {
-        "id": "balsamo-neutro",
-        "name": "Bálsamo Labial Neutro",
-        "badge": "Nutrición y Reparación",
-        "price": 60,
-        "color": "#C49A6C",
-        "icon": "spa",
-        "category": "balsamo",
-        "isGraphic": false,
-        "graphicBg": "#C49A6C",
-        "image": "img/productos/balsamo-neutro.jpg",
-        "shortDesc": "Bálsamo ultra emoliente que repara, nutre y protege los labios contra la resequedad y el clima.",
-        "fullDesc": "Formulado artesanalmente con mantecas y ceras botánicas puras para brindar un cuidado intensivo y reconfortante a la piel delicada de los labios. La sinergia de manteca de karité y manteca de cacao nutre en profundidad, mientras las ceras de abeja y soya sellan la humedad creando una barrera protectora flexible y no pegajosa.",
-        "ingredients": "Cera de abeja, cera de soya, manteca de cacao, manteca de karité y aceite de almendras.",
-        "aroma": "Natural de mantecas botánicas",
-        "skinTypes": [
-          "todo",
-          "sensible",
-          "seca"
-        ],
-        "properties": [
-          "Ultra nutritivo y reparador",
-          "Sella la humedad sin sensación pegajosa",
-          "100% ingredientes naturales botánicos",
-          "Protección contra la resequedad y el viento"
-        ],
-        "paused": false,
-        "image2": "img/productos/balsamos-juntos.jpg"
-      },
-      "balsamo-fresa": {
-        "id": "balsamo-fresa",
-        "name": "Bálsamo Labial Fresa",
-        "badge": "Deliciosa Nutrición Frutal",
-        "price": 60,
-        "color": "#B93F56",
-        "icon": "favorite",
-        "category": "balsamo",
-        "isGraphic": false,
-        "graphicBg": "#B93F56",
-        "image": "img/productos/balsamo-fresa.jpg",
-        "shortDesc": "Hidratación reparadora con un delicioso toque dulce de fresa natural que deja los labios suaves y tersos.",
-        "fullDesc": "Un ritual dulce y reconfortante para tus labios. Enriquecido con mantecas vegetales ultra emolientes, ceras puras de abeja y soya, aceite de almendras y un delicioso saborizante natural de fresa. Calma la resequedad, restaura la elasticidad dérmica y aporta un brillo satinado saludable.",
-        "ingredients": "Cera de abeja, cera de soya, manteca de cacao, manteca de karité, aceite de almendras y saborizante natural de fresa.",
-        "aroma": "Fresa dulce natural",
-        "skinTypes": [
-          "todo",
-          "mixta",
-          "seca"
-        ],
-        "properties": [
-          "Saborizante e infusión natural de fresa",
-          "Restaura y suaviza labios secos o partidos",
-          "Mantecas de cacao y karité de alta pureza",
-          "Brillo satinado natural no pegajoso"
-        ],
-        "paused": false,
-        "image2": "img/productos/balsamos-juntos.jpg"
-      },
-      "bloqueador": {
-        "id": "bloqueador",
-        "name": "Bloqueador Solar",
-        "badge": "Próximamente",
-        "price": 50,
-        "color": "#C28448",
-        "icon": "sunny",
-        "category": "mas-productos",
-        "isUpcoming": true,
-        "paused": true,
-        "isGraphic": false,
-        "graphicBg": "#C28448",
-        "image": "img/productos/bloqueador-solar.jpg",
-        "shortDesc": "Pantalla solar mineral con óxido de zinc no-nano y mantecas botánicas que protegen tu piel de los rayos UV.",
-        "fullDesc": "Protección solar mineral, biodegradable y respetuosa con tu piel. Crear una barrera física protectora que no deja residuo blanco excesivo ni obstruye los poros.",
-        "ingredients": "Proximamente",
-        "aroma": "Cálido y botánico con notas de karité",
-        "skinTypes": [
-          "todo",
-          "sensible",
-          "mixta",
-          "seca"
-        ],
-        "properties": [
-          "Filtro físico 100% mineral no-nano",
-          "Protección UVA/UVB biodegradable",
-          "Resistente al agua y al sudor leve",
-          "Nutrición antioxidante contra fotoenvejecimiento"
-        ],
-        "presentation": "Lanzamiento próximamente en formato sólido / crema botánica"
-      },
-      "agua-rosas-prod": {
-        "id": "agua-rosas-prod",
-        "name": "Agua de Rosas Pura",
-        "badge": "Próximamente",
-        "price": 50,
-        "color": "#B34A64",
-        "icon": "water_drop",
-        "category": "mas-productos",
-        "isUpcoming": true,
-        "paused": true,
-        "isGraphic": false,
-        "graphicBg": "#B34A64",
-        "image": "img/productos/agua-de-rosas.jpg",
-        "shortDesc": "Hidrolato puro de pétalos frescos de rosa obtenido por destilación al vapor. Equilibra el pH, tonifica y calma.",
-        "fullDesc": "Actúa como el tónico perfecto post-limpieza facial: equilibra el manto ácido natural, desinflama rojeces, cierra poros suavemente y prepara el cutis para absorber al máximo los nutrientes de tus aceites y bálsamos.",
-        "ingredients": "100% pétalos frescos de rosa.",
-        "aroma": "Floral sutil, delicado y 100% natural",
-        "skinTypes": [
-          "todo",
-          "sensible",
-          "seca",
-          "mixta"
-        ],
-        "properties": [
-          "Tónico facial equilibrante de pH",
-          "Desinflama y calma rojeces al instante",
-          "Hidratación ligera y refrescante",
-          "Libre de alcohol y fragancias sintéticas"
-        ],
-        "presentation": "Lanzamiento próximamente en botella de vidrio ámbar con atomizador"
-      }
-    };
+  "vino": {
+    "id": "vino",
+    "name": "Vino & Rosas",
+    "badge": "Ideal para piel seca o madura",
+    "price": 50,
+    "color": "#7A1F33",
+    "icon": "wine_bar",
+    "category": "sensible",
+    "image": "img/productos/vino-rosas.jpg",
+    "shortDesc": "Glicerina de vino y agua florida de rosas que nutren y devuelven luminosidad a la piel seca o madura.",
+    "fullDesc": "Un ritual antioxidante para la piel que pide nutrición. La glicerina de vino aporta antioxidantes naturales, el agua florida de rosas tonifica y refresca, la arcilla blanca limpia con suavidad sin resecar y el aceite de oliva deja la piel suave y nutrida.",
+    "ingredients": "Base de jabón glicerina de vino, agua florida de rosas, arcilla blanca y aceite de oliva.",
+    "aroma": "Rosas frescas y vino joven",
+    "skinTypes": [
+      "seca",
+      "madura"
+    ],
+    "properties": [
+      "Antioxidante natural",
+      "Nutre la piel seca",
+      "Limpieza suave sin resecar",
+      "Ideal para piel madura"
+    ],
+    "paused": false,
+    "isGraphic": false
+  },
+  "carbon": {
+    "id": "carbon",
+    "name": "Carbón Activado",
+    "badge": "Ideal para piel grasa o acné",
+    "price": 50,
+    "color": "#2b2b2b",
+    "icon": "masks",
+    "category": "grasa",
+    "image": "img/productos/carbon-activado.jpg",
+    "shortDesc": "Limpieza profunda que desintoxica impurezas, destapa poros y controla el exceso de grasa.",
+    "fullDesc": "La barra purificante. El polvo de carbón activado atrapa impurezas y el exceso de grasa, la arcilla roja limpia los poros a profundidad y el extracto del árbol del té ayuda a calmar los brotes, mientras el aceite de coco evita que la piel se reseque.",
+    "ingredients": "Base de jabón glicerina, polvo de carbón activado, arcilla roja, aceite de coco y extracto del árbol del té.",
+    "aroma": "Coco botánico con notas herbales",
+    "skinTypes": [
+      "grasa"
+    ],
+    "properties": [
+      "Absorbe el exceso de sebo",
+      "Efecto mate duradero",
+      "Acción antibacteriana natural",
+      "Descongestiona poros dilatados"
+    ],
+    "paused": false,
+    "isGraphic": false
+  },
+  "tepezcohuite": {
+    "id": "tepezcohuite",
+    "name": "Tepezcohuite",
+    "badge": "Ideal para piel seca, sensible, normal y madura",
+    "price": 50,
+    "color": "#6B4A3A",
+    "icon": "park",
+    "category": "sensible",
+    "isGraphic": false,
+    "graphicBg": "#6B4A3A",
+    "shortDesc": "Regenerador ancestral con tepezcohuite, manzanilla y aceites nutritivos de oliva, cacao y cacahuate.",
+    "fullDesc": "Conocido como el \"árbol de la piel\" en la herbolaria tradicional de México. El polvo de tepezcohuite se usa tradicionalmente para ayudar a la piel a recuperarse de marcas; la infusión de manzanilla calma, los aceites de oliva, cacao y cacahuate nutren, y la arcilla blanca limpia con suavidad. Contiene cacahuate: no lo uses si tienes alergia.",
+    "ingredients": "Base de jabón glicerina, infusión de manzanilla, polvo de tepezcohuite, aceite de oliva, aceite de cacao, aceite de cacahuate y arcilla blanca.",
+    "aroma": "Maderas nobles y tierra tibia",
+    "skinTypes": [
+      "seca",
+      "sensible",
+      "normal",
+      "madura"
+    ],
+    "properties": [
+      "Ayuda a la piel a recuperarse de marcas",
+      "Nutre con aceites de oliva, cacao y cacahuate",
+      "Calma con manzanilla",
+      "Ideal para piel seca, sensible y madura"
+    ],
+    "paused": false,
+    "image": "img/productos/tepezcohuite.jpg"
+  },
+  "miel": {
+    "id": "miel",
+    "name": "Manzanilla & Miel",
+    "badge": "Ideal para piel sensible y seca",
+    "price": 50,
+    "color": "#B8892B",
+    "icon": "hive",
+    "category": "sensible",
+    "isGraphic": false,
+    "graphicBg": "#B8892B",
+    "shortDesc": "Manzanilla y miel que calman y reconfortan la piel sensible y seca.",
+    "fullDesc": "Formulado para las pieles más delicadas. La infusión de manzanilla ayuda a calmar la irritación y las rojeces, mientras la miel actúa como humectante natural que retiene la hidratación y deja la piel suave y reconfortada.",
+    "ingredients": "Base de jabón glicerina, infusión de manzanilla y miel.",
+    "aroma": "Dulce natural apícola",
+    "skinTypes": [
+      "sensible",
+      "seca"
+    ],
+    "properties": [
+      "Calma la irritación y las rojeces",
+      "Humectación natural con miel",
+      "Alivia la tirantez",
+      "Ultra suave para piel sensible"
+    ],
+    "paused": false,
+    "image": "img/productos/manzanilla-miel.jpg"
+  },
+  "curcuma": {
+    "id": "curcuma",
+    "name": "Cúrcuma & Miel",
+    "badge": "Para todo tipo de piel",
+    "price": 50,
+    "color": "#D49A3D",
+    "icon": "flare",
+    "category": "mixta",
+    "image": "img/productos/curcuma-miel.jpg",
+    "shortDesc": "Cúrcuma, miel y avena coloidal que iluminan y suavizan. Apto para todo tipo de piel.",
+    "fullDesc": "Una barra dorada para el uso diario. La cúrcuma ayuda a unificar el tono y dar luminosidad, la infusión de manzanilla calma, la miel hidrata, la arcilla blanca limpia con suavidad y la avena coloidal deja la piel tersa. Su fórmula equilibrada es apta para todo tipo de piel.",
+    "ingredients": "Base de jabón glicerina, infusión de manzanilla, cúrcuma, miel, arcilla blanca y avena coloidal.",
+    "aroma": "Verbena cítrica y bergamota",
+    "skinTypes": [
+      "todo"
+    ],
+    "properties": [
+      "Unifica el tono",
+      "Luminosidad natural",
+      "Calma con manzanilla",
+      "Apto para todo tipo de piel"
+    ],
+    "paused": false,
+    "isGraphic": false
+  },
+  "avena": {
+    "id": "avena",
+    "name": "Avena & Miel",
+    "badge": "Ideal para piel mixta o grasa",
+    "price": 50,
+    "color": "#df9c20",
+    "icon": "grain",
+    "category": "mixta",
+    "image": "img/productos/avena-miel.jpg",
+    "shortDesc": "Avena y miel que limpian con suavidad y equilibran la piel mixta o grasa sin resecarla.",
+    "fullDesc": "Una limpieza equilibrada para el día a día. El extracto de avena y la avena coloidal exfolian de forma muy suave y ayudan a retirar el exceso de grasa sin resecar, mientras la miel mantiene la hidratación para dejar la piel fresca y suave.",
+    "ingredients": "Base de jabón glicerina, extracto de avena, avena coloidal y miel.",
+    "aroma": "Miel tibia y avena silvestre",
+    "skinTypes": [
+      "mixta",
+      "grasa"
+    ],
+    "properties": [
+      "Exfoliación suave",
+      "Equilibra sin resecar",
+      "Hidratación con miel",
+      "Ideal para piel mixta o grasa"
+    ],
+    "paused": false,
+    "isGraphic": false
+  },
+  "balsamo-neutro": {
+    "id": "balsamo-neutro",
+    "name": "Bálsamo Labial Neutro",
+    "badge": "Nutrición y Reparación",
+    "price": 60,
+    "color": "#C49A6C",
+    "icon": "spa",
+    "category": "balsamo",
+    "isGraphic": false,
+    "graphicBg": "#C49A6C",
+    "image": "img/productos/balsamo-neutro.jpg",
+    "shortDesc": "Bálsamo ultra emoliente que repara, nutre y protege los labios contra la resequedad y el clima.",
+    "fullDesc": "Formulado artesanalmente con mantecas y ceras botánicas puras para brindar un cuidado intensivo y reconfortante a la piel delicada de los labios. La sinergia de manteca de karité y manteca de cacao nutre en profundidad, mientras las ceras de abeja y soya sellan la humedad creando una barrera protectora flexible y no pegajosa.",
+    "ingredients": "Cera de abeja, cera de soya, manteca de cacao, manteca de karité y aceite de almendras.",
+    "aroma": "Natural de mantecas botánicas",
+    "skinTypes": [
+      "todo",
+      "sensible",
+      "seca"
+    ],
+    "properties": [
+      "Ultra nutritivo y reparador",
+      "Sella la humedad sin sensación pegajosa",
+      "100% ingredientes naturales botánicos",
+      "Protección contra la resequedad y el viento"
+    ],
+    "paused": false,
+    "image2": "img/productos/balsamos-juntos.jpg"
+  },
+  "balsamo-fresa": {
+    "id": "balsamo-fresa",
+    "name": "Bálsamo Labial Fresa",
+    "badge": "Deliciosa Nutrición Frutal",
+    "price": 60,
+    "color": "#B93F56",
+    "icon": "favorite",
+    "category": "balsamo",
+    "isGraphic": false,
+    "graphicBg": "#B93F56",
+    "image": "img/productos/balsamo-fresa.jpg",
+    "shortDesc": "Hidratación reparadora con un delicioso toque dulce de fresa natural que deja los labios suaves y tersos.",
+    "fullDesc": "Un ritual dulce y reconfortante para tus labios. Enriquecido con mantecas vegetales ultra emolientes, ceras puras de abeja y soya, aceite de almendras y un delicioso saborizante natural de fresa. Calma la resequedad, restaura la elasticidad dérmica y aporta un brillo satinado saludable.",
+    "ingredients": "Cera de abeja, cera de soya, manteca de cacao, manteca de karité, aceite de almendras y saborizante natural de fresa.",
+    "aroma": "Fresa dulce natural",
+    "skinTypes": [
+      "todo",
+      "mixta",
+      "seca"
+    ],
+    "properties": [
+      "Saborizante e infusión natural de fresa",
+      "Restaura y suaviza labios secos o partidos",
+      "Mantecas de cacao y karité de alta pureza",
+      "Brillo satinado natural no pegajoso"
+    ],
+    "paused": false,
+    "image2": "img/productos/balsamos-juntos.jpg"
+  },
+  "bloqueador": {
+    "id": "bloqueador",
+    "name": "Bloqueador Solar",
+    "badge": "Nuevo producto!",
+    "price": 120,
+    "color": "#c28448",
+    "icon": "sunny",
+    "category": "mas-productos",
+    "isUpcoming": false,
+    "paused": false,
+    "isGraphic": false,
+    "graphicBg": "#C28448",
+    "image": "img/productos/bloqueador-solar.jpg",
+    "shortDesc": "Protector solar que protegen tu piel de los rayos UV.",
+    "fullDesc": "Protección solar, biodegradable y respetuosa con tu piel. Crear una barrera física protectora que no deja residuo blanco excesivo ni obstruye los poros.",
+    "ingredients": "Acicrem, glicerina etoxilada, multifiltro, bloqueador físico.",
+    "aroma": "Sin olor",
+    "skinTypes": [
+      "grasa",
+      "mixta",
+      "normal",
+      "seca",
+      "sensible",
+      "madura",
+      "todo"
+    ],
+    "properties": [
+      "Filtro físico 100% mineral no-nano",
+      "Protección UVA/UVB biodegradable",
+      "Resistente al agua y al sudor leve",
+      "Nutrición antioxidante contra fotoenvejecimiento"
+    ],
+    "presentation": "Lanzamiento próximamente en formato sólido / crema botánica",
+    "image2": ""
+  },
+  "agua-rosas-prod": {
+    "id": "agua-rosas-prod",
+    "name": "Tónico de rosas",
+    "badge": "Nuevo producto!",
+    "price": 80,
+    "color": "#b34a64",
+    "icon": "water_drop",
+    "category": "mas-productos",
+    "isUpcoming": false,
+    "paused": false,
+    "isGraphic": false,
+    "graphicBg": "#B34A64",
+    "image": "img/productos/agua-de-rosas.jpg",
+    "shortDesc": "Hidrata, refresca y cuida de tu piel de forma natural.",
+    "fullDesc": "Tónico perfecto para hidratación facial: equilibra el manto ácido natural, desinflama rojeces, cierra poros suavemente y prepara el cutis para absorber al máximo los nutrientes de tus aceites y bálsamos.",
+    "ingredients": "Hidrolato de variación de flores 100% natural.",
+    "aroma": "Floral sutil, delicado y 100% natural",
+    "skinTypes": [
+      "grasa",
+      "mixta",
+      "normal",
+      "seca",
+      "sensible",
+      "madura",
+      "todo"
+    ],
+    "properties": [
+      "Tónico facial equilibrante de pH",
+      "Desinflama y calma rojeces al instante",
+      "Hidratación ligera y refrescante",
+      "Libre de alcohol y fragancias sintéticas"
+    ],
+    "presentation": "Lanzamiento próximamente en botella de vidrio ámbar con atomizador",
+    "image2": ""
+  }
+};
 
     let SOAPS = JSON.parse(JSON.stringify(DEFAULT_SOAPS));
 
@@ -1936,12 +1944,32 @@
                 'mas-productos' → sección "Más productos"
        ============================================================ */
     /*CATEGORIES_START*/const DEFAULT_CATEGORIES = {
-      'mixta': { id: 'mixta', name: 'Piel Mixta', section: 'jabones' },
-      'grasa': { id: 'grasa', name: 'Piel Grasa / Acné', section: 'jabones' },
-      'sensible': { id: 'sensible', name: 'Piel Sensible / Seca', section: 'jabones' },
-      'balsamo': { id: 'balsamo', name: 'Bálsamo Labial', section: 'mas-productos' },
-      'mas-productos': { id: 'mas-productos', name: 'Más Productos (Línea Botánica)', section: 'mas-productos' }
-    };/*CATEGORIES_END*/
+  "mixta": {
+    "id": "mixta",
+    "name": "Piel Mixta",
+    "section": "jabones"
+  },
+  "grasa": {
+    "id": "grasa",
+    "name": "Piel Grasa / Acné",
+    "section": "jabones"
+  },
+  "sensible": {
+    "id": "sensible",
+    "name": "Piel Sensible / Seca",
+    "section": "jabones"
+  },
+  "balsamo": {
+    "id": "balsamo",
+    "name": "Bálsamo Labial",
+    "section": "mas-productos"
+  },
+  "mas-productos": {
+    "id": "mas-productos",
+    "name": "Más Productos (Línea Botánica)",
+    "section": "mas-productos"
+  }
+};/*CATEGORIES_END*/
     // Las categorías originales no se pueden eliminar (sí renombrar)
     const BUILTIN_CATEGORY_IDS = ['mixta', 'grasa', 'sensible', 'balsamo', 'mas-productos'];
     // Las categorías viajan a la nube dentro del mismo catálogo, bajo esta clave
